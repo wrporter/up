@@ -1,4 +1,4 @@
-name: CI
+name: Main
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
     #  TURBO_REMOTE_ONLY: true
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
 
     steps:
       - name: Check out code
