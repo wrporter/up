@@ -1,0 +1,11 @@
+*
+!.git
+!.changeset
+!packages
+packages/**/.turbo
+packages/**/dist
+packages/**/node_modules
+!.npmrc
+!package.json
+!package-lock.json
+!turbo.json

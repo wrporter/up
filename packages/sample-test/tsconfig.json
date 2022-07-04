@@ -1,0 +1,11 @@
+{
+  "extends": "@wesp-up/tsconfig/base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "jsx": "react"
+  },
+  "include": ["src"],
+  "exclude": ["dist"]
+}
