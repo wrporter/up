@@ -9,9 +9,10 @@
     "changeset": "changeset",
     "changeset:apply": "changeset version",
     "ci": "turbo run lint build",
-    "ci:docker": "npm run ci -- --scope=${SCOPE} --include-dependencies --no-deps",
     "clean": "turbo run clean && rimraf node_modules",
     "docs": "turbo run docs",
+    "docker:build": "turbo run docker:build",
+    "docker:deploy": "turbo run docker:deploy",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "release": "turbo run build && changeset publish"
