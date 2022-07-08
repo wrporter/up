@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
-source .ci/config.sh
+source .ci/app/config.sh
 
 echo "-- ${0} start..."
 echo "-- Cleaning up leftover docker images"

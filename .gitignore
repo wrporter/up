@@ -5,15 +5,19 @@ node_modules
 
 # misc
 .DS_Store
+.env
 
 # debug
 npm-debug.log*
+yarn-error.log
 
 # turbo
 .turbo
 
 # artifacts
 dist
+build
+logs
 packages/**/typedoc.json
 
 # editor

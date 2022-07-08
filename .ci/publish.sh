@@ -3,8 +3,8 @@
 set -e
 source .ci/config.sh
 
-echo "-- publish.sh start..."
+echo "-- ${0} start..."
 
 echo "TODO"
 
-echo "-- publish.sh complete!"
+echo "-- ${0} complete!"
