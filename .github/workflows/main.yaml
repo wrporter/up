@@ -15,9 +15,11 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       TURBO_REMOTE_ONLY: true
-      SSH_USER: wesp
-      SSH_HOST: sunbeam.ga
-      SSH_PORT: 2614
+      SSH_USER: ${{ secrets.SSH_USER }}
+      SSH_HOST: ${{ secrets.SSH_HOST }}
+      SSH_PORT: ${{ secrets.SSH_PORT }}
+      CHECKIT_GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_ID }}
+      CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET }}
 
     steps:
       - name: Check out code
