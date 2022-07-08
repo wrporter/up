@@ -20,34 +20,35 @@ jobs:
       SSH_PORT: ${{ secrets.SSH_PORT }}
       CHECKIT_GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_ID }}
       CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET }}
+      CHECKIT_SESSION_SECRET: ${{ secrets.CHECKIT_SESSION_SECRET }}
 
     steps:
-      - name: Check out code
+      - name: 🥼 Check out code
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
 
-      - name: Setup Node.js environment
+      - name: 📔 Setup Node.js environment
         uses: actions/setup-node@v2
         with:
           node-version: 18
           cache: 'yarn'
 
-      - name: Install dependencies
+      - name: 🏬 Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build
+      - name: 🔧 Build
         run: yarn ci
 
-      - name: Install SSH key
+      - name: 🔑 Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_ed25519
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
-      - name: Build
+      - name: 🐳 Build Docker image
         run: yarn docker:build
 
-      - name: Build
+      - name: 🚀 Deploy
         run: yarn docker:deploy

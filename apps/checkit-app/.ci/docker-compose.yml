@@ -13,6 +13,7 @@ services:
     environment:
       - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
       - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+      - SESSION_SECRET=${SESSION_SECRET}
       - SITE_PROTOCOL=https
       - SITE_HOST=checkit.sunbeam.ga
       - SITE_PORT=
