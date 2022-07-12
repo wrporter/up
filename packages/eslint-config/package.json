@@ -1,6 +1,7 @@
 {
   "name": "@wesp-up/eslint-config",
   "version": "1.0.0",
+  "license": "MIT",
   "main": "index.js",
   "files": [
     "README.md",

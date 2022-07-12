@@ -3,7 +3,7 @@ import { json } from '@remix-run/node';
 import { requireUser } from '~/auth.server';
 import { Form, useLoaderData } from '@remix-run/react';
 import { useUser } from '~/utils';
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 import React from 'react';
 import { Dialog } from '@reach/dialog';
 import TextField from '~/components/TextField';

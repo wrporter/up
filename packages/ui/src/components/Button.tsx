@@ -1,7 +1,7 @@
 import React from 'react';
 import type { ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames';
-import { focusKeyboardRing } from '~/components/common-styles';
+import { focusKeyboardRing } from '../styles/common';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     as?: React.ElementType;

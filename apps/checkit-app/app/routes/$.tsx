@@ -1,5 +1,5 @@
 import { Link, useParams } from '@remix-run/react';
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 
 export default function NotFoundPage() {
     const params = useParams();

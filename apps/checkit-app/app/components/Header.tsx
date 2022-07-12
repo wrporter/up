@@ -1,5 +1,5 @@
 import { Link, useSubmit } from '@remix-run/react';
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 import { useOptionalUser } from '~/utils';
 import { MenuItem, MenuLink, MenuList } from '~/components/Menu';
 import { Menu, MenuButton } from '@reach/menu-button';

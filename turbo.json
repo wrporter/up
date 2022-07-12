@@ -9,6 +9,9 @@
     "clean": {
       "cache": false
     },
+    "dev": {
+      "cache": false
+    },
     "docker:build": {
       "outputs": []
     },

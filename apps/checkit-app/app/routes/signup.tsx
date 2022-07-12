@@ -9,7 +9,7 @@ import * as React from 'react';
 
 import { createUser, getUserByEmail } from '~/models/user.server';
 import { validateEmail } from '~/utils';
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 import TextField from '~/components/TextField';
 import TextLink from '~/components/TextLink';
 import { authenticator } from '~/auth.server';

@@ -1,8 +1,7 @@
 import { Link } from '@remix-run/react';
 
 import { useOptionalUser } from '~/utils';
-import Button from '~/components/Button';
-import { Hello } from '@wesp-up/sample-test';
+import { Button } from '@wesp-up/ui';
 
 export default function Index() {
     const user = useOptionalUser();
@@ -16,7 +15,6 @@ export default function Index() {
                             <span className="block drop-shadow-md">
                                 Get more done with Checkit!
                             </span>
-                            <Hello entity="John" />
                         </h2>
                         <p className="mx-auto mt-6 max-w-lg text-center text-xl sm:max-w-3xl">
                             Use state of the art technology to be your most

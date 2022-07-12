@@ -10,7 +10,7 @@ import { CustomCheckboxContainer, CustomCheckboxInput } from '@reach/checkbox';
 import classNames from 'classnames';
 import { EyeIcon, EyeOffIcon, TrashIcon } from '@heroicons/react/outline';
 import { CheckIcon } from '@heroicons/react/solid';
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 import Tooltip from '~/components/Tooltip';
 import useLocalStorage from '~/hooks/useLocalStorage';
 import logger from '../../server/logger';

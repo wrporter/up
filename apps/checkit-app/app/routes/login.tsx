@@ -6,7 +6,7 @@ import type {
 import { Form, useActionData, useSearchParams } from '@remix-run/react';
 import * as React from 'react';
 
-import Button from '~/components/Button';
+import { Button } from '@wesp-up/ui';
 import TextField from '~/components/TextField';
 import TextLink from '~/components/TextLink';
 import Checkbox from '~/components/Checkbox';
