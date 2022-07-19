@@ -34,10 +34,10 @@
     "@reach/menu-button": "^0.17.0",
     "@reach/tooltip": "^0.17.0",
     "@reach/utils": "^0.17.0",
-    "@remix-run/express": "^1.6.3",
-    "@remix-run/node": "^1.6.3",
-    "@remix-run/react": "^1.6.3",
-    "@remix-run/serve": "^1.6.3",
+    "@remix-run/express": "^1.6.5",
+    "@remix-run/node": "^1.6.5",
+    "@remix-run/react": "^1.6.5",
+    "@remix-run/serve": "^1.6.5",
     "@wesp-up/sample-test": "*",
     "@wesp-up/ui": "*",
     "bcryptjs": "^2.4.3",
@@ -61,7 +61,7 @@
     "winston": "^3.8.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.6.3",
+    "@remix-run/dev": "^1.6.5",
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/dom": "^8.14.0",
     "@testing-library/jest-dom": "^5.16.4",

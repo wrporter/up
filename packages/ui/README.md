@@ -40,4 +40,15 @@ Import and serve the CSS stylesheet.
 import '@wesp-up/ui/dist/index.css';
 ```
 
+### With Remix
+
+In order to get live updates when developing in a Remix project, the following needs to be added to `remix.config.js`:
+
+```javascript
+module.exports = {
+    serverDependenciesToBundle: ['@wesp-up/ui'],
+    watchPaths: ['../../node_modules/@wesp-up/ui/**/*.js'],
+};
+```
+
 ## Contributing

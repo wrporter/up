@@ -4,4 +4,6 @@
 module.exports = {
     cacheDirectory: './node_modules/.cache/remix',
     ignoredRouteFiles: ['.*', '**/*.css', '**/*.test.{js,jsx,ts,tsx}'],
+    serverDependenciesToBundle: ['@wesp-up/ui'],
+    watchPaths: ['../../node_modules/@wesp-up/ui/**/*.js'],
 };
