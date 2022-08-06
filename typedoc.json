@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "cleanOutputDir": true,
+  "disableSources": true,
+  "entryPoints": ["src/index.ts"],
+  "excludePrivate": true,
+  "githubPages": false,
+  "hideBreadcrumbs": true,
+  "hideInPageTOC": true,
+  "out": "docs",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none",
+  "sort": ["required-first"]
+}

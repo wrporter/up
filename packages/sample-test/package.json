@@ -1,0 +1,37 @@
+{
+  "name": "@wesp-up/sample-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "run-p build:*",
+    "build:code": "node --input-type=module build.js",
+    "build:typings": "tsc",
+    "clean": "rimraf .turbo dist node_modules",
+    "docs": "cp ../../typedoc.json ./ && typedoc && rimraf typedoc.json",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "typings": "tsc"
+  },
+  "peerDependencies": {
+    "react": ">= 17"
+  },
+  "devDependencies": {
+    "@wesp-up/eslint-config": "*",
+    "@wesp-up/tsconfig": "*",
+    "@types/react": "^18.0.14",
+    "esbuild": "^0.14.47",
+    "esbuild-node-externals": "^1.4.1",
+    "eslint": "^8.18.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}

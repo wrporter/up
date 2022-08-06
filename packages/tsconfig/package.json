@@ -1,0 +1,9 @@
+{
+  "name": "@wesp-up/tsconfig",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "*.json"
+  ]
+}

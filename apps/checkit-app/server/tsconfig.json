@@ -1,0 +1,3 @@
+{
+  "extends": "@wesp-up/tsconfig/remix-express-server.json"
+}

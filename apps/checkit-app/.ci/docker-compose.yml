@@ -1,0 +1,30 @@
+version: '3.8'
+
+networks:
+  reverse-proxy_internal:
+    external: true
+
+services:
+  checkit-app:
+    container_name: checkit-app
+    image: 192.168.1.222:5555/wesp/checkit-app
+    restart: unless-stopped
+    command: yarn workspace @wesp-up/checkit-app start
+    environment:
+      - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
+      - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+      - SESSION_SECRET=${SESSION_SECRET}
+      - SITE_PROTOCOL=https
+      - SITE_HOST=checkit.sunbeam.ga
+      - SITE_PORT=
+      - DATABASE_HOST=checkit-mongo
+      - LOG_PATH=/logs
+    networks:
+      - default
+      - reverse-proxy_internal
+  checkit-mongo:
+    container_name: checkit-mongo
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - /volume1/docker/checkit/mongo:/data/db

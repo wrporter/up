@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.19",
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:apply": "changeset version",
+    "ci": "turbo run lint build",
+    "clean": "turbo run clean && rimraf node_modules",
+    "dev": "turbo run dev",
+    "docs": "turbo run docs",
+    "docker:build": "turbo run docker:build",
+    "docker:deploy": "turbo run docker:deploy",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.23.0",
+    "rimraf": "^3.0.2",
+    "turbo": "^1.3.1",
+    "typedoc": "^0.23.5",
+    "typedoc-plugin-markdown": "^3.13.2"
+  }
+}

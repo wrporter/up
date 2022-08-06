@@ -1,0 +1,11 @@
+node_modules
+
+/build
+/public/build
+.env
+/server/build
+/logs
+
+junit.xml
+
+/app/styles/tailwind.css
