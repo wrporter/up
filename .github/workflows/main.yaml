@@ -43,7 +43,7 @@ jobs:
         run: yarn docker:build
 
       - name: ☁️ Install cloudflared
-        run: sudo apt-get install cloudflared
+        run: sudo wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb
 
       - name: 🔑 Install SSH key
         uses: shimataro/ssh-key-action@v2
