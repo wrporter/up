@@ -12,6 +12,10 @@ DOCKER_BUILDKIT=1 docker build \
 	--build-arg SCOPE=${SCOPE} \
   --cache-from="${TARGET_IMAGE}:${VERSION}" \
 	--file .ci/app/Dockerfile \
+  --build-arg APP_ID=${APP_ID} \
+  --build-arg BUILD_SHA=${VERSION} \
+  --build-arg BUILD_BRANCH=${GIT_BRANCH} \
+  --build-arg BUILD_DATE=${BUILD_DATE} \
   --label "app.build-info.service-name=${APP_NAME}" \
 	--label "app.build-info.build-time=${BUILD_DATE}" \
 	--label "app.build-info.git-branch=${GIT_BRANCH_NAME}" \
