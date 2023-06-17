@@ -1,8 +1,5 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "remoteCache": {
-    "signature": true
-  },
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
