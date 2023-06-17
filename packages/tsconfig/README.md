@@ -30,7 +30,8 @@ Below are each of the configuration files available and their explanations.
 
 - [`base.json`](./base.json): Base config consumed by just about all the other configs in this project with common compiler options.
 - [`react.json`](./react.json): Config for a React application.
+- [`node.json`](./node.json): Config for an NodeJS application.
+- [`lib.json`](./lib.json): Config for a npm package.
+- [`api-tests.json`](./api-tests.json): Config for an API test project.
 - [`remix.json`](./remix.json): Config for a Remix application.
-- [`remix-express-server.json`](./remix-express-server.json): Config for an Express server packaged for a Remix application.
-- [`api-tests.json`](./api-tests.json): Config for an API test project using [Vitest](https://vitest.dev/).
 - [`e2e-tests-cypress.json`](./e2e-tests-cypress.json): Config for an E2E test project using [Cypress](https://www.cypress.io/).

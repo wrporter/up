@@ -1,0 +1,33 @@
+{
+  "name": "@wesp-up/eslint-config-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "rules",
+    "[!.]*.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8.24 < 9"
+  },
+  "dependencies": {
+    "@wesp-up/eslint-config": "*",
+    "@rushstack/eslint-patch": "1.3.2",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-plugin-jest-dom": "5.0.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-testing-library": "5.11.0"
+  },
+  "devDependencies": {
+    "@wesp-up/tsconfig": "*",
+    "eslint": "8.43.0"
+  }
+}

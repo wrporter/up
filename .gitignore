@@ -10,6 +10,7 @@ node_modules
 # debug
 npm-debug.log*
 yarn-error.log
+logs
 
 # turbo
 .turbo
@@ -17,8 +18,7 @@ yarn-error.log
 # artifacts
 dist
 build
-logs
-packages/**/typedoc.json
+coverage
 
 # editor
 .idea

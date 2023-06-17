@@ -1,6 +1,7 @@
+import classNames from 'classnames';
 import React from 'react';
 import type { ButtonHTMLAttributes } from 'react';
-import classNames from 'classnames';
+
 import { focusKeyboardRing } from '../styles/common';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -44,4 +45,5 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLElement, ButtonProps>(
     },
 );
 
+// eslint-disable-next-line import/no-default-export
 export default Button;

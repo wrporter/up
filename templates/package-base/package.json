@@ -1,8 +1,0 @@
-{
-  "name": "package_name",
-  "version": "0.1.0",
-  "files": [
-    "README.md",
-    "{{files and folders to include in published artifact}}"
-  ]
-}

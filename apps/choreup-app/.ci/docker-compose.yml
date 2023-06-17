@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  choreup-app:
+    container_name: choreup-app
+    image: 192.168.1.222:5555/wesp/choreup-app
+    restart: unless-stopped
+    command: yarn workspace @wesp-up/choreup-app start
+    environment:
+      - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
+      - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+      - SESSION_SECRET=${SESSION_SECRET}
+      - SITE_PROTOCOL=https
+      - SITE_HOST=choreup.sunbeam1.page
+      - SITE_PORT=
+      - DATABASE_HOST=choreup-mongo
+      - LOG_PATH=/logs
+      - NODE_ENV=production
+    ports:
+      - 2017:3000
+  choreup-mongo:
+    container_name: choreup-mongo
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - ./mongo:/data/db

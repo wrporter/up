@@ -78,7 +78,7 @@ export default function ProfilePage() {
 
                     <TextField
                         type="text"
-                        placeholder="Type wesp@qualtrics.com to confirm."
+                        placeholder="Type your email to confirm."
                         className="w-full"
                     />
 

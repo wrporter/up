@@ -1,0 +1,10 @@
+{
+  "extends": "@wesp-up/tsconfig/lib.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "outDir": "dist",
+    "module": "CommonJS"
+  },
+  "include": ["**/*", ".*"],
+  "exclude": ["dist", "coverage"]
+}

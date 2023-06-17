@@ -1,0 +1,6 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "extends": ["../../node_modules/@wesp-up/typedoc-config/typedoc.json"],
+  "entryPoints": ["src/index.ts"],
+  "out": "docs"
+}

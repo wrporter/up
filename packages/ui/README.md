@@ -5,7 +5,7 @@ This package provides reusable UI components that are styled with Tailwind CSS.
 ## Installation
 
 ```shell
-npm install @wesp-ui/up
+npm install @wesp-up/ui
 ```
 
 ## Usage

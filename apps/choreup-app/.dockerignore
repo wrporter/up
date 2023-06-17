@@ -1,0 +1,14 @@
+*
+!app
+!public
+public/build
+!server
+!test
+!.eslintrc.js
+!remix.config.js
+!remix.env.d.ts
+!package.json
+!package-lock.json
+!tailwind.config.js
+!tsconfig.json
+!vitest.config.ts

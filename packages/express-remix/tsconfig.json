@@ -1,0 +1,9 @@
+{
+    "extends": "@wesp-up/tsconfig/react.json",
+    "compilerOptions": {
+        "types": ["vitest/globals"],
+        "outDir": "dist",
+    },
+    "include": ["**/*", ".*"],
+    "exclude": ["dist"],
+}

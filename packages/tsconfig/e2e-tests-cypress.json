@@ -1,11 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
+  "extends": "@wesp-up/tsconfig/node.json",
   "compilerOptions": {
     "types": ["node", "cypress", "@testing-library/cypress"],
-    "target": "ES2019",
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "noEmit": true
   }
 }

@@ -10,35 +10,42 @@ require('@rushstack/eslint-patch/modern-module-resolution');
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
-    ignorePatterns: ['dist'],
-    parser: '@typescript-eslint/parser',
+    ignorePatterns: ['dist', '**/build', 'coverage', '**/*.generated.*'],
     parserOptions: {
-        ecmaVersion: 2021,
         sourceType: 'module',
+        project: './tsconfig.json',
     },
     env: {
         es2021: true,
+        node: true,
     },
     extends: [
-        'eslint:recommended',
-        'prettier',
+        'airbnb-base',
+        'airbnb-typescript/base',
         'plugin:prettier/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:jsdoc/recommended',
     ],
-    plugins: ['@typescript-eslint', 'prettier', 'import', 'unused-imports'],
-    settings: {
-        'import/resolver': {
-            typescript: {},
-        },
-    },
+    plugins: ['node', 'prettier', 'import', 'unused-imports', 'jsdoc'],
     overrides: [
         {
             // Specifying overrides allows us to provide default file extensions.
             // See https://github.com/eslint/eslint/issues/2274
-            files: ['**/*.js?(x)', '**/*.ts?(x)'],
+            files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
             rules: {
                 ...baseRules,
+            },
+        },
+        {
+            files: '**/*.js',
+            rules: {
+                // allow for CommonJS files to use require
+                '@typescript-eslint/no-var-requires': 'off',
+            },
+        },
+        {
+            files: '**/*.config.{js,ts}',
+            rules: {
+                'import/no-default-export': 'off',
             },
         },
     ],

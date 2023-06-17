@@ -2,7 +2,7 @@
 # Copy all package.json files in the project
 # See https://stackoverflow.com/questions/49939960/docker-copy-files-using-glob-pattern
 ###############################################################################
-FROM node:16-alpine as dependencies
+FROM node:18-alpine as dependencies
 
 WORKDIR /app
 

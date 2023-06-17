@@ -1,12 +1,11 @@
 ###############################################################################
 # Base
 ###############################################################################
-FROM node:16-alpine AS base
+FROM node:18-alpine AS base
 
-RUN apk update && apk upgrade && apk add --no-cache curl bash git
+RUN apk update && apk upgrade && apk add --no-cache curl bash git libc6-compat
 
-# Needed for Vitest mocks to work properly. See https://github.com/vitest-dev/vitest/issues/1196
-WORKDIR /usr/app
+WORKDIR /app
 
 ARG SCOPE
 ENV SCOPE=${SCOPE}
@@ -28,8 +27,8 @@ RUN turbo prune --scope=${SCOPE} --docker
 ###############################################################################
 FROM base AS dependencies
 
-COPY --from=pruner /usr/app/out/json/ .
-COPY --from=pruner /usr/app/out/yarn.lock ./yarn.lock
+COPY --from=pruner /app/out/json/ .
+COPY --from=pruner /app/out/yarn.lock ./yarn.lock
 
 RUN yarn install --frozen-lockfile
 
@@ -38,28 +37,28 @@ RUN yarn install --frozen-lockfile
 ###############################################################################
 FROM base AS prod-dependencies
 
-COPY --from=pruner /usr/app/out/json/ .
-COPY --from=pruner /usr/app/out/yarn.lock ./yarn.lock
-COPY --from=dependencies /usr/app/${YARN_CACHE_FOLDER} /${YARN_CACHE_FOLDER}
+COPY --from=pruner /app/out/json/ .
+COPY --from=pruner /app/out/yarn.lock ./yarn.lock
+COPY --from=dependencies /app/${YARN_CACHE_FOLDER} /${YARN_CACHE_FOLDER}
 
 RUN yarn install --frozen-lockfile --production --prefer-offline --ignore-scripts
-RUN rm -rf /usr/app/${YARN_CACHE_FOLDER}
+RUN rm -rf /app/${YARN_CACHE_FOLDER}
 
 ###############################################################################
 # Build
 ###############################################################################
 FROM base AS builder
 
-COPY --from=dependencies /usr/app/ .
-COPY --from=pruner /usr/app/out/full/ .
+COPY --from=dependencies /app/ .
+COPY --from=pruner /app/out/full/ .
 
-RUN yarn ci --scope=${SCOPE} --include-dependencies --no-deps
+RUN yarn ci --filter=${SCOPE}...
 RUN find . -name node_modules | xargs rm -rf
 
 ###############################################################################
 # Production Image
 ###############################################################################
-FROM node:16-alpine AS production
+FROM node:18-alpine AS production
 
 WORKDIR /app
 
@@ -73,7 +72,7 @@ ENV BUILD_DATE=${BUILD_DATE}
 
 ENV NODE_ENV production
 
-COPY --from=prod-dependencies /usr/app/ .
-COPY --from=builder /usr/app/ .
+COPY --from=prod-dependencies /app/ .
+COPY --from=builder /app/ .
 
 CMD yarn workspace ${SCOPE} start

@@ -8,19 +8,31 @@ require('@rushstack/eslint-patch/modern-module-resolution');
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
-    extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended'],
-    plugins: ['jest', 'jest-dom'],
+    extends: ['plugin:jest/recommended'],
+    plugins: ['jest'],
     settings: {
         jest: {
-            version: 27,
+            version: 28,
         },
     },
-    rules: {
-        'jest/expect-expect': [
-            'error',
-            {
-                assertFunctionNames: ['expect*'],
-            },
-        ],
+    env: {
+        jest: true,
+        'jest/globals': true,
     },
+    overrides: [
+        {
+            files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
+            rules: {
+                'jest/expect-expect': [
+                    'error',
+                    {
+                        // allow for custom expect functions
+                        assertFunctionNames: ['expect*'],
+                    },
+                ],
+                // allow for .any() matchers in tests
+                '@typescript-eslint/no-unsafe-assignment': 'off',
+            },
+        },
+    ],
 };
