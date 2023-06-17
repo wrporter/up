@@ -8,12 +8,13 @@ source .ci/app/config.sh
 : "${WORKSPACE_PATH:?WORKSPACE_PATH must be set}"
 : "${REMOTE_APP_DIRECTORY:?REMOTE_APP_DIRECTORY must be set}"
 
-cp ${WORKSPACE_PATH}/.ci/docker-compose.yml .ci/docker-compose.yml.tmp
 ${WORKSPACE_PATH}/.ci/inject-docker-variables.sh
+if [ ! -f "${WORKSPACE_PATH}/prod.env" ]; then
+  touch ${WORKSPACE_PATH}/prod.env
+fi
+scp -O ${SCP_PORT} prod.env ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/.env
 
-scp -O ${SCP_PORT} $(pwd)/.ci/docker-compose.yml.tmp ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/docker-compose.yml
-
-rm .ci/docker-compose.yml.*
+scp -O ${SCP_PORT} ${WORKSPACE_PATH}/.ci/docker-compose.yml ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/docker-compose.yml
 
 docker save -o $(pwd)/${APP_NAME}.tar "${TARGET_IMAGE}:latest"
 
