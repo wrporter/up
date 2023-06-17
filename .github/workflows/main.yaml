@@ -18,10 +18,8 @@ jobs:
       SSH_USER: ${{ secrets.SSH_USER }}
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_PORT: ${{ secrets.SSH_PORT }}
+      CHECKIT_ENV: ${{ secrets.CHECKIT_ENV }}
       CHOREUP_ENV: ${{ secrets.CHOREUP_ENV }}
-      CHECKIT_GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_ID }}
-      CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.CHECKIT_GOOGLE_OAUTH_CLIENT_SECRET }}
-      CHECKIT_SESSION_SECRET: ${{ secrets.CHECKIT_SESSION_SECRET }}
 
     steps:
       - name: 🥼 Check out code
