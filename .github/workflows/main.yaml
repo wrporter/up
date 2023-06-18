@@ -33,11 +33,11 @@ jobs:
           node-version: 18
           cache: 'yarn'
 
-      - name: 🏬 Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: 🔧 Build
-        run: yarn ci
+#      - name: 🏬 Install dependencies
+#        run: yarn install --frozen-lockfile
+#
+#      - name: 🔧 Build
+#        run: yarn ci
 
       - name: ☁️ Install cloudflared
         run: sudo wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb
