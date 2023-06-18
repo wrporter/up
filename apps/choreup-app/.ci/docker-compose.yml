@@ -3,7 +3,7 @@ version: '3.8'
 services:
   choreup-app:
     container_name: choreup-app
-    image: 192.168.1.222:5555/wesp/choreup-app
+    image: wesp/choreup-app
     restart: unless-stopped
     command: yarn workspace @wesp-up/choreup-app start
     env_file:
