@@ -28,7 +28,7 @@ export function Header() {
                 {user ? (
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button>
+                            <Button kind="tertiary">
                                 {user.imageUrl ? (
                                     <img
                                         src={user.imageUrl}
