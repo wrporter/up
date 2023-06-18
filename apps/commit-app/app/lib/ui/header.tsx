@@ -17,7 +17,6 @@ export function Header() {
         <header className="flex items-center justify-between border-b border-b-gray-200 bg-white p-3">
             <Link
                 to={user ? '/home' : '/'}
-                // to="/"
                 className="flex items-center space-x-2"
             >
                 <img src="/assets/logo.svg" alt="" className="h-10 w-10" />
