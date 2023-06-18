@@ -9,10 +9,11 @@ source .ci/app/config.sh
 : "${REMOTE_APP_DIRECTORY:?REMOTE_APP_DIRECTORY must be set}"
 
 (cd ${WORKSPACE_PATH} && .ci/inject-docker-variables.sh)
-if [ ! -f "${WORKSPACE_PATH}/prod.env" ]; then
-  touch ${WORKSPACE_PATH}/prod.env
+if [ ! -f "${WORKSPACE_PATH}/.env.prod" ]; then
+  touch ${WORKSPACE_PATH}/.env.prod
 fi
-scp -O ${SCP_PORT} ${WORKSPACE_PATH}/prod.env ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/.env
+scp -O ${SCP_PORT} ${WORKSPACE_PATH}/.env.prod ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/.env
+rm ${WORKSPACE_PATH}/.env.prod
 
 scp -O ${SCP_PORT} ${WORKSPACE_PATH}/.ci/docker-compose.yml ${SSH_USER}@${SSH_HOST}:${BASE_DIRECTORY}${REMOTE_APP_DIRECTORY}/docker-compose.yml
 

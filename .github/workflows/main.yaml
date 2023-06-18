@@ -33,9 +33,9 @@ jobs:
           node-version: 18
           cache: 'yarn'
 
-#      - name: 🏬 Install dependencies
-#        run: yarn install --frozen-lockfile
-#
+      - name: 🏬 Install dependencies
+        run: yarn install --frozen-lockfile
+
 #      - name: 🔧 Build
 #        run: yarn ci
 
