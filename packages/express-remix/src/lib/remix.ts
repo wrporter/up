@@ -95,7 +95,7 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
                 // ignoring as we are following direct instructions from remix
                 /* c8 ignore next 6 */
                 getLoadContext() {
-                    return { ...res.locals.requestContext };
+                    return { requestContext: res.locals.requestContext };
                 },
                 // eslint-disable-next-line global-require,import/no-dynamic-require
                 build: require(serverBuildPath),
@@ -108,7 +108,7 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
                 // ignoring as we are following direct instructions from remix
                 /* c8 ignore next 6 */
                 getLoadContext() {
-                    return { ...res.locals.requestContext };
+                    return { requestContext: res.locals.requestContext };
                 },
                 // eslint-disable-next-line global-require,import/no-dynamic-require
                 build: require(serverBuildPath),

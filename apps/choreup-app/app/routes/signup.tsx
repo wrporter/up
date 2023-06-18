@@ -4,14 +4,12 @@ import type {
     V2_MetaFunction,
 } from '@remix-run/node';
 import { json } from '@remix-run/node';
-import { Form, useActionData, useSearchParams } from '@remix-run/react';
-import { Button } from '@wesp-up/ui';
+import { Form, Link, useActionData, useSearchParams } from '@remix-run/react';
+import { Button, TextField, TextLink } from '@wesp-up/ui';
 import * as React from 'react';
 
 import { authenticator } from '~/auth.server';
-import TextField from '~/components/TextField';
-import TextLink from '~/components/TextLink';
-import { createUser, getUserByEmail } from '~/models/user.server';
+import { createUser, getUserByEmail } from '~/lib/models/user.server';
 import { validateEmail } from '~/utils';
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -85,13 +83,7 @@ export const action: ActionFunction = async ({ request }) => {
     // });
 };
 
-export const meta: V2_MetaFunction = () => {
-    return [
-        {
-            title: 'Sign Up',
-        },
-    ];
-};
+export const meta: V2_MetaFunction = () => [{ title: 'Sign Up' }];
 
 export default function Signup() {
     const [searchParams] = useSearchParams();
@@ -248,6 +240,7 @@ export default function Signup() {
                         <div className="text-center text-sm text-gray-500">
                             Already have an account?{' '}
                             <TextLink
+                                as={Link}
                                 to={{
                                     pathname: '/login',
                                     search: searchParams.toString(),
