@@ -19,7 +19,7 @@ jobs:
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_PORT: ${{ secrets.SSH_PORT }}
       CHECKIT_ENV: ${{ secrets.CHECKIT_ENV }}
-      CHOREUP_ENV: ${{ secrets.CHOREUP_ENV }}
+      COMMIT_ENV: ${{ secrets.COMMIT_ENV }}
 
     steps:
       - name: 🥼 Check out code

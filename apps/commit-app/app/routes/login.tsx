@@ -54,7 +54,7 @@ export const action: ActionFunction = async ({ request }) => {
     // TODO: Handle showing form validation errors with yup
 };
 
-export const meta: V2_MetaFunction = () => [{ title: 'Checkit: Login' }];
+export const meta: V2_MetaFunction = () => [{ title: 'Commit: Login' }];
 
 export default function LoginPage() {
     const [searchParams] = useSearchParams();

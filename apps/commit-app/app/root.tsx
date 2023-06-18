@@ -15,6 +15,7 @@ import {
 } from '@remix-run/react';
 
 import { getUser } from '~/auth.server';
+import { Header } from '~/lib/ui/header';
 import stylesheet from '~/tailwind.css';
 
 export const links: LinksFunction = () => [
@@ -24,7 +25,7 @@ export const links: LinksFunction = () => [
 
 export const meta: V2_MetaFunction = () => [
     { charset: 'utf-8' },
-    { title: 'Checkit' },
+    { title: 'Commit' },
     { viewport: 'width=device-width,initial-scale=1' },
 ];
 
@@ -51,7 +52,11 @@ export default function App() {
                 <Links />
             </head>
             <body className="h-full">
-                <Outlet />
+                <div className="flex h-full min-h-screen flex-col">
+                    <Header />
+                    <Outlet />
+                </div>
+
                 <ScrollRestoration />
                 <Scripts />
                 <LiveReload />

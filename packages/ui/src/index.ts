@@ -25,3 +25,13 @@ export {
     TooltipTriggerProps,
     TooltipTrigger,
 } from './components/tooltip';
+export {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuContentProps,
+    DropdownMenuProps,
+    DropdownMenuTriggerProps,
+    DropdownMenuTrigger,
+    DropdownMenuItem,
+    DropdownMenuItemProps,
+} from './components/dropdown-menu';

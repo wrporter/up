@@ -21,6 +21,4 @@ build
 coverage
 
 # editor
-.idea
-*.iml
 .vscode

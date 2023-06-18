@@ -15,7 +15,7 @@ async function mongo(): Promise<MongoClient> {
     }
 
     const client = await MongoClient.connect(
-        `mongodb://${DATABASE_HOST}:27017/choreup`,
+        `mongodb://${DATABASE_HOST}:27017/commit`,
     );
 
     log.info('Successfully connected to the Mongo database!');

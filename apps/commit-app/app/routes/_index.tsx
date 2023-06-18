@@ -13,7 +13,7 @@ export default function Index() {
                     <div className="lg:pb-18 relative px-4 pt-16 pb-8 sm:px-6 sm:pt-24 sm:pb-14 lg:px-8 lg:pt-32">
                         <h2 className="text-center text-5xl tracking-tight sm:text-6xl lg:text-7xl">
                             <span className="block drop-shadow-md">
-                                Get more done with Checkit!
+                                Get more done with Commit!
                             </span>
                         </h2>
                         <p className="mx-auto mt-6 max-w-lg text-center text-xl sm:max-w-3xl">

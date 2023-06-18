@@ -1,23 +1,23 @@
 version: '3.8'
 
 services:
-  choreup-app:
-    container_name: choreup-app
-    image: wesp/choreup-app
+  commit-app:
+    container_name: commit-app
+    image: wesp/commit-app
     restart: unless-stopped
-    command: yarn workspace @wesp-up/choreup-app start
+    command: yarn workspace @wesp-up/commit-app start
     env_file:
       - .env
     environment:
       - SITE_PROTOCOL=https
-      - SITE_HOST=choreup.sunbeam1.page
+      - SITE_HOST=commit.sunbeam1.page
       - SITE_PORT=
-      - DATABASE_HOST=choreup-mongo
+      - DATABASE_HOST=commit-mongo
       - NODE_ENV=production
     ports:
       - 2017:3000
-  choreup-mongo:
-    container_name: choreup-mongo
+  commit-mongo:
+    container_name: commit-mongo
     image: mongo
     restart: unless-stopped
     volumes:

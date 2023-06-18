@@ -12,7 +12,7 @@ module.exports = {
     },
     ignoredRouteFiles: ['**/.*', '**/*.test.{js,jsx,ts,tsx}'],
     serverDependenciesToBundle: ['@wesp-up/ui'],
-    watchPaths: ['node_modules/@wesp-up/ui/**/*.js'],
+    watchPaths: ['node_modules/@wesp-up/ui/**/*'],
     postcss: true,
     tailwind: true,
     serverModuleFormat: 'cjs',
