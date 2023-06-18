@@ -1,7 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { mergeHandlers } from 'src/core/merge-handlers';
 import { vi } from 'vitest';
+
+import { mergeHandlers } from './merge-handlers';
 
 it('mergesHandlers calls all handlers', () => {
     const clickHandler1 = vi.fn();

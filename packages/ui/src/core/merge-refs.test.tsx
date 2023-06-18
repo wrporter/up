@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import { vi } from 'vitest';
 
-import { mergeRefs } from './index';
+import { mergeRefs } from './merge-refs';
 
 it('mergesRefs uses all refs', () => {
     const Dummy = React.forwardRef(function Dummy(_, ref) {
