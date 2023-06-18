@@ -16,7 +16,7 @@ RUN find packages \! -name "package.json" -mindepth 2 -maxdepth 2 -print | xargs
 ###############################################################################
 # Install Dependencies
 ###############################################################################
-FROM node:16-alpine
+FROM node:18-alpine
 
 RUN apk update && apk upgrade && apk add --no-cache curl bash git
 

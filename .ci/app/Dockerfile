@@ -11,6 +11,11 @@ ARG SCOPE
 ENV SCOPE=${SCOPE}
 ENV YARN_CACHE_FOLDER=.yarn-cache
 
+ARG TURBO_TEAM
+ARG TURBO_TOKEN
+ENV TURBO_TEAM=${TURBO_TEAM}
+ENV TURBO_TOKEN=${TURBO_TOKEN}
+
 ###############################################################################
 # Prune
 ###############################################################################
@@ -67,7 +72,7 @@ ARG APP_ID
 ARG BUILD_SHA
 ARG BUILD_BRANCH
 ARG BUILD_DATE
-ENV APP_ID=$APP_ID
+ENV APP_ID=${APP_ID}
 ENV BUILD_SHA=${BUILD_SHA}
 ENV BUILD_BRANCH=${BUILD_BRANCH}
 ENV BUILD_DATE=${BUILD_DATE}
