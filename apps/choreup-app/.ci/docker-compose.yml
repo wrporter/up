@@ -13,7 +13,6 @@ services:
       - SITE_HOST=choreup.sunbeam1.page
       - SITE_PORT=
       - DATABASE_HOST=choreup-mongo
-      - LOG_PATH=/logs
       - NODE_ENV=production
     ports:
       - 2017:3000

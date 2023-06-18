@@ -4,7 +4,7 @@ set -e
 
 echo "-- ${0} start..."
 
-if [[ -z "${CHOREUP_ENV}" ]]; then
+if [ -n "${CHOREUP_ENV}" ]; then
   echo "${CHOREUP_ENV}" > .env.prod
 fi
 

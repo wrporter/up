@@ -4,7 +4,7 @@ set -e
 
 echo "-- ${0} start..."
 
-if [[ -z "${CHECKIT_ENV}" ]]; then
+if [ -n "${CHECKIT_ENV}" ]; then
   echo "${CHECKIT_ENV}" > .env.prod
 fi
 
