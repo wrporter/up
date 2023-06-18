@@ -8,7 +8,7 @@ source .ci/app/config.sh
 : "${WORKSPACE_PATH:?WORKSPACE_PATH must be set}"
 : "${REMOTE_APP_DIRECTORY:?REMOTE_APP_DIRECTORY must be set}"
 
-${WORKSPACE_PATH}/.ci/inject-docker-variables.sh
+(cd ${WORKSPACE_PATH} && .ci/inject-docker-variables.sh)
 if [ ! -f "${WORKSPACE_PATH}/prod.env" ]; then
   touch ${WORKSPACE_PATH}/prod.env
 fi
