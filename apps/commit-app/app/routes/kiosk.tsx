@@ -33,11 +33,17 @@ export default function Page() {
                         <h3 className="flex justify-center text-lg font-bold border-b border-b-slate-200 pb-2 mb-2">
                             {child.name}
                         </h3>
-                        {child.chores[today]
-                            .filter(({ name }) => Boolean(name))
-                            .map((chore) => (
-                                <ChoreCheckbox key={chore.name} chore={chore} />
-                            ))}
+
+                        <div className="flex flex-col gap-4">
+                            {child.chores[today]
+                                .filter(({ name }) => Boolean(name))
+                                .map((chore) => (
+                                    <ChoreCheckbox
+                                        key={chore.name}
+                                        chore={chore}
+                                    />
+                                ))}
+                        </div>
                     </div>
                 ))
             ) : (
