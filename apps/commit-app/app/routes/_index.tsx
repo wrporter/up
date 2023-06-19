@@ -13,18 +13,20 @@ export default function Index() {
                     <div className="lg:pb-18 relative px-4 pt-16 pb-8 sm:px-6 sm:pt-24 sm:pb-14 lg:px-8 lg:pt-32">
                         <h2 className="text-center text-5xl tracking-tight sm:text-6xl lg:text-7xl">
                             <span className="block drop-shadow-md">
-                                Get more done with Commit!
+                                Raise resilient children!
                             </span>
                         </h2>
                         <p className="mx-auto mt-6 max-w-lg text-center text-xl sm:max-w-3xl">
-                            Use state of the art technology to be your most
-                            productive self. The most simplified todo list
-                            application ever!
+                            We provide tools to help children commit to success,
+                            by learning to work and manage money. Design your
+                            own chore chart and take chores to the next level
+                            for your children with a reward system that teaches
+                            them personal finances.
                         </p>
                         <div className="mt-10 flex justify-center">
                             {user ? (
                                 <Button as={Link} to="/home">
-                                    View your items
+                                    Take me home
                                 </Button>
                             ) : (
                                 <Button as={Link} to="/signup">
