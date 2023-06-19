@@ -2,7 +2,7 @@
 
 # First run .ci/app/build.sh to build the image before release.
 
-set -ex
+set -e
 source .ci/app/config.sh
 
 : "${WORKSPACE_PATH:?WORKSPACE_PATH must be set}"
