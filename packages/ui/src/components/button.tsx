@@ -7,7 +7,7 @@ import { forwardRef } from '~/core';
 import { focusKeyboardRing } from '~/styles/common';
 
 const buttonVariants = tv({
-    base: ['py-2 px-4 rounded text-white'],
+    base: ['rounded text-white flex justify-center items-center'],
     variants: {
         kind: {
             primary: [
@@ -35,9 +35,14 @@ const buttonVariants = tv({
                 'hover:border-red-100 active:border-red-200',
             ],
         },
+        small: {
+            true: 'p-2 h-8 text-sm',
+            false: 'py-2 px-4',
+        },
     },
     defaultVariants: {
         kind: 'primary',
+        small: false,
     },
 });
 
@@ -47,12 +52,13 @@ export interface ButtonProps
         Omit<VariantProps<typeof buttonVariants>, 'class'> {}
 
 export const Button = forwardRef<ButtonProps, 'button'>(
-    ({ as: Component = 'button', className, kind, ...rest }, ref) => {
+    ({ as: Component = 'button', className, kind, small, ...rest }, ref) => {
         return (
             <Component
                 ref={ref}
                 className={buttonVariants({
                     kind,
+                    small,
                     className: [focusKeyboardRing, className],
                 })}
                 {...rest}

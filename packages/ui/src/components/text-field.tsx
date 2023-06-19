@@ -1,25 +1,38 @@
 import React from 'react';
-import { twMerge } from 'tailwind-merge';
+import type { VariantProps } from 'tailwind-variants';
+import { tv } from 'tailwind-variants';
 
 import type { CoreProps, HTMLCoreProps } from '~/core';
 import { forwardRef } from '~/core';
 import { focusKeyboardRing } from '~/styles/common';
 
-export interface TextFieldProps extends HTMLCoreProps<'input'>, CoreProps {}
+const textFieldVariants = tv({
+    base: ['px-2 py-1 border border-gray-500', 'rounded'],
+    variants: {
+        small: {
+            true: 'h-8 text-sm',
+            false: 'text-lg',
+        },
+    },
+    defaultVariants: {
+        small: false,
+    },
+});
+
+export interface TextFieldProps
+    extends HTMLCoreProps<'input'>,
+        CoreProps,
+        Omit<VariantProps<typeof textFieldVariants>, 'class'> {}
 
 export const TextField = forwardRef<TextFieldProps, 'input'>(
-    ({ className, ...rest }: TextFieldProps, ref) => {
+    ({ small, className, ...rest }: TextFieldProps, ref) => {
         return (
             <input
                 ref={ref}
-                className={twMerge(
-                    'border border-gray-500',
-                    'rounded',
-                    'px-2 py-1',
-                    'text-lg',
-                    focusKeyboardRing,
-                    className,
-                )}
+                className={textFieldVariants({
+                    small,
+                    className: [focusKeyboardRing, className],
+                })}
                 {...rest}
             />
         );

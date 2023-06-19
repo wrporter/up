@@ -23,6 +23,7 @@ export type ChoreAssignments = {
 
 export interface Chore {
     name: string;
+    reward: number;
 }
 
 interface MongoChoreChart extends Omit<ChoreChart, 'id' | 'userId'> {
