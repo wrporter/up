@@ -103,7 +103,6 @@ export async function verifyLogin(
         .db()
         .collection('users')
         .findOne<MongoUser>({ email });
-    // console.log(userWithPassword);
 
     if (!userWithPassword?.password) {
         return null;

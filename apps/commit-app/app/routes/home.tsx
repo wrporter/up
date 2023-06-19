@@ -1,17 +1,14 @@
 import type { ActionFunction, LoaderFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
-import { Form, useLoaderData, useNavigation } from '@remix-run/react';
+import { useLoaderData } from '@remix-run/react';
+import { withZod } from '@remix-validated-form/with-zod';
 import type { RequestContext } from '@wesp-up/express-remix';
 import { Button, TextField } from '@wesp-up/ui';
-import type { EventHandler, FormEvent } from 'react';
-import { useEffect, useState } from 'react';
+import { FieldArray, ValidatedForm } from 'remix-validated-form';
+import { z } from 'zod';
 
 import { requireUser } from '~/auth.server';
-import type {
-    Child,
-    Chore,
-    ChoreAssignments,
-} from '~/lib/models/chore-chart.server';
+import type { Child, ChoreAssignments } from '~/lib/models/chore-chart.server';
 import {
     createChoreChart,
     getChoreChart,
@@ -19,6 +16,28 @@ import {
 } from '~/lib/models/chore-chart.server';
 import { days } from '~/lib/models/days';
 import { log } from '~/server/logger.server';
+
+const validator = withZod(
+    z.object({
+        id: z.string(),
+        children: z.array(
+            z.object({
+                name: z.string(),
+                chores: z.object(
+                    days.reduce(
+                        (result, day) => ({
+                            ...result,
+                            [day]: z
+                                .array(z.object({ name: z.string() }))
+                                .optional(),
+                        }),
+                        {},
+                    ),
+                ),
+            }),
+        ),
+    }),
+);
 
 export const loader: LoaderFunction = async ({ request, context }) => {
     log.info({
@@ -36,45 +55,18 @@ export const action: ActionFunction = async ({ request }) => {
         return json({ error: 'Unauthenticated' }, { status: 401 });
     }
 
-    const formData = await request.formData();
-    const children: Child[] = [];
-
-    for (let childIndex = 0; childIndex < 10; childIndex += 1) {
-        const name = formData.get(`child.${childIndex}.name`) as string;
-        if (!name) {
-            break;
-        }
-
-        const chores = days.reduce((result, day) => {
-            const chores: Chore[] = [];
-            for (let choreIndex = 0; choreIndex < 10; choreIndex += 1) {
-                const chore = formData.get(
-                    `child.${childIndex}.${day}.chore.${choreIndex}`,
-                );
-                if (chore) {
-                    chores.push({ name: chore as string });
-                }
-                if (!chore) {
-                    break;
-                }
-            }
-
-            return {
-                ...result,
-                [day]: chores,
-            };
-        }, {} as ChoreAssignments);
-
-        children.push({ name, chores });
+    const form = await validator.validate(await request.formData());
+    if (!form.data) {
+        return null;
     }
 
     if (request.method === 'POST') {
-        await createChoreChart(user.id, children);
+        await createChoreChart(user.id, form.data.children as Child[]);
     }
     if (request.method === 'PUT') {
         await updateChoreChart(user.id, {
-            id: formData.get('id') as string,
-            children,
+            id: form.data.id,
+            children: form.data.children as Child[],
         });
     }
     return null;
@@ -82,119 +74,166 @@ export const action: ActionFunction = async ({ request }) => {
 
 export default function Page() {
     const { choreChart } = useLoaderData<typeof loader>();
-    const [children, setChildren] = useState<Child[]>(
-        choreChart?.children ?? [],
-    );
-    const navigation = useNavigation();
-
-    useEffect(() => {
-        if (choreChart) {
-            setChildren(choreChart?.children);
-        }
-    }, [choreChart]);
-
-    const handleChange: EventHandler<FormEvent> = (e) => {};
 
     return (
         <div className="p-4">
             <h2 className="text-xl mb-4">Chore Chart</h2>
 
-            {navigation.state === 'submitting' ? (
-                <div>Loading...</div>
-            ) : (
-                <Form
-                    method={choreChart?.id ? 'PUT' : 'POST'}
-                    onChange={handleChange}
-                >
-                    <input type="hidden" name="id" value={choreChart?.id} />
+            <ValidatedForm
+                id="choreChartForm"
+                validator={validator}
+                method={choreChart?.id ? 'put' : 'post'}
+                defaultValues={choreChart}
+            >
+                <TextField
+                    type="hidden"
+                    name="id"
+                    defaultValue={choreChart?.id}
+                />
 
-                    <table className="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" className="px-6 py-3">
-                                    Child
+                <table className="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" className="px-6 py-3">
+                                Child
+                            </th>
+                            {days.map((day) => (
+                                <th key={day} scope="col" className="px-6 py-3">
+                                    {day}
                                 </th>
-                                {days.map((day) => (
-                                    <th
-                                        key={day}
-                                        scope="col"
-                                        className="px-6 py-3"
-                                    >
-                                        {day}
-                                    </th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {children.map((child, childIndex) => (
-                                <tr
-                                    key={newGuid()}
-                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                                >
-                                    <th
-                                        scope="row"
-                                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                                    >
-                                        <TextField
-                                            className="w-full"
-                                            name={`child.${childIndex}.name`}
-                                            defaultValue={child.name}
-                                        />
-                                    </th>
-                                    {days.map((day) => {
-                                        const chores = child.chores[day];
-                                        if (chores.length === 0) {
-                                            chores.push({ name: '' });
-                                        }
-                                        return (
-                                            <td
-                                                key={newGuid()}
-                                                className="px-2 py-4"
-                                            >
-                                                {chores.map(
-                                                    (chore, choreIndex) => (
-                                                        <TextField
-                                                            key={newGuid()}
-                                                            name={`child.${childIndex}.${day}.chore.${choreIndex}`}
-                                                            className="w-full"
-                                                            defaultValue={
-                                                                chore.name
-                                                            }
-                                                        />
-                                                    ),
-                                                )}
-                                            </td>
-                                        );
-                                    })}
-                                </tr>
                             ))}
-                        </tbody>
-                    </table>
+                        </tr>
+                    </thead>
+                    <FieldArray name="children">
+                        {(children, { push }) => (
+                            <tbody>
+                                {children.map(
+                                    ({ defaultValue, key }, childIndex) => (
+                                        <tr
+                                            key={key}
+                                            className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                                        >
+                                            <th
+                                                scope="row"
+                                                className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                            >
+                                                <TextField
+                                                    className="w-full"
+                                                    name={`children[${childIndex}].name`}
+                                                    defaultValue={
+                                                        defaultValue.name
+                                                    }
+                                                />
+                                            </th>
 
-                    <div className="flex mt-4 justify-between">
-                        <Button
-                            kind="secondary"
-                            type="button"
-                            onClick={() => {
-                                setChildren([...children, newChild()]);
-                            }}
-                        >
-                            Add Child
-                        </Button>
+                                            {days.map((day) => {
+                                                return (
+                                                    <td
+                                                        key={day}
+                                                        className="px-2 py-4"
+                                                    >
+                                                        <FieldArray
+                                                            name={`children[${childIndex}].chores.${day}`}
+                                                        >
+                                                            {(
+                                                                chores,
+                                                                {
+                                                                    insert,
+                                                                    remove,
+                                                                },
+                                                            ) => {
+                                                                return (
+                                                                    <>
+                                                                        {chores.map(
+                                                                            (
+                                                                                {
+                                                                                    defaultValue,
+                                                                                    key,
+                                                                                },
+                                                                                choreIndex,
+                                                                            ) => (
+                                                                                <div
+                                                                                    key={
+                                                                                        key
+                                                                                    }
+                                                                                    className="flex"
+                                                                                >
+                                                                                    <TextField
+                                                                                        name={`children[${childIndex}].chores.${day}[${choreIndex}].name`}
+                                                                                        className="w-full"
+                                                                                        defaultValue={
+                                                                                            defaultValue.name
+                                                                                        }
+                                                                                    />
 
-                        <Button>Save</Button>
-                    </div>
-                </Form>
-            )}
+                                                                                    {chores.length >
+                                                                                    1 ? (
+                                                                                        <Button
+                                                                                            kind="danger"
+                                                                                            type="button"
+                                                                                            onClick={() => {
+                                                                                                remove(
+                                                                                                    choreIndex,
+                                                                                                );
+                                                                                            }}
+                                                                                        >
+                                                                                            -
+                                                                                        </Button>
+                                                                                    ) : undefined}
+
+                                                                                    <Button
+                                                                                        kind="secondary"
+                                                                                        type="button"
+                                                                                        onClick={() => {
+                                                                                            insert(
+                                                                                                choreIndex +
+                                                                                                    1,
+                                                                                                {
+                                                                                                    name: '',
+                                                                                                },
+                                                                                            );
+                                                                                        }}
+                                                                                    >
+                                                                                        +
+                                                                                    </Button>
+                                                                                </div>
+                                                                            ),
+                                                                        )}
+                                                                    </>
+                                                                );
+                                                            }}
+                                                        </FieldArray>
+                                                    </td>
+                                                );
+                                            })}
+                                        </tr>
+                                    ),
+                                )}
+
+                                <tr>
+                                    <td>
+                                        <Button
+                                            kind="secondary"
+                                            type="button"
+                                            onClick={() => {
+                                                push(newChild());
+                                            }}
+                                        >
+                                            Add Child
+                                        </Button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        )}
+                    </FieldArray>
+                </table>
+
+                <div className="flex mt-4 justify-between">
+                    <Button type="submit">Save</Button>
+                </div>
+            </ValidatedForm>
         </div>
     );
-}
-
-function newGuid() {
-    const S4 = () =>
-        // eslint-disable-next-line no-bitwise
-        (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-    return `${S4() + S4()}-${S4()}-${S4()}-${S4()}-${S4()}${S4()}${S4()}`;
 }
 
 function newChild(): Child {
