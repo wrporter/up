@@ -12,6 +12,8 @@ DOCKER_BUILDKIT=1 docker build \
   --build-arg SCOPE=${SCOPE} \
   --cache-from="${TARGET_IMAGE}:${VERSION}" \
   --file .ci/app/Dockerfile \
+  --build-arg TURBO_TEAM=${TURBO_TEAM} \
+  --build-arg TURBO_TOKEN=${TURBO_TOKEN} \
   --build-arg APP_ID=${APP_ID} \
   --build-arg BUILD_SHA=${VERSION} \
   --build-arg BUILD_BRANCH=${GIT_BRANCH} \
