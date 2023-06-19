@@ -15,6 +15,7 @@
       "outputs": []
     },
     "docker:deploy": {
+      "dependsOn": ["docker:build"],
       "outputs": []
     },
     "docs": {
