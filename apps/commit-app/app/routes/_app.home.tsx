@@ -248,33 +248,3 @@ function newChild(): Child {
         ),
     };
 }
-
-// const choreVariants = tv({
-//     base: ['px-2 py-4 w-full', 'hover:bg-blue-100'],
-//     variants: {
-//         done: {
-//             true: 'line-through',
-//             false: 'underline',
-//         },
-//     },
-// });
-
-// function Chore({
-//     children,
-//     className,
-// }: {
-//     children: ReactNode;
-//     className?: string;
-// }) {
-//     const [done, setDone] = useState(false);
-//
-//     return (
-//         <Checkbox.Root
-//             checked={done}
-//             onCheckedChange={() => setDone((v) => !v)}
-//             className={choreVariants({ done, className })}
-//         >
-//             {children}
-//         </Checkbox.Root>
-//     );
-// }

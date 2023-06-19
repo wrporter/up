@@ -15,7 +15,6 @@ import {
 } from '@remix-run/react';
 
 import { getUser } from '~/auth.server';
-import { Header } from '~/lib/ui/header';
 import stylesheet from '~/tailwind.css';
 
 export const links: LinksFunction = () => [
@@ -52,11 +51,7 @@ export default function App() {
                 <Links />
             </head>
             <body className="h-full">
-                <div className="flex h-full min-h-screen flex-col">
-                    <Header />
-                    <Outlet />
-                </div>
-
+                <Outlet />
                 <ScrollRestoration />
                 <Scripts />
                 <LiveReload />

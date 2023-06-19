@@ -57,6 +57,11 @@ export function Header() {
                             <DropdownMenuItem asChild>
                                 <Link to="/profile">Profile</Link>
                             </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Link to="/chore-chart/view">
+                                    Chore Chart Kiosk
+                                </Link>
+                            </DropdownMenuItem>
                             <DropdownMenuItem
                                 onSelect={() =>
                                     submit(null, {
