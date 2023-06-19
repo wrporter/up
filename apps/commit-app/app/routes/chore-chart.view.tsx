@@ -48,7 +48,10 @@ export default function Page() {
 }
 
 const choreVariants = tv({
-    base: ['px-2 py-4 w-full', 'hover:bg-blue-100'],
+    base: [
+        'px-6 py-4 w-full bg-white rounded flex justify-start',
+        'hover:bg-blue-100',
+    ],
     variants: {
         done: {
             true: 'line-through opacity-50',
