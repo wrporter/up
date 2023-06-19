@@ -1,57 +1,59 @@
-import type {
-    ActionFunction,
-    LoaderFunction,
-    V2_MetaFunction,
-} from '@remix-run/node';
+import type { ActionArgs, LoaderArgs, V2_MetaFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { Form, Link, useActionData, useSearchParams } from '@remix-run/react';
+import { withZod } from '@remix-validated-form/with-zod';
 import { Button, Checkbox, TextField, TextLink } from '@wesp-up/ui';
 import * as React from 'react';
+import { AuthorizationError } from 'remix-auth';
+import {
+    ValidatedForm,
+    useFormContext,
+    validationError,
+} from 'remix-validated-form';
+import { z } from 'zod';
 
 import { authenticator } from '~/auth.server';
-import { validateEmail } from '~/utils';
 
-export const loader: LoaderFunction = async ({ request }) => {
+export const loader = async ({ request }: LoaderArgs) => {
     return authenticator.isAuthenticated(request, {
         successRedirect: '/home',
     });
 };
 
-interface ActionData {
-    errors?: {
-        email?: string;
-        password?: string;
-    };
-}
+const validator = withZod(
+    z.object({
+        email: z
+            .string()
+            .min(1, { message: 'Please enter an email address.' })
+            .email('Please enter a valid email address.'),
+        password: z.string().min(1, { message: 'Please enter a password.' }),
+        redirectTo: z.string(),
+    }),
+);
 
-export const action: ActionFunction = async ({ request }) => {
-    const requestClone = request.clone();
-    const formData = await requestClone.formData();
-    const redirectTo = formData.get('redirectTo');
-
-    const email = formData.get('email');
-    const password = formData.get('password');
-
-    if (!validateEmail(email)) {
-        return json<ActionData>(
-            { errors: { email: 'Email is invalid' } },
-            { status: 400 },
-        );
+export const action = async ({ request }: ActionArgs) => {
+    const formData = await request.formData();
+    const form = await validator.validate(formData);
+    if (form.error) {
+        return validationError(form.error);
     }
+    const { redirectTo } = form.data;
 
-    if (typeof password !== 'string' || !password) {
-        return json<ActionData>(
-            { errors: { password: 'Password is required' } },
-            { status: 400 },
-        );
+    try {
+        return await authenticator.authenticate('basic', request, {
+            successRedirect: redirectTo,
+            context: { formData },
+        });
+    } catch (error) {
+        if (error instanceof Response) return error;
+        if (error instanceof AuthorizationError) {
+            return json(
+                { passwordFailure: 'Invalid email or password.' },
+                { status: 401 },
+            );
+        }
+        throw error;
     }
-
-    return authenticator.authenticate('basic', request, {
-        successRedirect: typeof redirectTo === 'string' ? redirectTo : '/home',
-        failureRedirect: '/login',
-        throwOnError: true,
-    });
-    // TODO: Handle showing form validation errors with yup
 };
 
 export const meta: V2_MetaFunction = () => [{ title: 'Commit: Login' }];
@@ -59,17 +61,8 @@ export const meta: V2_MetaFunction = () => [{ title: 'Commit: Login' }];
 export default function LoginPage() {
     const [searchParams] = useSearchParams();
     const redirectTo = searchParams.get('redirectTo') || '/home';
-    const actionData = useActionData() as ActionData;
-    const emailRef = React.useRef<HTMLInputElement>(null);
-    const passwordRef = React.useRef<HTMLInputElement>(null);
-
-    React.useEffect(() => {
-        if (actionData?.errors?.email) {
-            emailRef.current?.focus();
-        } else if (actionData?.errors?.password) {
-            passwordRef.current?.focus();
-        }
-    }, [actionData]);
+    const form = useFormContext('loginForm');
+    const actionData = useActionData<{ passwordFailure?: string }>();
 
     return (
         <div className="container flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
@@ -98,28 +91,27 @@ export default function LoginPage() {
             </Form>
 
             <div className="mx-auto w-full max-w-md rounded bg-white px-8 py-8 drop-shadow">
-                <Form method="post" className="space-y-6">
+                <ValidatedForm
+                    id="loginForm"
+                    validator={validator}
+                    method="post"
+                    className="space-y-6"
+                    noValidate
+                >
                     <div>
                         <label className="block text-sm font-medium text-gray-700">
                             Email Address
                             <TextField
-                                ref={emailRef}
-                                required
-                                // eslint-disable-next-line jsx-a11y/no-autofocus
-                                autoFocus
                                 name="email"
                                 type="email"
                                 autoComplete="email"
-                                aria-invalid={
-                                    actionData?.errors?.email ? true : undefined
-                                }
                                 aria-describedby="email-error"
                                 className="w-full mt-1"
                             />
                         </label>
-                        {actionData?.errors?.email && (
+                        {form.fieldErrors.email && (
                             <div className="pt-1 text-red-700" id="email-error">
-                                {actionData.errors.email}
+                                {form.fieldErrors.email}
                             </div>
                         )}
                     </div>
@@ -128,25 +120,25 @@ export default function LoginPage() {
                         <label className="block text-sm font-medium text-gray-700">
                             Password
                             <TextField
-                                ref={passwordRef}
                                 name="password"
                                 type="password"
                                 autoComplete="current-password"
-                                aria-invalid={
-                                    actionData?.errors?.password
-                                        ? true
-                                        : undefined
-                                }
                                 className="w-full mt-1"
                                 aria-describedby="password-error"
                             />
                         </label>
-                        {actionData?.errors?.password && (
+                        {form.fieldErrors.password && (
                             <div
                                 className="pt-1 text-red-700"
                                 id="password-error"
                             >
-                                {actionData.errors.password}
+                                {form.fieldErrors.password}
+                            </div>
+                        )}
+
+                        {actionData?.passwordFailure && (
+                            <div className="pt-1 text-red-700">
+                                {actionData.passwordFailure}
                             </div>
                         )}
                     </div>
@@ -179,7 +171,7 @@ export default function LoginPage() {
                             </TextLink>
                         </div>
                     </div>
-                </Form>
+                </ValidatedForm>
             </div>
         </div>
     );

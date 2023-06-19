@@ -39,6 +39,7 @@
     "@remix-run/node": "1.17.1",
     "@remix-run/react": "1.17.1",
     "@remix-run/server-runtime": "1.17.1",
+    "@remix-validated-form/with-zod": "^2.0.6",
     "@wesp-up/express-remix": "*",
     "@wesp-up/ui": "*",
     "bcryptjs": "^2.4.3",
@@ -53,9 +54,12 @@
     "remix-auth": "^3.4.0",
     "remix-auth-form": "^1.3.0",
     "remix-auth-google": "^1.2.0",
+    "remix-validated-form": "^5.0.1",
     "tailwind-merge": "^1.13.2",
     "tailwind-variants": "^0.1.8",
-    "tiny-invariant": "^1.3.1"
+    "tiny-invariant": "^1.3.1",
+    "zod": "^3.21.4",
+    "zod-form-data": "^2.0.1"
   },
   "devDependencies": {
     "@remix-run/dev": "1.17.1",

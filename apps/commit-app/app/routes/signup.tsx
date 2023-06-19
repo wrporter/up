@@ -1,70 +1,56 @@
-import type {
-    ActionFunction,
-    LoaderFunction,
-    V2_MetaFunction,
-} from '@remix-run/node';
+import type { ActionArgs, LoaderArgs, V2_MetaFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
-import { Form, Link, useActionData, useSearchParams } from '@remix-run/react';
+import { Form, Link, useSearchParams } from '@remix-run/react';
+import { withZod } from '@remix-validated-form/with-zod';
 import { Button, TextField, TextLink } from '@wesp-up/ui';
 import * as React from 'react';
+import {
+    ValidatedForm,
+    useFormContext,
+    validationError,
+} from 'remix-validated-form';
+import { z } from 'zod';
 
 import { authenticator } from '~/auth.server';
 import { createUser, getUserByEmail } from '~/lib/models/user.server';
-import { validateEmail } from '~/utils';
 
-export const loader: LoaderFunction = async ({ request }) => {
+export const loader = async ({ request }: LoaderArgs) => {
     return authenticator.isAuthenticated(request, {
         successRedirect: '/home',
     });
 };
 
-interface ActionData {
-    errors: {
-        displayName?: string;
-        email?: string;
-        password?: string;
-    };
-}
+const validator = withZod(
+    z.object({
+        displayName: z
+            .string()
+            .min(1, { message: 'Please enter a display name.' }),
+        email: z
+            .string()
+            .min(1, { message: 'Please enter an email address.' })
+            .email('Please enter a valid email address.'),
+        password: z.string().min(1, { message: 'Please enter a password.' }),
+        redirectTo: z.string(),
+    }),
+);
 
-export const action: ActionFunction = async ({ request }) => {
+export const action = async ({ request }: ActionArgs) => {
     const formData = await request.formData();
-    const displayName = formData.get('displayName');
-    const email = formData.get('email');
-    const password = formData.get('password');
-    const redirectTo = formData.get('redirectTo');
-
-    if (typeof displayName !== 'string' || !displayName) {
-        return json<ActionData>(
-            { errors: { displayName: 'Display name is required' } },
-            { status: 400 },
-        );
+    const form = await validator.validate(formData);
+    if (form.error) {
+        return validationError(form.error);
     }
 
-    if (!validateEmail(email)) {
-        return json<ActionData>(
-            { errors: { email: 'Email is invalid' } },
-            { status: 400 },
-        );
-    }
-
-    if (typeof password !== 'string') {
-        return json<ActionData>(
-            { errors: { password: 'Password is required' } },
-            { status: 400 },
-        );
-    }
-
-    if (password.length < 3) {
-        return json<ActionData>(
-            { errors: { password: 'Password is too short' } },
-            { status: 400 },
-        );
-    }
+    const { displayName, email, password, redirectTo } = form.data;
 
     const existingUser = await getUserByEmail(email);
     if (existingUser) {
-        return json<ActionData>(
-            { errors: { email: 'A user already exists with this email' } },
+        return json(
+            {
+                errors: {
+                    email: 'This email is already taken. Please try a different email or try logging in.',
+                },
+            },
             { status: 400 },
         );
     }
@@ -72,36 +58,17 @@ export const action: ActionFunction = async ({ request }) => {
     await createUser(displayName, email, password);
 
     return authenticator.authenticate('basic', request, {
-        successRedirect: typeof redirectTo === 'string' ? redirectTo : '/home',
+        successRedirect: redirectTo,
+        context: { formData },
     });
-
-    // return createUserSession({
-    //     request,
-    //     userId: user.id,
-    //     remember: false,
-    //     redirectTo: typeof redirectTo === 'string' ? redirectTo : '/home',
-    // });
 };
 
 export const meta: V2_MetaFunction = () => [{ title: 'Sign Up' }];
 
 export default function Signup() {
     const [searchParams] = useSearchParams();
-    const redirectTo = searchParams.get('redirectTo') ?? undefined;
-    const actionData = useActionData() as ActionData;
-    const displayNameRef = React.useRef<HTMLInputElement>(null);
-    const emailRef = React.useRef<HTMLInputElement>(null);
-    const passwordRef = React.useRef<HTMLInputElement>(null);
-
-    React.useEffect(() => {
-        if (actionData?.errors?.displayName) {
-            displayNameRef.current?.focus();
-        } else if (actionData?.errors?.email) {
-            emailRef.current?.focus();
-        } else if (actionData?.errors?.password) {
-            passwordRef.current?.focus();
-        }
-    }, [actionData]);
+    const redirectTo = searchParams.get('redirectTo') ?? '/home';
+    const form = useFormContext('signupForm');
 
     return (
         <div className="container flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
@@ -130,7 +97,13 @@ export default function Signup() {
             </Form>
 
             <div className="mx-auto w-full max-w-md rounded bg-white px-8 py-8 drop-shadow">
-                <Form method="post" className="space-y-6">
+                <ValidatedForm
+                    id="signupForm"
+                    validator={validator}
+                    method="post"
+                    className="space-y-6"
+                    noValidate
+                >
                     <div>
                         <label
                             htmlFor="displayName"
@@ -140,28 +113,22 @@ export default function Signup() {
                         </label>
                         <div className="mt-1">
                             <TextField
-                                ref={displayNameRef}
                                 id="displayName"
-                                required
-                                // eslint-disable-next-line jsx-a11y/no-autofocus
-                                autoFocus
                                 name="displayName"
                                 type="displayName"
                                 autoComplete="displayName"
-                                aria-invalid={
-                                    actionData?.errors?.displayName
-                                        ? true
-                                        : undefined
-                                }
+                                aria-invalid={Boolean(
+                                    form.fieldErrors.displayName,
+                                )}
                                 aria-describedby="displayName-error"
                                 className="w-full"
                             />
-                            {actionData?.errors?.displayName && (
+                            {form.fieldErrors.displayName && (
                                 <div
                                     className="pt-1 text-red-700"
                                     id="displayName-error"
                                 >
-                                    {actionData.errors.displayName}
+                                    {form.fieldErrors.displayName}
                                 </div>
                             )}
                         </div>
@@ -176,24 +143,20 @@ export default function Signup() {
                         </label>
                         <div className="mt-1">
                             <TextField
-                                ref={emailRef}
                                 id="email"
-                                required
                                 name="email"
                                 type="email"
                                 autoComplete="email"
-                                aria-invalid={
-                                    actionData?.errors?.email ? true : undefined
-                                }
+                                aria-invalid={Boolean(form.fieldErrors.email)}
                                 aria-describedby="email-error"
                                 className="w-full"
                             />
-                            {actionData?.errors?.email && (
+                            {form.fieldErrors.email && (
                                 <div
                                     className="pt-1 text-red-700"
                                     id="email-error"
                                 >
-                                    {actionData.errors.email}
+                                    {form.fieldErrors.email}
                                 </div>
                             )}
                         </div>
@@ -209,24 +172,21 @@ export default function Signup() {
                         <div className="mt-1">
                             <TextField
                                 id="password"
-                                ref={passwordRef}
                                 name="password"
                                 type="password"
                                 autoComplete="new-password"
-                                aria-invalid={
-                                    actionData?.errors?.password
-                                        ? true
-                                        : undefined
-                                }
+                                aria-invalid={Boolean(
+                                    form.fieldErrors.password,
+                                )}
                                 aria-describedby="password-error"
                                 className="w-full"
                             />
-                            {actionData?.errors?.password && (
+                            {form.fieldErrors.password && (
                                 <div
                                     className="pt-1 text-red-700"
                                     id="password-error"
                                 >
-                                    {actionData.errors.password}
+                                    {form.fieldErrors.password}
                                 </div>
                             )}
                         </div>
@@ -250,7 +210,7 @@ export default function Signup() {
                             </TextLink>
                         </div>
                     </div>
-                </Form>
+                </ValidatedForm>
             </div>
         </div>
     );

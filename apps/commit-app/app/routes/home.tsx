@@ -1,8 +1,9 @@
 import type { ActionFunction, LoaderFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
-import { Form, useLoaderData } from '@remix-run/react';
+import { Form, useLoaderData, useNavigation } from '@remix-run/react';
 import type { RequestContext } from '@wesp-up/express-remix';
 import { Button, TextField } from '@wesp-up/ui';
+import type { EventHandler, FormEvent } from 'react';
 import { useEffect, useState } from 'react';
 
 import { requireUser } from '~/auth.server';
@@ -84,6 +85,7 @@ export default function Page() {
     const [children, setChildren] = useState<Child[]>(
         choreChart?.children ?? [],
     );
+    const navigation = useNavigation();
 
     useEffect(() => {
         if (choreChart) {
@@ -91,82 +93,99 @@ export default function Page() {
         }
     }, [choreChart]);
 
+    const handleChange: EventHandler<FormEvent> = (e) => {};
+
     return (
         <div className="p-4">
             <h2 className="text-xl mb-4">Chore Chart</h2>
 
-            <Form method={choreChart?.id ? 'PUT' : 'POST'}>
-                <input type="hidden" name="id" value={choreChart?.id} />
+            {navigation.state === 'submitting' ? (
+                <div>Loading...</div>
+            ) : (
+                <Form
+                    method={choreChart?.id ? 'PUT' : 'POST'}
+                    onChange={handleChange}
+                >
+                    <input type="hidden" name="id" value={choreChart?.id} />
 
-                <table className="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
-                            <th scope="col" className="px-6 py-3">
-                                Child
-                            </th>
-                            {days.map((day) => (
-                                <th key={day} scope="col" className="px-6 py-3">
-                                    {day}
+                    <table className="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" className="px-6 py-3">
+                                    Child
                                 </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {children.map((child, childIndex) => (
-                            <tr
-                                key={newGuid()}
-                                className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-                            >
-                                <th
-                                    scope="row"
-                                    className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                                >
-                                    <TextField
-                                        className="w-full"
-                                        name={`child.${childIndex}.name`}
-                                        defaultValue={child.name}
-                                    />
-                                </th>
-                                {days.map((day) => {
-                                    const chores = child.chores[day];
-                                    if (chores.length === 0) {
-                                        chores.push({ name: '' });
-                                    }
-                                    return (
-                                        <td
-                                            key={newGuid()}
-                                            className="px-2 py-4"
-                                        >
-                                            {chores.map((chore, choreIndex) => (
-                                                <TextField
-                                                    key={newGuid()}
-                                                    name={`child.${childIndex}.${day}.chore.${choreIndex}`}
-                                                    className="w-full"
-                                                    defaultValue={chore.name}
-                                                />
-                                            ))}
-                                        </td>
-                                    );
-                                })}
+                                {days.map((day) => (
+                                    <th
+                                        key={day}
+                                        scope="col"
+                                        className="px-6 py-3"
+                                    >
+                                        {day}
+                                    </th>
+                                ))}
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {children.map((child, childIndex) => (
+                                <tr
+                                    key={newGuid()}
+                                    className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                                >
+                                    <th
+                                        scope="row"
+                                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                                    >
+                                        <TextField
+                                            className="w-full"
+                                            name={`child.${childIndex}.name`}
+                                            defaultValue={child.name}
+                                        />
+                                    </th>
+                                    {days.map((day) => {
+                                        const chores = child.chores[day];
+                                        if (chores.length === 0) {
+                                            chores.push({ name: '' });
+                                        }
+                                        return (
+                                            <td
+                                                key={newGuid()}
+                                                className="px-2 py-4"
+                                            >
+                                                {chores.map(
+                                                    (chore, choreIndex) => (
+                                                        <TextField
+                                                            key={newGuid()}
+                                                            name={`child.${childIndex}.${day}.chore.${choreIndex}`}
+                                                            className="w-full"
+                                                            defaultValue={
+                                                                chore.name
+                                                            }
+                                                        />
+                                                    ),
+                                                )}
+                                            </td>
+                                        );
+                                    })}
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
 
-                <div className="flex mt-4 justify-between">
-                    <Button
-                        kind="secondary"
-                        type="button"
-                        onClick={() => {
-                            setChildren([...children, newChild()]);
-                        }}
-                    >
-                        Add Child
-                    </Button>
+                    <div className="flex mt-4 justify-between">
+                        <Button
+                            kind="secondary"
+                            type="button"
+                            onClick={() => {
+                                setChildren([...children, newChild()]);
+                            }}
+                        >
+                            Add Child
+                        </Button>
 
-                    <Button>Save</Button>
-                </div>
-            </Form>
+                        <Button>Save</Button>
+                    </div>
+                </Form>
+            )}
         </div>
     );
 }

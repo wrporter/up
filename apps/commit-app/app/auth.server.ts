@@ -18,30 +18,13 @@ export const AUTH_ERROR_KEY = 'auth-error-key';
 
 export const authenticator = new Authenticator<User>(sessionStorage, {
     sessionErrorKey: AUTH_ERROR_KEY,
+    throwOnError: true,
 });
-
-// function validationError(field: string, condition: boolean, message: string) {
-//     if (!condition) {
-//         throw new Error(JSON.stringify({ field, message }));
-//     }
-// }
 
 authenticator.use(
     new FormStrategy(async ({ form }) => {
-        const email = form.get('email');
-        const password = form.get('password');
-
-        invariant(typeof email === 'string', 'email must be a string');
-        invariant(email.length > 0, 'email must not be empty');
-
-        invariant(typeof password === 'string', 'password must be a string');
-        invariant(password.length > 0, 'password must not be empty');
-
-        // validationError(
-        //     'password',
-        //     password.length >= 8,
-        //     'password must be at least 8 characters long'
-        // );
+        const email = form.get('email') as string;
+        const password = form.get('password') as string;
 
         const user = await verifyLogin(email, password);
         invariant(user, 'Invalid email or password');
