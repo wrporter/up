@@ -50,5 +50,8 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
           config: ${{ secrets.SSH_CONFIG }}
 
-      - name: 🐳 🚀 Deploy
+      - name: 🐳 Build Docker
+        run: yarn docker:build
+
+      - name: 🚀 Deploy
         run: yarn docker:deploy
