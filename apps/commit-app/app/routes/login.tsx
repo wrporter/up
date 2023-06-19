@@ -72,7 +72,7 @@ export default function LoginPage() {
     }, [actionData]);
 
     return (
-        <div className="flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
+        <div className="container flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
             <h2 className="mb-6 text-center text-4xl">Log in</h2>
 
             <Form
@@ -156,7 +156,7 @@ export default function LoginPage() {
                         Log in
                     </Button>
 
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:justify-between">
                         <div className="flex items-center">
                             <Checkbox id="remember" name="remember" />
                             <label

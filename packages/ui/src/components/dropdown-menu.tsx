@@ -72,7 +72,7 @@ export const DropdownMenuItem = forwardRef<DropdownMenuItemProps, 'div'>(
                     'relative select-none outline-none',
                     'cursor-pointer',
                     'data-[disabled]:text-gray-600 data-[disabled]:pointer-events-none',
-                    'data-[highlighted]:bg-gray-300',
+                    'data-[highlighted]:bg-blue-200',
                     className,
                 )}
                 {...rest}

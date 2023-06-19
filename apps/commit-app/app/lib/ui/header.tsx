@@ -1,3 +1,4 @@
+import * as Avatar from '@radix-ui/react-avatar';
 import { Link, useSubmit } from '@remix-run/react';
 import {
     Button,
@@ -5,7 +6,9 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
+    focusKeyboardRing,
 } from '@wesp-up/ui';
+import { twMerge } from 'tailwind-merge';
 
 import { useOptionalUser } from '~/utils';
 
@@ -14,10 +17,15 @@ export function Header() {
     const submit = useSubmit();
 
     return (
-        <header className="flex items-center justify-between border-b border-b-gray-200 bg-white p-3">
+        <header className="flex items-center justify-between border-b border-b-gray-200 bg-white px-3 py-1">
             <Link
                 to={user ? '/home' : '/'}
-                className="flex items-center space-x-2"
+                className={twMerge(
+                    'flex items-center space-x-2',
+                    'p-1',
+                    'rounded',
+                    focusKeyboardRing,
+                )}
             >
                 <img src="/assets/logo.svg" alt="" className="h-10 w-10" />
                 <h1 className="text-2xl">Commit</h1>
@@ -27,20 +35,22 @@ export function Header() {
                 {user ? (
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button kind="tertiary">
-                                {user.imageUrl ? (
-                                    <img
+                            <Button kind="tertiary" className="p-1">
+                                <Avatar.Root className="bg-blackA3 inline-flex h-10 w-10 select-none items-center justify-center overflow-hidden rounded-full align-middle">
+                                    <Avatar.Image
+                                        className="h-full w-full rounded-[inherit] object-cover"
                                         src={user.imageUrl}
-                                        alt=""
-                                        className="h-8 w-8 rounded-full"
+                                        alt={user.displayName}
                                     />
-                                ) : (
-                                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-sm text-white">
+                                    <Avatar.Fallback
+                                        className="text-violet11 leading-1 flex h-full w-full items-center justify-center bg-white text-[15px] font-medium"
+                                        delayMs={600}
+                                    >
                                         {user.displayName
                                             .charAt(0)
                                             .toUpperCase()}
-                                    </span>
-                                )}
+                                    </Avatar.Fallback>
+                                </Avatar.Root>
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>

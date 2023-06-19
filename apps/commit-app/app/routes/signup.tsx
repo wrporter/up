@@ -104,7 +104,7 @@ export default function Signup() {
     }, [actionData]);
 
     return (
-        <div className="flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
+        <div className="container flex h-full flex-col bg-gradient-to-r from-lime-300 to-cyan-400 py-6 sm:py-8 lg:py-10">
             <h2 className="mb-6 text-center text-4xl">Sign up</h2>
 
             <Form
