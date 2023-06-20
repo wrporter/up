@@ -23,7 +23,7 @@ export default function Page() {
     }) as (typeof days)[number];
 
     return (
-        <div className="p-4 flex gap-4 flex-col lg:flex-row">
+        <div className="container py-4 flex gap-4 flex-col lg:flex-row">
             {choreChart ? (
                 choreChart.children.map((child) => (
                     <div
@@ -83,8 +83,8 @@ function ChoreCheckbox({
             className={choreVariants({ done, className })}
         >
             <span>{chore.name}</span>
-            <span className="text-sm text-green-500">
-                $ {chore.reward.toFixed(2)}
+            <span className="text-sm text-green-500 tabular-nums slashed-zero">
+                ${chore.reward.toFixed(2)}
             </span>
         </Checkbox.Root>
     );

@@ -5,6 +5,7 @@ import { useLoaderData } from '@remix-run/react';
 import { withZod } from '@remix-validated-form/with-zod';
 import type { RequestContext } from '@wesp-up/express-remix';
 import { Button, TextField } from '@wesp-up/ui';
+import { Fragment } from 'react';
 import { FieldArray, ValidatedForm } from 'remix-validated-form';
 import { z } from 'zod';
 import { zfd } from 'zod-form-data';
@@ -115,24 +116,29 @@ export default function Page() {
                                             <div className="border-b border-gray-400">
                                                 <label className="flex flex-row-reverse items-center gap-4 mb-4">
                                                     <TextField
-                                                        className="flex-grow text-lg font-bold peer"
+                                                        className="flex-grow text-2xl font-bold"
                                                         name={`children[${childIndex}].name`}
                                                         defaultValue={
                                                             defaultValue.name
                                                         }
                                                     />
-                                                    <span className="peer-focus:text-blue-600">
+                                                    <span className="text-2xl font-bold text-emerald-600">
                                                         Child {childIndex + 1}
                                                     </span>
                                                 </label>
                                             </div>
 
                                             {days.map((day) => (
-                                                <ChoresForDay
-                                                    key={`${key}-${day}`}
-                                                    day={day}
-                                                    childIndex={childIndex}
-                                                />
+                                                <Fragment key={`${key}-${day}`}>
+                                                    <h3 className="py-2 my-3 text-2xl font-mono font-semibold tracking-widest text-center bg-stone-300 text-blue-700">
+                                                        {day}
+                                                    </h3>
+
+                                                    <ChoresForDay
+                                                        day={day}
+                                                        childIndex={childIndex}
+                                                    />
+                                                </Fragment>
                                             ))}
                                         </div>
                                     ),
@@ -169,80 +175,72 @@ function ChoresForDay({
     childIndex: number;
 }) {
     return (
-        <>
-            <h3 className="my-2">{day}</h3>
+        <div className="flex flex-col gap-6">
+            <FieldArray name={`children[${childIndex}].chores.${day}`}>
+                {(chores, { insert, remove }) => {
+                    return chores.map(({ defaultValue, key }, choreIndex) => (
+                        <div key={key} className="flex flex-col gap-2">
+                            <label className="text-sm flex flex-col-reverse">
+                                <TextField
+                                    type="text"
+                                    small
+                                    name={`children[${childIndex}].chores.${day}[${choreIndex}].name`}
+                                    className="w-full peer"
+                                    defaultValue={defaultValue.name}
+                                />
+                                <span className="mb-1 font-bold peer-focus:text-blue-600">
+                                    Chore {choreIndex + 1}
+                                </span>
+                            </label>
 
-            <div className="flex flex-col gap-4">
-                <FieldArray name={`children[${childIndex}].chores.${day}`}>
-                    {(chores, { insert, remove }) => {
-                        return chores.map(
-                            ({ defaultValue, key }, choreIndex) => (
-                                <div key={key} className="flex flex-col gap-4">
-                                    <label className="text-sm flex flex-col-reverse">
-                                        <TextField
-                                            type="text"
-                                            small
-                                            name={`children[${childIndex}].chores.${day}[${choreIndex}].name`}
-                                            className="w-full peer"
-                                            defaultValue={defaultValue.name}
-                                        />
-                                        <span className="mb-1 peer-focus:text-blue-600">
-                                            Chore {choreIndex + 1}
-                                        </span>
-                                    </label>
+                            <label className="text-sm flex flex-col-reverse">
+                                <TextField
+                                    type="number"
+                                    step="0.01"
+                                    small
+                                    name={`children[${childIndex}].chores.${day}[${choreIndex}].reward`}
+                                    className="w-full peer tabular-nums slashed-zero"
+                                    defaultValue={defaultValue.reward ?? 0.01}
+                                />
+                                <span className="mb-1 font-bold peer-focus:text-blue-600">
+                                    Reward
+                                </span>
+                            </label>
 
-                                    <label className="text-sm flex flex-col-reverse">
-                                        <TextField
-                                            type="number"
-                                            step="0.01"
-                                            small
-                                            name={`children[${childIndex}].chores.${day}[${choreIndex}].reward`}
-                                            className="w-full peer"
-                                            defaultValue={
-                                                defaultValue.reward ?? 0.01
-                                            }
-                                        />
-                                        <span className="mb-1 peer-focus:text-blue-600">
-                                            Reward
-                                        </span>
-                                    </label>
+                            <div className="flex gap-4">
+                                <Button
+                                    kind="secondary"
+                                    type="button"
+                                    small
+                                    className="flex-grow gap-2"
+                                    onClick={() => {
+                                        insert(choreIndex + 1, {
+                                            name: '',
+                                        });
+                                    }}
+                                >
+                                    <PlusIcon /> Add Chore
+                                </Button>
 
-                                    <div className="flex gap-4">
-                                        <Button
-                                            kind="secondary"
-                                            type="button"
-                                            small
-                                            className="flex-grow gap-2"
-                                            onClick={() => {
-                                                insert(choreIndex + 1, {
-                                                    name: '',
-                                                });
-                                            }}
-                                        >
-                                            <PlusIcon /> Add Chore
-                                        </Button>
-
-                                        {chores.length > 1 ? (
-                                            <Button
-                                                kind="danger"
-                                                type="button"
-                                                small
-                                                className="w-8"
-                                                onClick={() => {
-                                                    remove(choreIndex);
-                                                }}
-                                            >
-                                                <TrashIcon />
-                                            </Button>
-                                        ) : undefined}
-                                    </div>
-                                </div>
-                            ),
-                        );
-                    }}
-                </FieldArray>
-            </div>
-        </>
+                                {chores.length > 1 ? (
+                                    <Button
+                                        kind="danger"
+                                        type="button"
+                                        small
+                                        className="w-8"
+                                        onClick={() => {
+                                            remove(choreIndex);
+                                        }}
+                                    >
+                                        <TrashIcon />
+                                    </Button>
+                                ) : undefined}
+                            </div>
+                        </div>
+                    ));
+                }}
+            </FieldArray>
+        </div>
     );
 }
 
