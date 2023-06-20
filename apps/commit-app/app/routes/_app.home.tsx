@@ -114,7 +114,7 @@ export default function Page() {
                                             className="p-2 bg-gray-100 border border-gray-300 rounded"
                                         >
                                             <div className="border-b border-gray-400">
-                                                <label className="flex flex-row-reverse items-center gap-4 mb-4">
+                                                <label className="flex flex-col-reverse gap-2 mb-4">
                                                     <TextField
                                                         className="flex-grow text-2xl font-bold"
                                                         name={`children[${childIndex}].name`}
