@@ -5,7 +5,6 @@ import { useLoaderData } from '@remix-run/react';
 import { withZod } from '@remix-validated-form/with-zod';
 import type { RequestContext } from '@wesp-up/express-remix';
 import { Button, TextField } from '@wesp-up/ui';
-import { Fragment } from 'react';
 import { FieldArray, ValidatedForm } from 'remix-validated-form';
 import { z } from 'zod';
 import { zfd } from 'zod-form-data';
@@ -105,10 +104,10 @@ export default function Page() {
 
                 <div className="flex flex-col gap-8">
                     <FieldArray name="children">
-                        {(children, { push }) => (
-                            <>
-                                {children.map(
-                                    ({ defaultValue, key }, childIndex) => (
+                        {(children, { push, remove }) =>
+                            children.map(
+                                ({ defaultValue, key }, childIndex) => (
+                                    <>
                                         <div
                                             key={key}
                                             className="p-2 bg-gray-100 border border-gray-300 rounded"
@@ -145,21 +144,35 @@ export default function Page() {
                                                 ))}
                                             </div>
                                         </div>
-                                    ),
-                                )}
 
-                                <Button
-                                    kind="secondary"
-                                    type="button"
-                                    className="flex-grow gap-2"
-                                    onClick={() => {
-                                        push(newChild());
-                                    }}
-                                >
-                                    <PlusIcon /> Add Child
-                                </Button>
-                            </>
-                        )}
+                                        <div className="flex gap-4">
+                                            <Button
+                                                kind="secondary"
+                                                type="button"
+                                                className="flex-grow gap-2"
+                                                onClick={() => {
+                                                    push(newChild());
+                                                }}
+                                            >
+                                                <PlusIcon /> Add Child
+                                            </Button>
+
+                                            {children.length > 1 ? (
+                                                <Button
+                                                    kind="danger"
+                                                    type="button"
+                                                    onClick={() => {
+                                                        remove(childIndex);
+                                                    }}
+                                                >
+                                                    <TrashIcon />
+                                                </Button>
+                                            ) : undefined}
+                                        </div>
+                                    </>
+                                ),
+                            )
+                        }
                     </FieldArray>
                 </div>
 
