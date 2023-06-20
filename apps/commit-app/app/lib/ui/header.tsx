@@ -58,7 +58,13 @@ export function Header() {
                                 <Link to="/profile">Profile</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Link to="/chore-chart/view">
+                                <Link to="/home">Home</Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Link to="/chore-chart">Chore Chart</Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Link to="/chore-chart/kiosk">
                                     Chore Chart Kiosk
                                 </Link>
                             </DropdownMenuItem>
