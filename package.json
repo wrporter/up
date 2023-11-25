@@ -1,21 +1,21 @@
 {
   "name": "wesp-up",
   "private": true,
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "npm@10.2.3",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "engines": {
-    "node": ">=18",
-    "npm": ">=8"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "scripts": {
     "build": "turbo run build --filter=!@wesp-up/checkit-app",
     "changeset": "changeset",
     "changeset:apply": "changeset version",
     "ci": "turbo run lint typecheck test build",
-    "clean": "turbo run clean && rimraf node_modules",
+    "clean": "find . -depth \\( -name junit.xml -o -name dist -o -name build -o -name .turbo -o -name node_modules \\) -exec rm -rv {} +",
     "dev": "turbo run dev",
     "docs": "turbo run docs",
     "docker:build": "turbo run docker:build",
@@ -25,14 +25,14 @@
     "release": "turbo run build && changeset publish",
     "test": "turbo run test",
     "update-dependencies": "npx npm-check-updates -u --root -ws",
-    "update-yarn-lock": "npm run clean && rm yarn.lock && yarn install"
+    "update-package-lock": "npm run clean && rm -f package-lock.json && npm install"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "rimraf": "^5.0.1",
-    "turbo": "^1.10.3",
-    "typedoc": "^0.24.8",
-    "typedoc-plugin-markdown": "^3.15.3",
-    "vitest": "^0.32.2"
+    "@changesets/cli": "^2.26.2",
+    "rimraf": "^5.0.5",
+    "turbo": "^1.10.16",
+    "typedoc": "^0.25.3",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "vitest": "^0.34.6"
   }
 }

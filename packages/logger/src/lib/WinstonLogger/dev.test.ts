@@ -1,10 +1,9 @@
 import { devFormat, printFormat } from './dev';
 
 vi.mock('winston', async () => {
-    // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-    const { format } = await vi.importActual<typeof import('winston')>(
-        'winston',
-    );
+    const { format } =
+        // eslint-disable-next-line @typescript-eslint/consistent-type-imports
+        await vi.importActual<typeof import('winston')>('winston');
 
     return {
         format: {

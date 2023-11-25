@@ -9,7 +9,6 @@ node_modules
 
 # debug
 npm-debug.log*
-yarn-error.log
 logs
 
 # turbo
@@ -21,4 +20,6 @@ build
 coverage
 
 # editor
+.idea
+*.iml
 .vscode

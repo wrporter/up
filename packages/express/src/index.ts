@@ -10,15 +10,5 @@ export {
     HEADER_PARENT_REQUEST_ID,
     HEADER_REQUEST_ID,
 } from './lib/request-transaction';
-export {
-    gracefulShutdown,
-    gracefulShutdownWithSignals,
-    ShutdownOptions,
-} from './lib/shutdown';
-export {
-    Server,
-    Options,
-    log,
-    createServer,
-    defaultServerOptions,
-} from './lib/server';
+export { gracefulShutdown, gracefulShutdownWithSignals, ShutdownOptions } from './lib/shutdown';
+export { Server, Options, log, createServer, defaultServerOptions } from './lib/server';

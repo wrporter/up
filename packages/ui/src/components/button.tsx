@@ -7,9 +7,15 @@ import { forwardRef } from '~/core';
 import { focusKeyboardRing } from '~/styles/common';
 
 const buttonVariants = tv({
-    base: ['rounded text-white flex justify-center items-center'],
+    base: ['rounded text-white flex justify-center items-center cursor-pointer'],
     variants: {
         kind: {
+            neutral: [
+                'bg-white text-gray-600',
+                'border border-gray-600',
+                'hover:bg-gray-100 active:bg-gray-200',
+                'hover:border-gray-100 active:border-gray-200',
+            ],
             primary: [
                 'text-white bg-blue-600',
                 'border border-blue-600',
@@ -37,7 +43,7 @@ const buttonVariants = tv({
         },
         small: {
             true: 'p-2 h-8 text-sm',
-            false: 'py-2 px-4',
+            false: 'py-2 px-4 h-10',
         },
     },
     defaultVariants: {

@@ -8,8 +8,7 @@ vi.mock('./health.handler', () => ({
     healthHandler: (req: Request, res: Response) => res.json({ status: 'ok' }),
 }));
 vi.mock('./version.handler', () => ({
-    createVersionHandler: () => (req: Request, res: Response) =>
-        res.json({ version: 1 }),
+    createVersionHandler: () => (req: Request, res: Response) => res.json({ version: 1 }),
 }));
 
 function setup(pathPrefix?: string) {

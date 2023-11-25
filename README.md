@@ -90,3 +90,9 @@ The root `package.json` comes with some helpful scripts that we will describe in
 - `lint`: Run the `lint` script in each package.
 - `lint:fix`: Run the `lint:fix` script in each package.
 - `release`: Publish any packages that have not been published with their current version.
+
+## Deployments
+
+1. `.ci/build-base.sh`
+2. `APP=commit-app .ci/build-app.sh`
+3. `WORKSPACE_PATH=apps/commit-app APP=commit-app REMOTE_APP_DIRECTORY=commit .ci/deploy.sh`

@@ -11,6 +11,9 @@ require('@rushstack/eslint-patch/modern-module-resolution');
  */
 module.exports = {
     extends: ['airbnb', 'airbnb-typescript', '@wesp-up/eslint-config'],
+    env: {
+        browser: true,
+    },
     overrides: [
         {
             // Specifying overrides allows us to provide default file extensions.

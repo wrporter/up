@@ -12,7 +12,7 @@ services:
       - .env
     environment:
       - SITE_PROTOCOL=https
-      - SITE_HOST=checkit.sunbeam1.page
+      - SITE_HOST=checkit.epicbits.dev
       - SITE_PORT=
       - DATABASE_HOST=checkit-mongo
       - LOG_PATH=/logs

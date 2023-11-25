@@ -35,8 +35,7 @@ export const printFormat: (info: TransformableInfo) => string = ({
     const timestampF = c.colorize('timestamp', timestamp);
     const levelF = c.colorize(level, `[${level.toUpperCase().padEnd(6, ' ')}]`);
 
-    const transactionIdF =
-        transactionId && c.colorize('transactionId', `[${transactionId}]`);
+    const transactionIdF = transactionId && c.colorize('transactionId', `[${transactionId}]`);
 
     const messageF = message ?? '';
     const errorF = error && c.colorize('stack', `- ${error.stack}`);

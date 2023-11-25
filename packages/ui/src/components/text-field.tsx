@@ -7,11 +7,16 @@ import { forwardRef } from '~/core';
 import { focusKeyboardRing } from '~/styles/common';
 
 const textFieldVariants = tv({
-    base: ['px-2 py-1 border border-gray-500', 'rounded'],
+    base: [
+        'px-2 py-1 border border-gray-500',
+        'rounded',
+        'focus-visible:border-transparent',
+        'group-focus-visible/label-name:text-blue-600',
+    ],
     variants: {
         small: {
             true: 'h-8 text-sm',
-            false: 'text-lg',
+            false: 'h-10 text-lg',
         },
     },
     defaultVariants: {

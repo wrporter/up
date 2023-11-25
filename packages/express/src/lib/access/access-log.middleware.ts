@@ -23,8 +23,7 @@ export function accessLogMiddleware(log: Logger): RequestHandler {
             const elapsedTime = Math.trunc(performance.now() - startTime);
             const responseSize = textEncoder.encode(res.content || '').length;
 
-            const requestContext: BaseRequestContext =
-                res.locals.requestContext ?? {};
+            const requestContext: BaseRequestContext = res.locals.requestContext ?? {};
 
             log.access({
                 // -- Required

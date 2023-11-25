@@ -36,10 +36,7 @@ export const DropdownMenu: Story = {
             </DropdownMenuTrigger>
             <DropdownMenuContent color={color}>
                 {items.map((item: string) => (
-                    <DropdownMenuItem
-                        key={item}
-                        onClick={() => alert(`You clicked [${item}]!`)}
-                    >
+                    <DropdownMenuItem key={item} onClick={() => alert(`You clicked [${item}]!`)}>
                         {item}
                     </DropdownMenuItem>
                 ))}

@@ -7,8 +7,7 @@ import { Server, createServer } from './server';
 
 vi.mock('./metrics', () => ({
     metricsMiddleware: vi.fn().mockImplementation(() => {
-        const middleware = (req: Request, res: Response, next: NextFunction) =>
-            next();
+        const middleware = (req: Request, res: Response, next: NextFunction) => next();
         middleware.metricsMiddleware = (req: Request, res: Response) => {
             res.json({ test: '123' });
         };
@@ -33,27 +32,25 @@ class CustomServer extends Server {
         this.customOptions.pre?.(app);
     }
 
-    protected postMountApp(app: Application) {
+    protected async postMountApp(app: Application) {
         this.customOptions.post?.(app);
     }
 }
 
 describe('init', () => {
     it('has a health check route', async () => {
-        const server = createServer();
-        const res = await request(server.httpServer)
-            .get('/healthcheck')
-            .expect(200);
+        const server = await createServer();
+        const res = await request(server.httpServer).get('/healthcheck').expect(200);
 
         expect(res.body.status).toBe('ok');
     });
 
     it('has a version route', async () => {
-        const server = createServer({ versionMeta: { id: 'my-it-server' } });
+        const server = await createServer({
+            versionMeta: { id: 'my-it-server' },
+        });
 
-        const res = await request(server.httpServer)
-            .get('/version')
-            .expect(200);
+        const res = await request(server.httpServer).get('/version').expect(200);
 
         expect(res.body.id).toBe('my-it-server');
     });
@@ -68,10 +65,8 @@ describe('init', () => {
     });
 
     it('has a metrics route on the metrics server', async () => {
-        const server = createServer();
-        const res = await request(server.metricsHttpServer)
-            .get('/metrics')
-            .expect(200);
+        const server = await createServer();
+        const res = await request(server.metricsHttpServer).get('/metrics').expect(200);
 
         expect(res.body).toMatchObject({});
     });
@@ -116,13 +111,11 @@ describe('init', () => {
 });
 
 describe('start', () => {
-    it('listens on default ports', () => {
-        const server = createServer({
+    it('listens on default ports', async () => {
+        const server = await createServer({
             gracefulShutdownTimeout: 0,
         });
-        vi.spyOn(server.httpServer, 'listen').mockImplementation(
-            () => server.httpServer,
-        );
+        vi.spyOn(server.httpServer, 'listen').mockImplementation(() => server.httpServer);
         vi.spyOn(server.metricsHttpServer, 'listen').mockImplementation(
             () => server.metricsHttpServer,
         );
@@ -130,16 +123,14 @@ describe('start', () => {
         server.start();
 
         expect(server.httpServer.listen).toHaveBeenCalledTimes(1);
-        expect(server.httpServer.listen).toHaveBeenCalledWith(80);
+        expect(server.httpServer.listen).toHaveBeenCalledWith(80, expect.anything());
         expect(server.metricsHttpServer.listen).toHaveBeenCalledTimes(1);
         expect(server.metricsHttpServer.listen).toHaveBeenCalledWith(22500);
     });
 
-    it('listens on specified ports', () => {
-        const server = createServer();
-        vi.spyOn(server.httpServer, 'listen').mockImplementation(
-            () => server.httpServer,
-        );
+    it('listens on specified ports', async () => {
+        const server = await createServer();
+        vi.spyOn(server.httpServer, 'listen').mockImplementation(() => server.httpServer);
         vi.spyOn(server.metricsHttpServer, 'listen').mockImplementation(
             () => server.metricsHttpServer,
         );
@@ -147,20 +138,18 @@ describe('start', () => {
         server.start(3000, 22501);
 
         expect(server.httpServer.listen).toHaveBeenCalledTimes(1);
-        expect(server.httpServer.listen).toHaveBeenCalledWith(3000);
+        expect(server.httpServer.listen).toHaveBeenCalledWith(3000, expect.anything());
         expect(server.metricsHttpServer.listen).toHaveBeenCalledTimes(1);
         expect(server.metricsHttpServer.listen).toHaveBeenCalledWith(22501);
     });
 });
 
 describe('stop', () => {
-    it('shuts down the servers', () => {
-        const server = createServer({
+    it('shuts down the servers', async () => {
+        const server = await createServer({
             gracefulShutdownTimeout: 0,
         });
-        vi.spyOn(server.httpServer, 'listen').mockImplementation(
-            () => server.httpServer,
-        );
+        vi.spyOn(server.httpServer, 'listen').mockImplementation(() => server.httpServer);
         vi.spyOn(server.metricsHttpServer, 'listen').mockImplementation(
             () => server.metricsHttpServer,
         );

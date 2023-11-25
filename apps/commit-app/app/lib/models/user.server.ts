@@ -1,118 +1,90 @@
 import bcrypt from 'bcryptjs';
-import { ObjectId } from 'mongodb';
 
-import { mongo } from '~/db.server';
+import type { Group } from '~/lib/models/group.server';
+import { prisma } from '~/prisma.server';
 
-export interface MongoUser {
-    _id: ObjectId;
-    imageUrl?: string;
-    image?: string;
-    displayName: string;
-    email: string;
-    password?: string;
-    socialProviders?: { [key: string]: boolean };
+export interface Password {
+    id: number;
+    hash: string;
+    userId: number;
     createdAt: Date;
     updatedAt: Date;
 }
 
 export interface User {
-    id: string;
-    imageUrl?: string;
-    image?: string;
-    displayName: string;
+    id: number;
     email: string;
+    imageUrl: string | null;
+    image: string | null;
+    displayName: string;
+    socialProviders: { [provider: string]: boolean };
     createdAt: Date;
     updatedAt: Date;
+
+    password?: Password;
+    groups?: Group[];
 }
 
-function toUserWithoutPassword(mongoUser: MongoUser | null): User | null {
-    if (!mongoUser) {
-        return null;
-    }
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    const { _id, imageUrl, image, displayName, email, createdAt, updatedAt } =
-        mongoUser;
-    return {
-        id: _id.toHexString(),
-        imageUrl,
-        image,
+export async function getUserById(id: User['id']) {
+    return prisma.user.findUnique({ where: { id } });
+}
+
+export async function getUserByEmail(email: User['email']) {
+    return prisma.user.findUnique({ where: { email } });
+}
+
+export async function createUser({
+    displayName,
+    email,
+    password,
+    imageUrl,
+    image,
+    socialProviders,
+}: Partial<Pick<User, 'displayName' | 'email' | 'image' | 'imageUrl' | 'socialProviders'>> & {
+    password?: string;
+}) {
+    const data: any = {
         displayName,
         email,
-        createdAt,
-        updatedAt,
-    };
-}
-
-export async function getUserById(id: string): Promise<User | null> {
-    const user = await (
-        await mongo()
-    )
-        .db()
-        .collection('users')
-        .findOne<MongoUser>({ _id: ObjectId.createFromHexString(id) });
-
-    return toUserWithoutPassword(user);
-}
-
-export async function getUserByEmail(email: string): Promise<User | null> {
-    const user = await (await mongo())
-        .db()
-        .collection('users')
-        .findOne<MongoUser>({ email });
-
-    return toUserWithoutPassword(user);
-}
-
-export async function createUser(
-    displayName: string,
-    email: string,
-    password?: string,
-    imageUrl?: string,
-    image?: string,
-    socialProviders?: { [key: string]: boolean },
-): Promise<User> {
-    const user: MongoUser = {
-        _id: new ObjectId(),
         imageUrl,
         image,
-        displayName,
-        email,
         socialProviders,
-        createdAt: new Date(),
-        updatedAt: new Date(),
     };
 
     if (password) {
-        user.password = await bcrypt.hash(password, 10);
+        data.password = {
+            create: {
+                hash: await bcrypt.hash(password, 10),
+            },
+        };
     }
 
-    await (await mongo()).db().collection<MongoUser>('users').insertOne(user);
-
-    return toUserWithoutPassword(user) as User;
+    return prisma.user.create({ data });
 }
 
 export async function deleteUserByEmail(email: string) {
-    return (await mongo()).db().collection('users').deleteOne({ email });
+    return prisma.user.delete({ where: { email } });
 }
 
-export async function verifyLogin(
-    email: string,
-    password: string,
-): Promise<User | null> {
-    const userWithPassword = await (await mongo())
-        .db()
-        .collection('users')
-        .findOne<MongoUser>({ email });
+export async function verifyLogin(email: User['email'], password: Password['hash']) {
+    const userWithPassword = await prisma.user.findUnique({
+        where: { email },
+        include: {
+            password: true,
+        },
+    });
 
     if (!userWithPassword?.password) {
         return null;
     }
 
-    const isValid = await bcrypt.compare(password, userWithPassword.password);
+    const isValid = await bcrypt.compare(password, userWithPassword.password.hash);
 
     if (!isValid) {
         return null;
     }
 
-    return toUserWithoutPassword(userWithPassword);
+    const { password: stripPassword, ...userWithoutPassword } = userWithPassword;
+
+    return userWithoutPassword;
 }

@@ -6,11 +6,7 @@ type WriteArgs = [
     encoding: BufferEncoding,
     cb?: ((error: Error | null | undefined) => void) | undefined,
 ];
-type EndArgs = [
-    chunk: any,
-    encoding: BufferEncoding,
-    cb?: (() => void) | undefined,
-];
+type EndArgs = [chunk: any, encoding: BufferEncoding, cb?: (() => void) | undefined];
 
 /**
  * Records the response body to provide the byte size in access logs.

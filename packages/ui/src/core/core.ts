@@ -26,10 +26,10 @@ export interface CoreProps {
     'data-testid'?: string;
 }
 
-export type OmitCommonProps<
+export type OmitCommonProps<Target, OmitAdditionalProps extends keyof any = never> = Omit<
     Target,
-    OmitAdditionalProps extends keyof any = never,
-> = Omit<Target, 'as' | 'color' | OmitAdditionalProps>;
+    'as' | 'color' | OmitAdditionalProps
+>;
 
 export type RightJoinProps<
     SourceProps extends object = {},
@@ -68,10 +68,7 @@ export function forwardRef<Props extends object, Component extends As>(
         }
     >,
 ) {
-    return forwardReactRef(component) as unknown as ComponentWithAs<
-        Component,
-        Props
-    >;
+    return forwardReactRef(component) as unknown as ComponentWithAs<Component, Props>;
 }
 
 /**

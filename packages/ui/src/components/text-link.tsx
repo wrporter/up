@@ -12,11 +12,7 @@ export const TextLink = forwardRef<TextLinkProps, 'a'>(
         return (
             <Component
                 ref={ref}
-                className={twMerge(
-                    'text-blue-600 underline',
-                    focusKeyboardRing,
-                    className,
-                )}
+                className={twMerge('text-blue-600 underline', focusKeyboardRing, className)}
                 {...rest}
             />
         );

@@ -14,10 +14,7 @@ module.exports = {
             // See https://github.com/eslint/eslint/issues/2274
             files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
             rules: {
-                'jsdoc/require-jsdoc': [
-                    'error',
-                    { publicOnly: true, enableFixer: false },
-                ],
+                'jsdoc/require-jsdoc': ['error', { publicOnly: true, enableFixer: false }],
             },
         },
     ],

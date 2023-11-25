@@ -5,20 +5,27 @@ services:
     container_name: commit-app
     image: wesp/commit-app
     restart: unless-stopped
-    command: yarn workspace @wesp-up/commit-app start
+    depends_on:
+      - commit-postgres
     env_file:
       - .env
     environment:
       - SITE_PROTOCOL=https
-      - SITE_HOST=commit.sunbeam1.page
+      - SITE_HOST=commit.epicbits.dev
       - SITE_PORT=
-      - DATABASE_HOST=commit-mongo
+      - DATABASE_URL=postgresql://postgres:postgres@commit-postgres:5432/commit?authSource=admin&directConnection=true
       - NODE_ENV=production
     ports:
       - 2017:3000
-  commit-mongo:
-    container_name: commit-mongo
-    image: mongo
+  commit-postgres:
+    container_name: commit-postgres
+    image: postgres:15
     restart: unless-stopped
     volumes:
-      - ./mongo:/data/db
+      - ./postgres:/data/db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5412:5432"

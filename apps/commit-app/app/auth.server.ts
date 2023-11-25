@@ -1,18 +1,14 @@
+import type { User } from '@prisma/client';
+import { log } from '@wesp-up/express-remix';
 import { Authenticator } from 'remix-auth';
 import { FormStrategy } from 'remix-auth-form';
 import { GoogleStrategy } from 'remix-auth-google';
 import invariant from 'tiny-invariant';
 
-import type { User } from '~/lib/models/user.server';
-import {
-    createUser,
-    getUserByEmail,
-    verifyLogin,
-} from '~/lib/models/user.server';
-
 import { sessionStorage } from './session.server';
 
-const { SITE_PROTOCOL, SITE_HOST, SITE_PORT } = process.env;
+import { createUser, getUserByEmail, verifyLogin } from '~/lib/models/user.server';
+import { env } from '~/server/env.server';
 
 export const AUTH_ERROR_KEY = 'auth-error-key';
 
@@ -35,28 +31,29 @@ authenticator.use(
 );
 
 let port = '';
-if (SITE_PORT) {
-    port = `:${SITE_PORT}`;
+if (env.SITE_PORT) {
+    port = `:${env.SITE_PORT}`;
 }
 
 authenticator.use(
     new GoogleStrategy(
         {
-            clientID: process.env.GOOGLE_OAUTH_CLIENT_ID || '',
-            clientSecret: process.env.GOOGLE_OAUTH_CLIENT_SECRET || '',
-            callbackURL: `${SITE_PROTOCOL}://${SITE_HOST}${port}/auth/google/callback`,
+            clientID: env.GOOGLE_OAUTH_CLIENT_ID || '',
+            clientSecret: env.GOOGLE_OAUTH_CLIENT_SECRET || '',
+            callbackURL: `${env.SITE_PROTOCOL}://${env.SITE_HOST}${port}/auth/google/callback`,
         },
         async ({ profile }) => {
+            log.info(JSON.stringify(env));
             let user = await getUserByEmail(profile.emails[0].value);
             if (!user) {
-                user = await createUser(
-                    profile.displayName,
-                    profile.emails[0].value,
-                    undefined,
-                    profile.photos[0].value,
-                    undefined,
-                    { google: true },
-                );
+                user = await createUser({
+                    displayName: profile.displayName,
+                    email: profile.emails[0].value,
+                    imageUrl: profile.photos[0].value,
+                    image: undefined,
+                    socialProviders: { google: true },
+                });
+                log.info(JSON.stringify(user));
             }
             invariant(user, 'User does not exist');
             return user;

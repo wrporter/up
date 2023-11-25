@@ -8,10 +8,7 @@ it('mergesHandlers calls all handlers', () => {
     const clickHandler1 = vi.fn();
     const clickHandler2 = vi.fn();
     render(
-        <button
-            type="button"
-            onClick={mergeHandlers(clickHandler1, clickHandler2)}
-        >
+        <button type="button" onClick={mergeHandlers(clickHandler1, clickHandler2)}>
             Click
         </button>,
     );

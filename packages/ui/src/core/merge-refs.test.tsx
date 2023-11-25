@@ -13,9 +13,7 @@ it('mergesRefs uses all refs', () => {
     const refAsObj = { current: undefined };
     const nullRef = null;
     function Example({ visible }: { visible: boolean }) {
-        return visible ? (
-            <Dummy ref={mergeRefs([refAsObj, refAsFunc, nullRef])} />
-        ) : null;
+        return visible ? <Dummy ref={mergeRefs([refAsObj, refAsFunc, nullRef])} /> : null;
     }
 
     const { rerender } = render(<Example visible />);

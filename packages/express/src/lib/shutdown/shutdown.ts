@@ -87,17 +87,14 @@ export function gracefulShutdown(options: ShutdownOptions) {
         isShuttingDown = true;
         log?.debug('Shutdown initiated');
 
-        server.on(
-            'request',
-            (incoming: IncomingMessage, outgoing: OutgoingMessage) => {
-                if (!outgoing.headersSent) {
-                    // Indicate to the client that the server would like to close
-                    // the connection. See
-                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection#directives
-                    outgoing.setHeader('Connection', 'close');
-                }
-            },
-        );
+        server.on('request', (incoming: IncomingMessage, outgoing: OutgoingMessage) => {
+            if (!outgoing.headersSent) {
+                // Indicate to the client that the server would like to close
+                // the connection. See
+                // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection#directives
+                outgoing.setHeader('Connection', 'close');
+            }
+        });
 
         sockets.forEach((socket) => {
             // @ts-ignore This is the HTTPS CONNECT request socket.

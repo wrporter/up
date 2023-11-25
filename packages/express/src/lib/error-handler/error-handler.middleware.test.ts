@@ -42,12 +42,7 @@ describe('errorHandler', () => {
     });
 
     test('should log the error and return the error via res', () => {
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -67,12 +62,7 @@ describe('errorHandler', () => {
         res.locals!.requestContext = {
             transactionId: 'someTransaction',
         } as RequestContext;
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -86,12 +76,7 @@ describe('errorHandler', () => {
         const error = new URIError('failed to decode param') satisfies Error;
         // @ts-ignore
         error.status = 400;
-        errorHandler(logger as unknown as Logger)(
-            error,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(error, req as Request, res as Response, next);
 
         expect(logger.error).not.toHaveBeenCalled();
         expect(res.status).toHaveBeenCalledWith(400);
@@ -106,12 +91,7 @@ describe('errorHandler', () => {
     test('default to 500 error if an httpError is not passed', () => {
         err = new Error('Catastrophic Error');
 
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -132,12 +112,7 @@ describe('errorHandler', () => {
             expose: true,
         });
 
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -158,12 +133,7 @@ describe('errorHandler', () => {
             expose: false,
         });
 
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -184,12 +154,7 @@ describe('errorHandler', () => {
             expose: false,
         });
 
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({
@@ -211,12 +176,7 @@ describe('errorHandler', () => {
             expose: false,
         });
 
-        errorHandler(logger as unknown as Logger)(
-            err,
-            req as Request,
-            res as Response,
-            next,
-        );
+        errorHandler(logger as unknown as Logger)(err, req as Request, res as Response, next);
 
         expect(logger.error).toHaveBeenCalledOnce();
         expect(logger.error).toHaveBeenCalledWith({

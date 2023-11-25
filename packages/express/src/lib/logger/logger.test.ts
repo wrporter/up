@@ -3,10 +3,9 @@ import { log } from '@wesp-up/logger';
 import { ServerLogger } from './logger';
 
 vi.mock('@wesp-up/logger', async () => {
-    // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-    const actual = await vi.importActual<typeof import('@wesp-up/logger')>(
-        '@wesp-up/logger',
-    );
+    const actual =
+        // eslint-disable-next-line @typescript-eslint/consistent-type-imports
+        await vi.importActual<typeof import('@wesp-up/logger')>('@wesp-up/logger');
     return {
         ...actual,
         log: {

@@ -1,6 +1,4 @@
 import type { LoaderFunction } from '@remix-run/node';
-import { Link } from '@remix-run/react';
-import { TextLink } from '@wesp-up/ui';
 
 import { requireUser } from '~/auth.server';
 
@@ -11,24 +9,12 @@ export const loader: LoaderFunction = async ({ request, context }) => {
 
 export default function Page() {
     return (
-        <div className="container py-4">
-            <h2 className="text-xl mb-4">Home</h2>
+        <div className="p-4">
+            <h1 className="text-xl mb-4">Home</h1>
 
-            <ul className="list-disc ml-6 space-y-1">
-                <li>
-                    <TextLink as={Link} to="/chore-chart">
-                        Chore Chart
-                    </TextLink>{' '}
-                    - Manage your chore chart.
-                </li>
-                <li>
-                    <TextLink as={Link} to="/chore-chart/kiosk">
-                        Chore Chart Kiosk
-                    </TextLink>{' '}
-                    - Display your chore chart for your kids to update it when
-                    they complete tasks.
-                </li>
-            </ul>
+            <div>
+                🚧 This page is under construction. Stay tuned for statistics about your account!
+            </div>
         </div>
     );
 }

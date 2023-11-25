@@ -26,9 +26,9 @@ export const log = new ServerLogger();
  * ```
  * @param options - {@link Options}
  */
-export function createServer(options: Options = {}) {
+export async function createServer(options: Options = {}) {
     const server = new Server(options);
-    server.init();
+    await server.init();
     return server;
 }
 
@@ -57,7 +57,7 @@ export class Server {
         this.metricsHttpServer = http.createServer();
     }
 
-    public init() {
+    public async init() {
         /* --------------------- Performance & Security --------------------- */
         // http://expressjs.com/en/advanced/best-practice-security.html#at-a-minimum-disable-x-powered-by-header
         this.app.disable('x-powered-by');
@@ -90,7 +90,7 @@ export class Server {
         /* ------------------------- Customization ------------------------- */
         this.preMountApp?.(this.app);
         this.options.mountApp?.(this.app);
-        this.postMountApp?.(this.app);
+        await this.postMountApp?.(this.app);
 
         /* ------------------------- Error Handling ------------------------- */
         this.app.use(notFoundHandler);
@@ -124,7 +124,7 @@ export class Server {
      * consumers.
      * @param app - Express application.
      */
-    protected postMountApp?(app: express.Application): void;
+    protected async postMountApp?(app: express.Application): Promise<void>;
 
     /**
      * Starts the main and metrics HTTP servers.
@@ -132,7 +132,7 @@ export class Server {
      * @param metricsPort - The port to start the metrics app (default 22500).
      */
     start(port = 80, metricsPort = 22500) {
-        this.httpServer.listen(port);
+        this.httpServer.listen(port, this.appReady.bind(this));
         this.metricsHttpServer.listen(metricsPort);
 
         const metricsShutdown = gracefulShutdown({
@@ -153,6 +153,11 @@ export class Server {
             onShutdown: () => metricsShutdown(),
         });
     }
+
+    /**
+     * Callback handler once the server has finished starting up.
+     */
+    protected appReady() {}
 
     /**
      * Gracefully stops the main and metrics HTTP servers.

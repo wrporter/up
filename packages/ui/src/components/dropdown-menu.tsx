@@ -15,9 +15,7 @@ const menuVariants = tv({
     },
 });
 
-export interface DropdownMenuProps
-    extends DropdownMenuPrimitive.DropdownMenuProps,
-        CoreProps {}
+export interface DropdownMenuProps extends DropdownMenuPrimitive.DropdownMenuProps, CoreProps {}
 
 export const DropdownMenu = forwardRef<DropdownMenuProps, 'div'>(
     ({ ...rest }: DropdownMenuProps, ignoredRef) => {
@@ -25,15 +23,13 @@ export const DropdownMenu = forwardRef<DropdownMenuProps, 'div'>(
     },
 );
 
-export interface DropdownMenuTriggerProps
-    extends DropdownMenuPrimitive.DropdownMenuTriggerProps {}
+export interface DropdownMenuTriggerProps extends DropdownMenuPrimitive.DropdownMenuTriggerProps {}
 
-export const DropdownMenuTrigger = forwardRef<
-    DropdownMenuTriggerProps,
-    'button'
->(({ ...rest }, ignoredRef) => {
-    return <DropdownMenuPrimitive.Trigger {...rest} />;
-});
+export const DropdownMenuTrigger = forwardRef<DropdownMenuTriggerProps, 'button'>(
+    ({ ...rest }, ignoredRef) => {
+        return <DropdownMenuPrimitive.Trigger {...rest} />;
+    },
+);
 
 export interface DropdownMenuContentProps
     extends Omit<DropdownMenuPrimitive.DropdownMenuContentProps, 'color'>,
@@ -42,11 +38,16 @@ export interface DropdownMenuContentProps
 }
 
 export const DropdownMenuContent = forwardRef<DropdownMenuContentProps, 'div'>(
-    ({ portalProps, color, children, ...rest }, ref) => {
+    ({ portalProps, color, className, children, ...rest }, ref) => {
         const { content } = menuVariants({ color });
         return (
             <DropdownMenuPrimitive.Portal {...portalProps}>
-                <DropdownMenuPrimitive.Content className={content()} {...rest}>
+                <DropdownMenuPrimitive.Content
+                    className={content({
+                        className: twMerge('flex flex-col gap-2', className),
+                    })}
+                    {...rest}
+                >
                     {children}
                     <DropdownMenuPrimitive.Arrow asChild>
                         <Arrow color={color} />
@@ -57,8 +58,7 @@ export const DropdownMenuContent = forwardRef<DropdownMenuContentProps, 'div'>(
     },
 );
 
-export interface DropdownMenuItemProps
-    extends DropdownMenuPrimitive.DropdownMenuItemProps {}
+export interface DropdownMenuItemProps extends DropdownMenuPrimitive.DropdownMenuItemProps {}
 
 export const DropdownMenuItem = forwardRef<DropdownMenuItemProps, 'div'>(
     ({ className, ...rest }, ref) => {
@@ -68,11 +68,12 @@ export const DropdownMenuItem = forwardRef<DropdownMenuItemProps, 'div'>(
                     'group leading-none',
                     'rounded',
                     'flex items-center',
-                    'px-2 py-2',
+                    'h-10 px-2 py-2',
                     'relative select-none outline-none',
                     'cursor-pointer',
                     'data-[disabled]:text-gray-600 data-[disabled]:pointer-events-none',
-                    'data-[highlighted]:bg-blue-200',
+                    'data-[highlighted]:bg-blue-100',
+                    'active:bg-blue-200',
                     className,
                 )}
                 {...rest}

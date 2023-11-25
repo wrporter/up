@@ -38,15 +38,9 @@ it('sets transaction headers on the response', () => {
 
     requestTransactionMiddleware(req, res, next);
 
-    expect(res.setHeader).toHaveBeenCalledWith(
-        HEADER_TRANSACTION_ID,
-        'transaction-id',
-    );
+    expect(res.setHeader).toHaveBeenCalledWith(HEADER_TRANSACTION_ID, 'transaction-id');
     expect(res.setHeader).toHaveBeenCalledWith(HEADER_REQUEST_ID, 'request-id');
-    expect(res.setHeader).not.toHaveBeenCalledWith(
-        HEADER_PARENT_REQUEST_ID,
-        expect.anything(),
-    );
+    expect(res.setHeader).not.toHaveBeenCalledWith(HEADER_PARENT_REQUEST_ID, expect.anything());
 });
 
 it('sets the parent request id when present', () => {
@@ -57,15 +51,9 @@ it('sets the parent request id when present', () => {
 
     requestTransactionMiddleware(req, res, next);
 
-    expect(res.setHeader).toHaveBeenCalledWith(
-        HEADER_TRANSACTION_ID,
-        'transaction-id',
-    );
+    expect(res.setHeader).toHaveBeenCalledWith(HEADER_TRANSACTION_ID, 'transaction-id');
     expect(res.setHeader).toHaveBeenCalledWith(HEADER_REQUEST_ID, 'request-id');
-    expect(res.setHeader).toHaveBeenCalledWith(
-        HEADER_PARENT_REQUEST_ID,
-        'parent-request-id',
-    );
+    expect(res.setHeader).toHaveBeenCalledWith(HEADER_PARENT_REQUEST_ID, 'parent-request-id');
 });
 
 it('sets transaction ids on the request context', () => {

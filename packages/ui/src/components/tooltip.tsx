@@ -8,8 +8,9 @@ import { forwardRef } from '~/core';
 export const tooltipVariants = tv({
     slots: {
         content: [
+            // 'z-50',
             'max-w-[90vw]',
-            'drop-shadow',
+            'shadow',
             'select-none rounded-[4px] px-4 py-2.5 leading-none',
             'will-change-[transform,opacity]',
             'data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade',
@@ -21,7 +22,7 @@ export const tooltipVariants = tv({
     variants: {
         color: {
             white: {
-                content: ['bg-white', 'border border-gray-300'],
+                content: ['bg-white', 'border border-gray-400'],
             },
             black: {
                 content: ['bg-black', 'text-white'],
@@ -35,6 +36,7 @@ export const tooltipVariants = tv({
 
 export const arrowVariants = tv({
     slots: {
+        // arrow: 'z-50',
         arrow: '',
         arrowBorder: '',
     },
@@ -42,7 +44,7 @@ export const arrowVariants = tv({
         color: {
             white: {
                 arrow: 'fill-white',
-                arrowBorder: 'stroke-2 stroke-gray-300',
+                arrowBorder: 'stroke-2 stroke-gray-400',
             },
             black: {
                 arrow: 'fill-black',
@@ -69,8 +71,7 @@ export const Tooltip = forwardRef<TooltipProps, 'div'>(
     },
 );
 
-export interface TooltipTriggerProps
-    extends TooltipPrimitive.TooltipTriggerProps {}
+export interface TooltipTriggerProps extends TooltipPrimitive.TooltipTriggerProps {}
 
 export const TooltipTrigger = forwardRef<TooltipTriggerProps, 'button'>(
     ({ ...rest }, ignoredRef) => {
@@ -100,8 +101,7 @@ export const TooltipContent = forwardRef<TooltipContentProps, 'div'>(
     },
 );
 
-export interface ArrowProps
-    extends Omit<VariantProps<typeof arrowVariants>, 'class'> {}
+export interface ArrowProps extends Omit<VariantProps<typeof arrowVariants>, 'class'> {}
 export function Arrow({ color }: ArrowProps) {
     const { arrow, arrowBorder } = arrowVariants({ color });
     return (

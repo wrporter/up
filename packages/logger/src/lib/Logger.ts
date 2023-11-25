@@ -61,10 +61,7 @@ export abstract class Logger {
      * @param data - Data to be logged. Can be of any type.
      */
     log(level: Level, data: string | Error | Entry | AccessEntry): void {
-        if (
-            this.level !== 'silent' &&
-            toSeverity(level) <= toSeverity(this.level)
-        ) {
+        if (this.level !== 'silent' && toSeverity(level) <= toSeverity(this.level)) {
             let entry: Entry;
             if (data instanceof Error) {
                 entry = { error: data };

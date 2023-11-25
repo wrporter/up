@@ -9,15 +9,13 @@ import type { User } from '~/lib/models/user.server';
  * @param {string} id The route id
  * @returns {JSON|undefined} The router data or undefined if not found
  */
-export function useMatchesData(
-    id: string,
-): Record<string, unknown> | undefined {
+export function useMatchesData(id: string): Record<string, unknown> | undefined {
     const matchingRoutes = useMatches();
     const route = useMemo(
         () => matchingRoutes.find((route) => route.id === id),
         [matchingRoutes, id],
     );
-    return route?.data;
+    return route?.data as Record<string, unknown>;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

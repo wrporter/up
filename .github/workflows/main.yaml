@@ -23,21 +23,24 @@ jobs:
 
     steps:
       - name: 🥼 Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
       - name: 📔 Setup Node.js environment
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'yarn'
+          node-version: 20
+          cache: 'npm'
 
-      - name: 🏬 Install Turbo
-        run: yarn global add turbo
-
+#      - name: 🏬 Install Turbo
+#        run: npm install --global turbo
+#
 #      - name: 🔧 Build
-#        run: yarn ci
+#        run: npm run ci
+
+      - name: 🔧 Build
+        run: APP=commit-app .ci/build-app.sh
 
       - name: ☁️ Install cloudflared
         run: sudo wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb
@@ -50,5 +53,7 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
           config: ${{ secrets.SSH_CONFIG }}
 
+      #      - name: 🐳 🚀 Deploy
+      #        run: npm run docker:deploy
       - name: 🐳 🚀 Deploy
-        run: yarn docker:deploy
+        run: WORKSPACE_PATH=apps/commit-app APP=commit-app REMOTE_APP_DIRECTORY=commit .ci/deploy.sh

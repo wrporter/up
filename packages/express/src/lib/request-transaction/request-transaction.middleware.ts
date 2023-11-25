@@ -12,11 +12,7 @@ export const HEADER_REQUEST_ID = 'X-Request-ID';
  * Middleware to apply request transaction trace identifiers to the request
  * context.
  */
-export const requestTransactionMiddleware: RequestHandler = (
-    req,
-    res,
-    next,
-) => {
+export const requestTransactionMiddleware: RequestHandler = (req, res, next) => {
     const transactionId = req.header(HEADER_TRANSACTION_ID) ?? uuidV4();
     const parentRequestId = req.header(HEADER_PARENT_REQUEST_ID);
     const requestId = uuidV4();

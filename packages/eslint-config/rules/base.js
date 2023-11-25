@@ -6,6 +6,7 @@ module.exports = {
             trailingComma: 'all',
             tabWidth: 4,
             singleQuote: true,
+            printWidth: 100,
         },
     ],
 
@@ -29,14 +30,7 @@ module.exports = {
     'import/order': [
         'error',
         {
-            groups: [
-                'builtin',
-                'external',
-                'internal',
-                ['sibling', 'parent'],
-                'index',
-                'unknown',
-            ],
+            groups: ['builtin', 'external', 'internal', ['sibling', 'parent'], 'index', 'unknown'],
             'newlines-between': 'always',
             alphabetize: {
                 order: 'asc',
@@ -102,4 +96,7 @@ module.exports = {
     'jsdoc/require-returns-type': 'off',
     'jsdoc/require-param': 'off',
     'jsdoc/require-returns': 'off',
+
+    // Allow array reduce to object and property assignment
+    'no-param-reassign': ['error', { props: false }],
 };
