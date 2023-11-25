@@ -1,4 +1,5 @@
 *
+!.changeset
 !.npmrc
 !package.json
 !package-lock.json

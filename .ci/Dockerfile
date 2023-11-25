@@ -2,7 +2,7 @@
 # Copy all package.json files in the project
 # See https://stackoverflow.com/questions/49939960/docker-copy-files-using-glob-pattern
 ###############################################################################
-FROM alpine:3.20 as dependencies
+FROM alpine:3.18 as dependencies
 
 WORKDIR /app
 

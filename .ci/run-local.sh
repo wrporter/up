@@ -9,7 +9,7 @@ echo "-- Running Docker container with arguments [${@}]"
 docker run \
 	--rm \
 	--name=${APP_NAME} \
-	${TARGET_IMAGE}:${VERSION} \
+	${IMAGE_PATH}:${VERSION} \
 	${@}
 
 echo "-- ${0} complete!"

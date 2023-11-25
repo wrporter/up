@@ -15,6 +15,8 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       TURBO_REMOTE_ONLY: true
+      REGISTRY_EMAIL: ${{ secrets.REGISTRY_EMAIL }}
+      REGISTRY_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
 
     steps:
       - name: 🥼 Check out code

@@ -9,7 +9,7 @@ echo "-- Building docker image for production"
 buildDocker \
 	--progress=plain \
 	--file .ci/Dockerfile \
-	--tag "${TARGET_IMAGE}:${VERSION}" \
+	--tag "${IMAGE_PATH}:${VERSION}" \
 	.
 
 echo "-- ${0} complete!"
