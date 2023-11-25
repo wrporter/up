@@ -10,14 +10,15 @@
   ],
   "scripts": {
     "build": "tsup",
+    "ci": "npm run lint && npm run typecheck && npm run build && npm run test && npm run docs",
     "dev": "tsup --watch",
     "clean": "rm -rf .turbo dist node_modules",
     "docs": "typedoc",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "typecheck": "tsc -b",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook:build": "storybook build",
+    "typecheck": "tsc -b"
   },
   "peerDependencies": {
     "react": ">= 18"

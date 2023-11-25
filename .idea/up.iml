@@ -3,10 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/apps/checkit-mongo/db" />
-      <excludeFolder url="file://$MODULE_DIR$/apps/commit-app/.turbo" />
-      <excludeFolder url="file://$MODULE_DIR$/apps/commit-app/build" />
-      <excludeFolder url="file://$MODULE_DIR$/apps/commit-app/public/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../commit/commit/apps/checkit-mongo/db" />
+      <excludeFolder url="file://$MODULE_DIR$/../commit/commit/apps/commit-app/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/../commit/commit/apps/commit-app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../commit/commit/apps/commit-app/public/build" />
       <excludePattern pattern=".turbo" />
       <excludePattern pattern="coverage" />
       <excludePattern pattern="dist" />

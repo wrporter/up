@@ -1,0 +1,14 @@
+*
+!.npmrc
+!package.json
+!package-lock.json
+!turbo.json
+
+!packages/*/.storybook
+!packages/*/src
+!packages/*/test
+!packages/*/rules
+!packages/*/.eslintignore
+!packages/*/*.js
+!packages/*/*.json
+!packages/*/*.ts

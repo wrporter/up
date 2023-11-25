@@ -11,13 +11,6 @@
     "dev": {
       "cache": false
     },
-    "docker:build": {
-      "outputs": []
-    },
-    "docker:deploy": {
-      "dependsOn": ["docker:build"],
-      "outputs": []
-    },
     "docs": {
       "dependsOn": ["^build"],
       "outputs": ["docs"]

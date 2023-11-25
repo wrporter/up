@@ -10,13 +10,15 @@
   ],
   "scripts": {
     "build": "tsup",
+    "ci": "npm run lint && npm run typecheck && npm run build && npm run test && npm run docs",
     "dev": "tsup --watch",
     "clean": "rm -rf .turbo dist node_modules",
     "docs": "typedoc",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "vitest run --coverage",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "typecheck": "tsc -b"
   },
   "peerDependencies": {
     "@remix-run/node": "^2.3.1",

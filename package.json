@@ -1,9 +1,7 @@
 {
   "name": "wesp-up",
   "private": true,
-  "packageManager": "npm@10.2.3",
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "engines": {
@@ -11,15 +9,13 @@
     "npm": ">=10"
   },
   "scripts": {
-    "build": "turbo run build --filter=!@wesp-up/checkit-app",
+    "build": "turbo run build",
     "changeset": "changeset",
     "changeset:apply": "changeset version",
     "ci": "turbo run lint typecheck test build",
-    "clean": "find . -depth \\( -name junit.xml -o -name dist -o -name build -o -name .turbo -o -name node_modules \\) -exec rm -rv {} +",
+    "clean": "find . -depth \\( -name junit.xml -o -name dist -o -name build -o -name .turbo -o -name node_modules \\) -exec rm -rf {} +",
     "dev": "turbo run dev",
     "docs": "turbo run docs",
-    "docker:build": "turbo run docker:build",
-    "docker:deploy": "turbo run docker:deploy",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "release": "turbo run build && changeset publish",
@@ -29,7 +25,6 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "rimraf": "^5.0.5",
     "turbo": "^1.10.16",
     "typedoc": "^0.25.3",
     "typedoc-plugin-markdown": "^3.17.1",

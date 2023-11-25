@@ -15,11 +15,6 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       TURBO_REMOTE_ONLY: true
-      SSH_USER: ${{ secrets.SSH_USER }}
-      SSH_HOST: ${{ secrets.SSH_HOST }}
-      SSH_PORT: ${{ secrets.SSH_PORT }}
-      CHECKIT_ENV: ${{ secrets.CHECKIT_ENV }}
-      COMMIT_ENV: ${{ secrets.COMMIT_ENV }}
 
     steps:
       - name: 🥼 Check out code
@@ -27,33 +22,11 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: 📔 Setup Node.js environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-#      - name: 🏬 Install Turbo
-#        run: npm install --global turbo
-#
-#      - name: 🔧 Build
-#        run: npm run ci
-
       - name: 🔧 Build
-        run: APP=commit-app .ci/build-app.sh
+        run: .ci/build.sh
 
-      - name: ☁️ Install cloudflared
-        run: sudo wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb
+      - name: 🧪 Validate
+        run: .ci/run.sh npm run ci
 
-      - name: 🔑 Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          name: id_ed25519
-          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-          config: ${{ secrets.SSH_CONFIG }}
-
-      #      - name: 🐳 🚀 Deploy
-      #        run: npm run docker:deploy
-      - name: 🐳 🚀 Deploy
-        run: WORKSPACE_PATH=apps/commit-app APP=commit-app REMOTE_APP_DIRECTORY=commit .ci/deploy.sh
+      - name: 🚀 Publish
+        run: .ci/publish.sh
