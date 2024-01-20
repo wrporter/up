@@ -57,6 +57,13 @@ export async function useRemix(app: Application, options?: Partial<RemixOptions>
     const BUILD_PATH = path.resolve('build/index.js');
     const VERSION_PATH = path.resolve('build/version.txt');
     const initialBuild = await reimportServer();
+    const remixHandler =
+        process.env.NODE_ENV === 'development'
+            ? await createDevRequestHandler(initialBuild)
+            : createRequestHandler({
+                  build: initialBuild,
+                  mode: initialBuild.mode,
+              });
 
     const opts = {
         ...defaultRemixOptions,
@@ -91,17 +98,7 @@ export async function useRemix(app: Application, options?: Partial<RemixOptions>
     app.use(express.static(assetsRoot, { maxAge: '1h' }));
 
     /* -------------------------- Remix Routes -------------------------- */
-    app.all('*', async (...args) => {
-        const handler =
-            process.env.NODE_ENV === 'development'
-                ? await createDevRequestHandler(initialBuild)
-                : createRequestHandler({
-                      build: initialBuild,
-                      mode: initialBuild.mode,
-                  });
-
-        return handler(...args);
-    });
+    app.all('*', remixHandler);
 
     async function reimportServer(): Promise<ServerBuild> {
         // cjs: manually remove the server build from the require cache
