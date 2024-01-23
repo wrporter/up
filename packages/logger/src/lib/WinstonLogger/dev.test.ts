@@ -116,6 +116,21 @@ it('prints the error', () => {
     expect(result).toContain(`${timestamp} [ERROR ] : - Error: boom!`);
 });
 
+it('prints additional metadata', () => {
+    const result = printFormat({
+        timestamp,
+        level: 'info',
+        message: 'mock message',
+        userId: 'mockuser',
+        brandId: 'mockbrand',
+    });
+
+    expect(result).toEqual(`${timestamp} [INFO  ] : mock message {
+  "userId": "mockuser",
+  "brandId": "mockbrand"
+}`);
+});
+
 it('transforms into the dev format', () => {
     const result = devFormat.transform({
         level: 'info',
