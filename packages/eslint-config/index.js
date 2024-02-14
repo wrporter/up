@@ -25,7 +25,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:jsdoc/recommended',
     ],
-    plugins: ['node', 'prettier', 'import', 'unused-imports', 'jsdoc'],
+    plugins: ['node', 'prettier', 'unused-imports', 'jsdoc'],
     overrides: [
         {
             // Specifying overrides allows us to provide default file extensions.
