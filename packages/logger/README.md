@@ -16,12 +16,12 @@ import { log } from '@wesp-up/logger';
 log.info('Hello, World!');
 
 try {
-    processThatMightFail();
+  processThatMightFail();
 } catch (error) {
-    log.error({
-      message: 'A failure occurred in a most important system',
-      error,
-    });
+  log.error({
+    message: 'A failure occurred in a most important system',
+    error,
+  });
 }
 ```
 
@@ -32,8 +32,8 @@ For documentation on each exported member, see the [docs](docs).
 ## Best Practices
 
 - Avoid logging entire request or response objects in production or any other objects containing sensitive information, such as credentials, secrets, and personally identifiable information (PII).
-- Use `NODE_ENV=production` when running the service anywhere other than a local machine. Note that if you use `NODE_ENV=development`, you can enable a more  human-readable logger for local development. 
-    ![Pretty Log Format](readme/pretty-format.png "Pretty Log Format")
+- Use `NODE_ENV=production` when running the service anywhere other than a local machine. Note that if you use `NODE_ENV=development`, you can enable a more human-readable logger for local development.
+  ![Pretty Log Format](readme/pretty-format.png 'Pretty Log Format')
 - Modify the `LOG_LEVEL` environment variable on a production node if you need more debug information. Possible values are `silent`, `error`, `warn`, `access`, `info`, `debug`.
   - **Silent:** When you don't want any output at all. Useful in test
     environments.

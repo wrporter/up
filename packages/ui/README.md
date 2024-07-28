@@ -16,9 +16,7 @@ Any package within this monorepo will need to include the references from the ro
 
 ```javascript
 module.exports = {
-    content: [
-        '../../node_modules/@wesp-up/ui/dist/**/*.js',
-    ],
+  content: ['../../node_modules/@wesp-up/ui/dist/**/*.js'],
 };
 ```
 
@@ -26,9 +24,7 @@ Otherwise, it will just look like this:
 
 ```javascript
 module.exports = {
-    content: [
-        './node_modules/@wesp-up/ui/dist/**/*.js',
-    ],
+  content: ['./node_modules/@wesp-up/ui/dist/**/*.js'],
 };
 ```
 
@@ -46,8 +42,8 @@ In order to get live updates when developing in a Remix project, the following n
 
 ```javascript
 module.exports = {
-    serverDependenciesToBundle: ['@wesp-up/ui'],
-    watchPaths: ['../../node_modules/@wesp-up/ui/**/*.js'],
+  serverDependenciesToBundle: ['@wesp-up/ui'],
+  watchPaths: ['../../node_modules/@wesp-up/ui/**/*.js'],
 };
 ```
 

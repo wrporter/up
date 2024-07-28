@@ -1,0 +1,10 @@
+{
+  "extends": "@wesp-up/tsconfig/lib.json",
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": ["vitest/globals"],
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["dist", "coverage"]
+}

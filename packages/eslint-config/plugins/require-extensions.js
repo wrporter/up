@@ -1,6 +1,6 @@
 // Adapted from https://github.com/solana-labs/eslint-plugin-require-extensions
 // to support ESLint 9.
-/* eslint-disable */
+
 import { existsSync, lstatSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 

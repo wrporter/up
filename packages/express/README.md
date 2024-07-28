@@ -32,57 +32,59 @@ const pathPrefix = '/my-service';
 
 const router = Router();
 router.get('/my-route', (req, res) => {
-    log.info('Some interesting information');
-    res.send({ sand: 'castle' });
+  log.info('Some interesting information');
+  res.send({ sand: 'castle' });
 });
 
 const counter = new promClient.Counter({
-    name: 'custom_counter',
-    help: 'My custom counter'
+  name: 'custom_counter',
+  help: 'My custom counter',
 });
 
 const customRouter = Router();
 customRouter.get('/my-counter-route', (req, res) => {
-    counter.inc();
-    res.send({ sand: 'box' });
+  counter.inc();
+  res.send({ sand: 'box' });
 });
 
 const server = createServer({
-    pathPrefix,
-    metricsOptions: {
-        includePath: true,              // default true
-        includeDefaultMetrics: false    // default true
-    },
-    mountApp(app: Application) {
-        app.use(pathPrefix, router);
-        app.use(pathPrefix, customRouter);
-    },
+  pathPrefix,
+  metricsOptions: {
+    includePath: true, // default true
+    includeDefaultMetrics: false, // default true
+  },
+  mountApp(app: Application) {
+    app.use(pathPrefix, router);
+    app.use(pathPrefix, customRouter);
+  },
 });
 
 server.start();
 ```
 
 ### Request context
+
 This library stores context related to the current request on `res.locals.requestContext`. By default, this includes transaction
 and request IDs. You can also extend it with fields relevant to your own application. If you provide authentication information
 following a certain format, then the access logger in this repository will include it in logs.
 
 The request context contains fields that are useful for making requests to other services, correlating logs together, and more.
 You may often want to pass it between functions. It's recommended to include context when logging information:
+
 ```typescript
 import { RequestContext, log } from '@wesp-up/express';
 
 async function tryDeleteResource(context: RequestContext, resourceId: string) {
-    try {
-        await db.deleteResource(context.brandId, resourceId);
-    } catch(error) {
-        log.error({
-            message: 'Failed to clean up resource',
-            error,
-            resourceId,
-            context // Or just log part of context, if it's large or contains sensitive data
-        });
-    }
+  try {
+    await db.deleteResource(context.brandId, resourceId);
+  } catch (error) {
+    log.error({
+      message: 'Failed to clean up resource',
+      error,
+      resourceId,
+      context, // Or just log part of context, if it's large or contains sensitive data
+    });
+  }
 }
 ```
 
@@ -93,13 +95,14 @@ using interface merging:
 
 ```typescript
 declare module '@wesp-up/express' {
-    interface RequestContext {
-        myField: string;
-    }
+  interface RequestContext {
+    myField: string;
+  }
 }
 ```
 
 ## Documentation
+
 For documentation on each exported member, see the [docs](docs).
 
 ## TODO

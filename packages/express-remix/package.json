@@ -1,9 +1,13 @@
 {
   "name": "@wesp-up/express-remix",
   "version": "1.0.1",
-  "module": "dist/index.mjs",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "README.md",
     "dist"
@@ -21,34 +25,35 @@
     "typecheck": "tsc -b"
   },
   "peerDependencies": {
-    "@remix-run/node": "^2.3.1",
-    "@remix-run/react": "^2.3.1",
+    "@remix-run/node": "2.3.1",
+    "@remix-run/react": "2.3.1",
     "prom-client": ">=14.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "18.2.0"
   },
   "dependencies": {
-    "@remix-run/express": "~2.3.1",
+    "@remix-run/express": "2.10.3",
     "@wesp-up/express": "*",
-    "chokidar": "^3.5.3",
-    "express": "^4.18.2",
-    "isbot": "^3.7.1"
+    "chokidar": "3.6.0",
+    "express": "4.19.2",
+    "isbot": "5.1.13"
   },
   "devDependencies": {
-    "@remix-run/node": "~2.3.1",
-    "@remix-run/react": "~2.3.1",
-    "@types/express": "^4.17.21",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.0",
-    "@vitest/coverage-v8": "^0.34.6",
+    "@remix-run/node": "2.10.3",
+    "@remix-run/react": "2.10.3",
+    "@types/express": "4.17.21",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "@vitest/coverage-v8": "2.0.4",
+    "@wesp-up/eslint-config": "*",
     "@wesp-up/eslint-config-react": "*",
     "@wesp-up/tsconfig": "*",
     "@wesp-up/typedoc-config": "*",
-    "eslint": "^8.54.0",
-    "prom-client": "^15.0.0",
-    "react-dom": "^18.2.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.2",
-    "vite-tsconfig-paths": "^4.2.1",
-    "vitest": "^0.34.6"
+    "eslint": "9.8.0",
+    "prom-client": "15.1.3",
+    "react-dom": "18.3.1",
+    "tsup": "8.2.3",
+    "typescript": "5.5.4",
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "2.0.4"
   }
 }

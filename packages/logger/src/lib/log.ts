@@ -1,8 +1,8 @@
-import type { Level } from './Level';
-import { severity } from './Level';
-import { MultiLogger } from './MultiLogger';
-import { WinstonLogger } from './WinstonLogger';
-import type { Mode } from './WinstonLogger';
+import type { Level } from './Level.js';
+import { severity } from './Level.js';
+import { MultiLogger } from './MultiLogger.js';
+import { WinstonLogger } from './WinstonLogger/index.js';
+import type { Mode } from './WinstonLogger/index.js';
 
 /**
  * Singleton instance of the multi logger. The following default configuration is applied.
@@ -24,19 +24,19 @@ export const log = createDefaultLogger();
  * Creates a logger with smart defaults.
  */
 export function createDefaultLogger() {
-    let level: Level = 'info';
-    const levelFromEnv = process.env.LOG_LEVEL as Level;
-    const mode = process.env.NODE_ENV;
+  let level: Level = 'info';
+  const levelFromEnv = process.env.LOG_LEVEL as Level;
+  const mode = process.env.NODE_ENV;
 
-    if (severity[levelFromEnv] !== undefined) {
-        level = levelFromEnv;
-    } else if (mode === 'test') {
-        level = 'silent';
-    }
+  if (severity[levelFromEnv] !== undefined) {
+    level = levelFromEnv;
+  } else if (mode === 'test') {
+    level = 'silent';
+  }
 
-    const logger = new MultiLogger();
-    logger.register(new WinstonLogger({ mode: mode as Mode }));
-    logger.configure({ level });
+  const logger = new MultiLogger();
+  logger.register(new WinstonLogger({ mode: mode as Mode }));
+  logger.configure({ level });
 
-    return logger;
+  return logger;
 }

@@ -1,72 +1,77 @@
 import './styles/tailwind.css';
 
-export { focusKeyboardRing } from './styles/common';
+export { focusKeyboardRing } from './styles/common.js';
 
 export {
-    mergeHandlers,
-    mergeRefs,
-    forwardRef,
-    HTMLCoreProps,
-    CoreProps,
-    NoNullMember,
-    OmitCommonProps,
-} from './core';
+  mergeHandlers,
+  mergeRefs,
+  forwardRef,
+  type HTMLCoreProps,
+  type CoreProps,
+  type NoNullMember,
+  type OmitCommonProps,
+} from './core/index.js';
 
-export { useLocalStorage } from './hooks/useLocalStorage';
+export { useLocalStorage } from './hooks/useLocalStorage.js';
 
 export {
-    Accordion,
-    AccordionItem,
-    AccordionTrigger,
-    AccordionContent,
-    AccordionItemProps,
-    AccordionProps,
-    AccordionTriggerProps,
-    AccordionContentProps,
-} from './components/accordion';
-export { Button, ButtonProps } from './components/button';
-export { Checkbox, CheckboxProps } from './components/checkbox';
-export { TextField, TextFieldProps } from './components/text-field';
-export { TextLink, TextLinkProps } from './components/text-link';
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+  type AccordionItemProps,
+  type AccordionProps,
+  type AccordionTriggerProps,
+  type AccordionContentProps,
+} from './components/accordion.js';
+export { Button, type ButtonProps } from './components/button.js';
+export { Checkbox, type CheckboxProps } from './components/checkbox.js';
+export { TextField, type TextFieldProps } from './components/text-field.js';
+export { TextLink, type TextLinkProps } from './components/text-link.js';
 export {
-    Tooltip,
-    TooltipContent,
-    TooltipContentProps,
-    TooltipProps,
-    TooltipTriggerProps,
-    TooltipTrigger,
-} from './components/tooltip';
+  Tooltip,
+  TooltipContent,
+  type TooltipContentProps,
+  type TooltipProps,
+  type TooltipTriggerProps,
+  TooltipTrigger,
+} from './components/tooltip.js';
 export {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuContentProps,
-    DropdownMenuProps,
-    DropdownMenuTriggerProps,
-    DropdownMenuTrigger,
-    DropdownMenuItem,
-    DropdownMenuItemProps,
-} from './components/dropdown-menu';
+  DropdownMenu,
+  DropdownMenuContent,
+  type DropdownMenuContentProps,
+  type DropdownMenuProps,
+  type DropdownMenuTriggerProps,
+  DropdownMenuTrigger,
+  DropdownMenuItem,
+  type DropdownMenuItemProps,
+} from './components/dropdown-menu.js';
 export {
-    Dialog,
-    DialogContent,
-    DialogClose,
-    DialogCloseProps,
-    DialogContentProps,
-    DialogProps,
-    DialogTriggerProps,
-    DialogTrigger,
-    DialogTitle,
-    DialogTitleProps,
-    DialogDescription,
-    DialogDescriptionProps,
-} from './components/dialog';
+  Dialog,
+  DialogContent,
+  DialogClose,
+  type DialogCloseProps,
+  type DialogContentProps,
+  type DialogProps,
+  type DialogTriggerProps,
+  DialogTrigger,
+  DialogTitle,
+  type DialogTitleProps,
+  DialogDescription,
+  type DialogDescriptionProps,
+} from './components/dialog.js';
 export {
-    Pill,
-    PillProps,
-    PillGroupProps,
-    PillGroup,
-    PillMenuProps,
-    PillMenu,
-} from './components/pill';
-export { Combobox, ComboboxOption, ComboboxOptions, ComboboxTrigger } from './components/combobox';
-export { FormLabel, FormLabelProps } from './components/form-field';
+  Pill,
+  type PillProps,
+  type PillGroupProps,
+  PillGroup,
+  type PillMenuProps,
+  PillMenu,
+} from './components/pill.js';
+export {
+  Combobox,
+  ComboboxOption,
+  ComboboxOptions,
+  ComboboxTrigger,
+} from './components/combobox.js';
+export { FormLabel, type FormLabelProps } from './components/form-field.js';

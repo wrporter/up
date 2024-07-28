@@ -3,9 +3,9 @@
  * set these fields.
  */
 export interface BaseRequestContext {
-    transactionId: string;
-    requestId: string;
-    parentRequestId?: string;
+  transactionId: string;
+  requestId: string;
+  parentRequestId?: string;
 }
 
 /**
@@ -14,9 +14,9 @@ export interface BaseRequestContext {
 export interface RequestContext extends BaseRequestContext {}
 
 declare global {
-    namespace Express {
-        interface Locals {
-            requestContext: RequestContext;
-        }
+  namespace Express {
+    interface Locals {
+      requestContext: RequestContext;
     }
+  }
 }

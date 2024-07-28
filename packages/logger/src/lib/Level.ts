@@ -6,12 +6,12 @@
 export type Level = 'silent' | 'error' | 'warn' | 'access' | 'info' | 'debug';
 
 export const severity: { [key in Level]: number } = {
-    silent: 0,
-    error: 1,
-    warn: 2,
-    access: 3,
-    info: 4,
-    debug: 5,
+  silent: 0,
+  error: 1,
+  warn: 2,
+  access: 3,
+  info: 4,
+  debug: 5,
 };
 
 /**
@@ -19,5 +19,5 @@ export const severity: { [key in Level]: number } = {
  * @param level - Log level name to convert.
  */
 export function toSeverity(level: Level): number {
-    return severity[level];
+  return severity[level];
 }

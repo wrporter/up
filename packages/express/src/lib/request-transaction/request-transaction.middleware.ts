@@ -13,22 +13,22 @@ export const HEADER_REQUEST_ID = 'X-Request-ID';
  * context.
  */
 export const requestTransactionMiddleware: RequestHandler = (req, res, next) => {
-    const transactionId = req.header(HEADER_TRANSACTION_ID) ?? uuidV4();
-    const parentRequestId = req.header(HEADER_PARENT_REQUEST_ID);
-    const requestId = uuidV4();
+  const transactionId = req.header(HEADER_TRANSACTION_ID) ?? uuidV4();
+  const parentRequestId = req.header(HEADER_PARENT_REQUEST_ID);
+  const requestId = uuidV4();
 
-    res.setHeader(HEADER_TRANSACTION_ID, transactionId);
-    res.setHeader(HEADER_REQUEST_ID, requestId);
-    if (parentRequestId) {
-        res.setHeader(HEADER_PARENT_REQUEST_ID, parentRequestId);
-    }
+  res.setHeader(HEADER_TRANSACTION_ID, transactionId);
+  res.setHeader(HEADER_REQUEST_ID, requestId);
+  if (parentRequestId) {
+    res.setHeader(HEADER_PARENT_REQUEST_ID, parentRequestId);
+  }
 
-    res.locals.requestContext = {
-        ...res.locals.requestContext,
-        transactionId,
-        requestId,
-        parentRequestId,
-    };
+  req.context = {
+    ...req.context,
+    transactionId,
+    requestId,
+    parentRequestId,
+  };
 
-    next();
+  next();
 };

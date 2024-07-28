@@ -1,12 +1,12 @@
 import type { Logger as Winston } from 'winston';
 import { createLogger, transports } from 'winston';
 
-import { devFormat } from './dev';
-import { prodFormat } from './prod';
-import type { Level } from '../Level';
-import { severity } from '../Level';
-import type { Options as BaseOptions, Entry } from '../Logger';
-import { Logger } from '../Logger';
+import { devFormat } from './dev.js';
+import { prodFormat } from './prod.js';
+import type { Level } from '../Level.js';
+import { severity } from '../Level.js';
+import type { Options as BaseOptions, Entry } from '../Logger.js';
+import { Logger } from '../Logger.js';
 
 /**
  * Mode to put the logger in. When `development`, a pretty logger is used,
@@ -18,7 +18,7 @@ export type Mode = 'test' | 'development' | 'production';
  * Options for the Winston Logger.
  */
 export interface Options extends BaseOptions {
-    mode?: Mode;
+  mode?: Mode;
 }
 
 /**
@@ -40,38 +40,37 @@ export interface Options extends BaseOptions {
  * override them.
  */
 export class WinstonLogger extends Logger {
-    public logger: Winston;
+  public logger: Winston;
 
-    constructor(options?: Options) {
-        super(options);
-        const silent = this.level === 'silent';
-        const format = this.getFormat(options?.mode);
+  constructor(options?: Options) {
+    super(options);
+    const silent = this.level === 'silent';
+    const format = this.getFormat(options?.mode);
 
-        this.logger = createLogger({
-            silent,
-            levels: severity,
-            level: this.level,
-            format,
-            transports: [new transports.Console()],
-        });
+    this.logger = createLogger({
+      silent,
+      levels: severity,
+      level: this.level,
+      format,
+      transports: [new transports.Console()],
+    });
+  }
+
+  protected commit(level: Level, data: Entry): void {
+    this.logger.log(level, data);
+  }
+
+  configure(options: Options) {
+    super.configure(options);
+    if (this.logger && options.level) {
+      this.logger.level = options.level;
     }
+  }
 
-    protected commit(level: Level, data: Entry): void {
-        this.logger.log(level, data);
+  private getFormat(mode?: Mode) {
+    if (mode === 'development') {
+      return devFormat;
     }
-
-    configure(options: Options) {
-        super.configure(options);
-        if (this.logger && options.level) {
-            this.logger.level = options.level;
-        }
-    }
-
-    // eslint-disable-next-line class-methods-use-this
-    private getFormat(mode?: Mode) {
-        if (mode === 'development') {
-            return devFormat;
-        }
-        return prodFormat;
-    }
+    return prodFormat;
+  }
 }

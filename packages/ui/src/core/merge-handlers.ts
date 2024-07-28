@@ -14,9 +14,9 @@ import type { EventHandler } from 'react';
  * ```
  */
 export function mergeHandlers(
-    ...handlers: Array<EventHandler<any> | (() => void)>
+  ...handlers: Array<EventHandler<any> | (() => void)>
 ): EventHandler<any> {
-    return (event: Event) => {
-        handlers.forEach((handler) => handler(event));
-    };
+  return (event: Event) => {
+    handlers.forEach((handler) => handler(event));
+  };
 }

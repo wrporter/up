@@ -1,3 +1,3 @@
-export * from './core';
-export * from './merge-handlers';
-export * from './merge-refs';
+export * from './core.js';
+export * from './merge-handlers.js';
+export * from './merge-refs.js';

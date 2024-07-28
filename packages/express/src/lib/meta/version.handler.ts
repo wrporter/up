@@ -16,22 +16,22 @@ import type { Request, Response } from 'express';
  * - **BUILD_VERSION:** _[Optional]_ A semantic version of the app.
  */
 export interface VersionMeta {
-    /** The name of xthis service. */
-    id?: string;
-    /**
-     * The version control branch of the source code this build was created
-     * from.
-     */
-    branch?: string;
-    /**
-     * The SHA1 hash of the source code this build was created from. For git
-     * repos, this hash is conventionally the git commit.
-     */
-    sha?: string;
-    /** The semantic version of the current build. */
-    version?: string;
-    /** The date this app was built in RFC3339 format. */
-    buildDate?: string;
+  /** The name of this service. */
+  id?: string;
+  /**
+   * The version control branch of the source code this build was created
+   * from.
+   */
+  branch?: string;
+  /**
+   * The SHA1 hash of the source code this build was created from. For git
+   * repos, this hash is conventionally the git commit.
+   */
+  sha?: string;
+  /** The semantic version of the current build. */
+  version?: string;
+  /** The date this app was built in RFC3339 format. */
+  buildDate?: string;
 }
 
 /**
@@ -39,16 +39,16 @@ export interface VersionMeta {
  * running service. The route expects the following environment variables.
  */
 export function createVersionHandler(versionMeta?: VersionMeta) {
-    const meta: VersionMeta = {
-        id: process.env.APP_ID ?? '',
-        branch: process.env.BUILD_BRANCH ?? '',
-        sha: process.env.BUILD_SHA ?? '',
-        version: process.env.BUILD_VERSION ?? '',
-        buildDate: process.env.BUILD_DATE ?? '',
-        ...versionMeta,
-    };
+  const meta: VersionMeta = {
+    id: process.env.APP_ID ?? '',
+    branch: process.env.BUILD_BRANCH ?? '',
+    sha: process.env.BUILD_SHA ?? '',
+    version: process.env.BUILD_VERSION ?? '',
+    buildDate: process.env.BUILD_DATE ?? '',
+    ...versionMeta,
+  };
 
-    return (req: Request, res: Response) => {
-        return res.json(meta);
-    };
+  return (req: Request, res: Response) => {
+    return res.json(meta);
+  };
 }

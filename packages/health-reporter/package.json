@@ -1,0 +1,36 @@
+{
+  "name": "@wesp-up/health-reporter",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "ci": "npm run lint && npm run build && npm run test && npm run docs",
+    "dev": "tsup --watch",
+    "clean": "rm -rf .turbo dist node_modules",
+    "docs": "typedoc",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@wesp-up/eslint-config": "*",
+    "@wesp-up/tsconfig": "*",
+    "@wesp-up/typedoc-config": "*",
+    "@vitest/coverage-v8": "2.0.4",
+    "eslint": "9.8.0",
+    "tsup": "8.2.3",
+    "typescript": "5.5.4",
+    "vitest": "2.0.4"
+  }
+}

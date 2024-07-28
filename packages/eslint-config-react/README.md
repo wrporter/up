@@ -1,6 +1,8 @@
 # @wesp-up/eslint-config-react
 
-This project maintains base ESLint configuration for TypeScript React projects. Each file may be extended and custom configuration may be added. We use the opinionated [Airbnb Style Guide](https://github.com/airbnb/javascript) to gain some of the best support out there.
+This project maintains base ESLint configuration for TypeScript projects. Each file may be extended and custom configuration may be added. We use the recommended rules as much as possible to gain great default support.
+
+For ultimate productivity, configure your IDE to auto-lint when saving changes.
 
 ## Installation
 
@@ -19,36 +21,38 @@ npm install --save-dev @wesp-up/eslint-config-react eslint
    ```
 
 2. In your `tsconfig.json`, include all TypeScript and JavaScript files via the following, including dot files, such as `eslint.config.js`.
+
    ```json
    {
      "include": ["**/*", ".*"]
    }
    ```
+
    - Be sure to also `exclude` any files from your `tsconfig` now that it is being used for both linting and transpiling.
    - To get the full capabilities of linting with TypeScript, the parser must use the transpiler. If you would like to use a different `tsconfig` for linting, you can specify a new one via `tsconfig.eslint.json` then add the following to your `.eslintrc.cjs` file.
 
-      ```json
-      {
-        "extends": "./tsconfig.json",
-        "include": ["**/*", ".*"]
-      }
-      ```
+     ```json
+     {
+       "extends": "./tsconfig.json",
+       "include": ["**/*", ".*"]
+     }
+     ```
 
-      ```javascript
-      // eslint.config.js
-      import config from '@wesp-up/eslint-config';
- 
-      export default [
-        ...config,
-        {
-          languageOptions: {
-            parserOptions: {
-              project: './tsconfig.eslint.json',
-            },
-          },
-        },
-      ];
-      ```
+     ```javascript
+     // eslint.config.js
+     import config from '@wesp-up/eslint-config';
+
+     export default [
+       ...config,
+       {
+         languageOptions: {
+           parserOptions: {
+             project: './tsconfig.eslint.json',
+           },
+         },
+       },
+     ];
+     ```
 
 3. In your `package.json` add the following scripts.
    ```json

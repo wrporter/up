@@ -28,31 +28,31 @@ npm install --save-dev @wesp-up/eslint-config eslint
    }
    ```
 
-    - Be sure to also `exclude` any files from your `tsconfig` now that it is being used for both linting and transpiling.
-    - To get the full capabilities of linting with TypeScript, the parser must use the transpiler. If you would like to use a different `tsconfig` for linting, you can specify a new one via `tsconfig.eslint.json` then add the following to your `eslint.config.js` file.
+   - Be sure to also `exclude` any files from your `tsconfig` now that it is being used for both linting and transpiling.
+   - To get the full capabilities of linting with TypeScript, the parser must use the transpiler. If you would like to use a different `tsconfig` for linting, you can specify a new one via `tsconfig.eslint.json` then add the following to your `eslint.config.js` file.
 
-      ```json
-      {
-        "extends": "./tsconfig.json",
-        "include": ["**/*", ".*"]
-      }
-      ```
+     ```json
+     {
+       "extends": "./tsconfig.json",
+       "include": ["**/*", ".*"]
+     }
+     ```
 
-      ```javascript
-      // eslint.config.js
-      import config from '@wesp-up/eslint-config';
- 
-      export default [
-        ...config,
-        {
-          languageOptions: {
-            parserOptions: {
-              project: './tsconfig.eslint.json',
-            },
-          },
-        },
-      ];
-      ```
+     ```javascript
+     // eslint.config.js
+     import config from '@wesp-up/eslint-config';
+
+     export default [
+       ...config,
+       {
+         languageOptions: {
+           parserOptions: {
+             project: './tsconfig.eslint.json',
+           },
+         },
+       },
+     ];
+     ```
 
 3. In your `package.json` add the following scripts.
    ```json

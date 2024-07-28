@@ -1,2 +1,2 @@
-export { accessLogMiddleware } from './access-log.middleware';
-export { responseContentMiddleware } from './response-content.middleware';
+export { accessLogMiddleware } from './access-log.middleware.js';
+export { responseContentMiddleware } from './response-content.middleware.js';

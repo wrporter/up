@@ -4,10 +4,12 @@
   "workspaces": [
     "packages/*"
   ],
+  "packageManager": "npm@10.7.0",
   "engines": {
-    "node": ">=20",
-    "npm": ">=10"
+    "npm": ">=10.7.0",
+    "node": ">=20.15.1"
   },
+  "prettier": "@wesp-up/prettier-config",
   "scripts": {
     "build": "turbo run build",
     "changeset": "changeset",
@@ -16,18 +18,20 @@
     "clean": "find . -depth \\( -name junit.xml -o -name dist -o -name build -o -name .turbo -o -name node_modules \\) -exec rm -rf {} +",
     "dev": "turbo run dev",
     "docs": "turbo run docs",
+    "format": "prettier --write .",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "release": "turbo run build && changeset publish",
     "test": "turbo run test",
     "update-dependencies": "npx npm-check-updates -u --root -ws",
-    "update-package-lock": "npm run clean && rm -f package-lock.json && npm install"
+    "update-package-lock": "npx rimraf --glob **/node_modules package-lock.json && npm install"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "turbo": "^1.10.16",
-    "typedoc": "^0.25.3",
-    "typedoc-plugin-markdown": "^3.17.1",
-    "vitest": "^0.34.6"
+    "@changesets/cli": "2.27.7",
+    "prettier": "3.3.3",
+    "turbo": "2.0.9",
+    "typedoc": "0.26.5",
+    "typedoc-plugin-markdown": "4.2.3",
+    "vitest": "2.0.4"
   }
 }

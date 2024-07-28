@@ -19,7 +19,7 @@ This project provides packages for Frontend and Backend JavaScript services to g
 6. When ready to release, bump package versions with `npm run changeset:apply`
 7. Review changes in `CHANGELOG.md` files and add the date next to the version number. For example, `1.3.2 (2021-05-21)`.
 8. Commit changes with the message `Release: <package1 name>@<new version> <package2 name>@<new version> ...`
-    - **Tip:** you can use [`.ci/release-commit.sh`](.ci/release-commit.sh) to copy the commit message format to your clipboard!
+   - **Tip:** you can use [`.ci/release-commit.sh`](.ci/release-commit.sh) to copy the commit message format to your clipboard!
 9. Create a merge request and use the `Release` template
 10. Once merged, the main CI pipeline will publish packages
     - To publish manually, you can run `.ci/build.sh && .ci/publish.sh`
@@ -36,19 +36,19 @@ This project provides packages for Frontend and Backend JavaScript services to g
 Local packages should be shared in the following ways:
 
 1. As a version range for **production dependencies**. E.g. `^1.3.5` (minor) or `~1.3.5` (patch).
-    - This allows for predictable versions while also reducing duplication of installed versions of transitive dependencies.
+   - This allows for predictable versions while also reducing duplication of installed versions of transitive dependencies.
 2. As a local package reference for **development dependencies**. E.g. `*`.
-    - This ensures that the entire monorepo remains in a working state regardless of changes for build dependencies.
+   - This ensures that the entire monorepo remains in a working state regardless of changes for build dependencies.
 
 #### Test in a separate project
 
 During development and before publishing, you can test the consumption of a package in a different project.
 
 1. Run `npm run dev` from within the desired package (that supports the command) to bundle code on every change.
-    - Can optionally run `npm run build` to get one-time-built assets.
+   - Can optionally run `npm run build` to get one-time-built assets.
 2. Run `npm link` at the root of the package(s) you want to test. Or `npm link -w <package-name>`.
 3. Run `npm link <package name> [<package name>...]` in the project you want to consume the package in.
-    - Multiple packages may be linked at the same time. For example: `npm link @wesp-up/eslint-config @wesp-up/tsconfig`
+   - Multiple packages may be linked at the same time. For example: `npm link @wesp-up/eslint-config @wesp-up/tsconfig`
 4. Make updates and use them in the consuming project.
 
 #### Publish beta versions
@@ -57,9 +57,9 @@ Another option for sharing the changes to a broader audience to test the changes
 
 1. Temporarily bump the version of a package to a beta version, such as `2.0.0-beta.0`. Do not commit this change.
 2. Publish the package with the `beta` tag with
-    ```shell
-    npm publish --tag beta -w @wesp-up/eslint-config
-    ```
+   ```shell
+   npm publish --tag beta -w @wesp-up/eslint-config
+   ```
 
 #### Documentation
 
@@ -104,12 +104,12 @@ We use `changesets` to manage package versions, changelogs, and publishing. Vers
 - Not every change in the repo requires a changeset, except for when the change is meant to cause a semantic version change in a package.
 - Provide as much detail about a change as you can that is appropriate for consumers and maintainers alike. You can edit the changeset files under [.changeset](.changeset) to provide additional details about your changes.
 - Following practices from [keep a changelog](https://keepachangelog.com/en/1.0.0/), use one of the following prefixes in each changeset to describe the nature of the change. For example: `Added: Peanut butter bomb feature x.`.
-    - `Added` for new features.
-    - `Changed` for changes in existing functionality.
-    - `Deprecated` for soon-to-be removed features.
-    - `Removed` for now removed features.
-    - `Fixed` for any bug fixes.
-    - `Security` for vulnerability patches.
+  - `Added` for new features.
+  - `Changed` for changes in existing functionality.
+  - `Deprecated` for soon-to-be removed features.
+  - `Removed` for now removed features.
+  - `Fixed` for any bug fixes.
+  - `Security` for vulnerability patches.
 
 ### Registry
 

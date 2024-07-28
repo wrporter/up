@@ -1,1 +1,1 @@
-export { metricsMiddleware } from './metrics.middleware';
+export { metricsMiddleware } from './metrics.middleware.js';

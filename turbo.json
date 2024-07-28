@@ -1,9 +1,12 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
-  "pipeline": {
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**", "build/**"]
+    },
+    "ci": {
+      "dependsOn": ["^ci"]
     },
     "clean": {
       "cache": false
@@ -19,12 +22,18 @@
       "dependsOn": ["build"],
       "outputs": []
     },
+    "test:coverage": {
+      "dependsOn": ["build"],
+      "outputs": []
+    },
     "lint": {
       "dependsOn": ["build"],
       "outputs": []
     },
     "lint:fix": {
-      "cache": false,
+      "outputs": []
+    },
+    "format": {
       "outputs": []
     },
     "publish": {
@@ -34,8 +43,5 @@
       "dependsOn": ["build"],
       "outputs": []
     }
-  },
-  "remoteCache": {
-    "signature": true
   }
 }

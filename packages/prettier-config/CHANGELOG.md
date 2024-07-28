@@ -5,4 +5,3 @@
 ### Major Changes
 
 - Initial release
-

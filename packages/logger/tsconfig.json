@@ -5,6 +5,6 @@
     "outDir": "dist",
     "module": "CommonJS"
   },
-  "include": ["**/*", ".*"],
+  "include": ["src"],
   "exclude": ["dist", "coverage"]
 }

@@ -5,7 +5,6 @@
   "excludePrivate": true,
   "githubPages": false,
   "hideBreadcrumbs": true,
-  "hideInPageTOC": true,
   "plugin": ["typedoc-plugin-markdown"],
   "readme": "none",
   "sort": ["required-first"]

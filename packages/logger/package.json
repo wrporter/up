@@ -1,9 +1,13 @@
 {
   "name": "@wesp-up/logger",
   "version": "1.1.0",
-  "module": "dist/index.mjs",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "README.md",
     "dist"
@@ -21,16 +25,16 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "winston": "^3.11.0"
+    "winston": "3.13.1"
   },
   "devDependencies": {
     "@wesp-up/eslint-config": "*",
     "@wesp-up/tsconfig": "*",
     "@wesp-up/typedoc-config": "*",
-    "@vitest/coverage-v8": "^0.34.6",
-    "eslint": "^8.54.0",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.2",
-    "vitest": "^0.34.6"
+    "@vitest/coverage-v8": "2.0.4",
+    "eslint": "9.8.0",
+    "tsup": "8.2.3",
+    "typescript": "5.5.4",
+    "vitest": "2.0.4"
   }
 }

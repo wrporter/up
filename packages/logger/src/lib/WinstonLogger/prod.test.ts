@@ -1,79 +1,78 @@
-/* eslint-disable no-new */
 import { describe, expect, it } from 'vitest';
 
-import { pickFieldsFromError, prodFormat, transformErrors } from './prod';
+import { pickFieldsFromError, prodFormat, transformErrors } from './prod.js';
 
 class CustomError extends Error {
-    constructor(message: string) {
-        super(message);
-        this.name = 'CustomError';
-    }
+  constructor(message: string) {
+    super(message);
+    this.name = 'CustomError';
+  }
 }
 
 describe('pickFieldsFromError', () => {
-    it('returns the error name, message, and stack', () => {
-        const err = new Error('Catastrophic Error');
+  it('returns the error name, message, and stack', () => {
+    const err = new Error('Catastrophic Error');
 
-        const replaced = pickFieldsFromError(err);
+    const replaced = pickFieldsFromError(err);
 
-        expect(replaced).toEqual({
-            name: 'Error',
-            message: 'Catastrophic Error',
-            stack: expect.any(String),
-        });
+    expect(replaced).toEqual({
+      name: 'Error',
+      message: 'Catastrophic Error',
+      stack: expect.any(String),
     });
+  });
 });
 
 describe('transformErrors', () => {
-    it('returns the transformed error if an error is passed in', () => {
-        const err = new CustomError('Catastrophic Error');
+  it('returns the transformed error if an error is passed in', () => {
+    const err = new CustomError('Catastrophic Error');
 
-        const replaced = transformErrors('key', err);
+    const replaced = transformErrors('key', err);
 
-        expect(replaced).toEqual({
-            name: 'CustomError',
-            message: 'Catastrophic Error',
-            stack: expect.any(String),
-        });
+    expect(replaced).toEqual({
+      name: 'CustomError',
+      message: 'Catastrophic Error',
+      stack: expect.any(String),
     });
+  });
 
-    it('returns the transformed error for objects that appear to be errors and strips other data', () => {
-        const err = {
-            name: 'MockError',
-            message: 'failure',
-            stack: 'mock stack trace',
-            other: 'data',
-        };
+  it('returns the transformed error for objects that appear to be errors and strips other data', () => {
+    const err = {
+      name: 'MockError',
+      message: 'failure',
+      stack: 'mock stack trace',
+      other: 'data',
+    };
 
-        const replaced = transformErrors('key', err);
+    const replaced = transformErrors('key', err);
 
-        expect(replaced).toEqual({
-            name: 'MockError',
-            message: 'failure',
-            stack: 'mock stack trace',
-        });
+    expect(replaced).toEqual({
+      name: 'MockError',
+      message: 'failure',
+      stack: 'mock stack trace',
     });
+  });
 
-    it('returns the original value if no error is passed in', () => {
-        const value = 'Hello There';
+  it('returns the original value if no error is passed in', () => {
+    const value = 'Hello There';
 
-        const replaced = transformErrors('key', value);
+    const replaced = transformErrors('key', value);
 
-        expect(replaced).toEqual('Hello There');
-    });
+    expect(replaced).toEqual('Hello There');
+  });
 });
 
 it('transforms into the prod format', () => {
-    const result = prodFormat.transform({
-        level: 'info',
-        message: '',
-    });
+  const result = prodFormat.transform({
+    level: 'info',
+    message: '',
+  });
 
-    expect(result).toEqual(
-        expect.objectContaining({
-            level: 'info',
-            message: '',
-            timestamp: expect.any(String),
-        }),
-    );
+  expect(result).toEqual(
+    expect.objectContaining({
+      level: 'info',
+      message: '',
+      timestamp: expect.any(String),
+    }),
+  );
 });

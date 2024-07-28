@@ -1,4 +1,3 @@
-import type { Logger } from '@wesp-up/logger';
 import type { ErrorRequestHandler, RequestHandler } from 'express';
 import type { HttpError } from 'http-errors';
 import createHttpError, { isHttpError } from 'http-errors';
@@ -7,42 +6,48 @@ import statuses from 'statuses';
 /**
  * Creates an error handling middleware using the provided logger. Meant to be
  * the final middleware applied as a fallback to catch errors.
- * @param logger - A \@wesp-up/logger instance
  * @returns A connect compatible (Express) error handling middleware
  */
-export function errorHandler(logger: Logger): ErrorRequestHandler {
-    // eslint-disable-next-line consistent-return
-    return (err: HttpError, req, res, next) => {
-        // Check for URIError due to Express throwing it with the message
-        // "Failed to decode param" when there is a malformed URL path.
-        if (err.status !== 404 && !(err instanceof URIError)) {
-            logger.error({
-                message: 'Failed request',
-                transactionId: res.locals.requestContext?.transactionId,
-                error: err,
-            });
-        }
+export function errorHandler(
+  /**
+   * Custom error handler to overwrite the default JSON response.
+   */
+  error500Handler?: ErrorRequestHandler,
+): ErrorRequestHandler {
+  return (err: HttpError, req, res, next) => {
+    // Check for URIError due to Express throwing it with the message
+    // "Failed to decode param" when there is a malformed URL path.
+    if (err.status !== 404 && !(err instanceof URIError)) {
+      req.context?.log.error({
+        message: 'Failed request',
+        error: err,
+      });
+    }
 
-        if (res.headersSent) {
-            return next(err);
-        }
-        if (!isHttpError(err)) {
-            // eslint-disable-next-line no-param-reassign
-            err = createHttpError(500, err);
-        }
+    if (res.headersSent) {
+      return next(err);
+    }
+    if (!isHttpError(err)) {
+      err = createHttpError(500, err);
+    }
 
-        let { message } = err;
-        // Expose is automatically set to false for 500 errors unless explicitly specified
-        if (!err.expose) {
-            message = statuses.message[err.status] ?? 'Internal Server Error';
-        }
+    // use the custom handler and return if supplied
+    if (err.status === 500 && error500Handler) {
+      return error500Handler(err, req, res, next);
+    }
+    let { message } = err;
+    // Expose is automatically set to false for 500 errors unless explicitly specified
+    if (!err.expose) {
+      message = statuses.message[err.status] ?? 'Internal Server Error';
+    }
 
-        res.status(err.status).send({
-            status: err.status,
-            message,
-            time: new Date().toISOString(),
-        });
-    };
+    // return a default response
+    res.status(err.status).send({
+      status: err.status,
+      message,
+      time: new Date().toISOString(),
+    });
+  };
 }
 
 /**
@@ -55,5 +60,5 @@ export function errorHandler(logger: Logger): ErrorRequestHandler {
  * ```
  */
 export const notFoundHandler: RequestHandler = (req, res, next) => {
-    return next(createHttpError(404));
+  return next(createHttpError(404));
 };
