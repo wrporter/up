@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY_EMAIL: ${{ secrets.REGISTRY_EMAIL }}
-      REGISTRY_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
 
     steps:
       - name: 🥼 Check out code
@@ -49,8 +49,5 @@ jobs:
       - name: 🚀 Publish packages
         run: |
           REGISTRY_URL="registry.npmjs.org/"
-          echo '//${REGISTRY_URL}:_authToken="${REGISTRY_AUTH_TOKEN}"' >> .npmrc
           echo '//${REGISTRY_URL}:email=${REGISTRY_EMAIL}' >> .npmrc
-          echo '//${REGISTRY_URL}:always-auth=true' >> .npmrc
-          cat .npmrc
           npx changeset publish
