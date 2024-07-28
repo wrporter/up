@@ -1,0 +1,11 @@
+{
+  "name": "@wesp-up/prettier-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "index.js"
+  ]
+}

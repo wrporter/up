@@ -14,11 +14,11 @@ In your `tsconfig.json`, extend the config file that suits your project. For exa
 
 ```json
 {
-    "extends": "@wesp-up/tsconfig/base.json",
-    "include": ["src"],
-    "compilerOptions": {
-      "outDir": "dist"
-    }
+  "extends": "@wesp-up/tsconfig/base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
 }
 ```
 
@@ -33,5 +33,3 @@ Below are each of the configuration files available and their explanations.
 - [`node.json`](./node.json): Config for an NodeJS application.
 - [`lib.json`](./lib.json): Config for a npm package.
 - [`api-tests.json`](./api-tests.json): Config for an API test project.
-- [`remix.json`](./remix.json): Config for a Remix application.
-- [`e2e-tests-cypress.json`](./e2e-tests-cypress.json): Config for an E2E test project using [Cypress](https://www.cypress.io/).

@@ -1,24 +1,36 @@
 ###############################################################################
-# Copy all package.json files in the project
-# See https://stackoverflow.com/questions/49939960/docker-copy-files-using-glob-pattern
+# Base image
 ###############################################################################
-FROM alpine:3.18 as dependencies
+FROM node:20-alpine AS base
 
 WORKDIR /app
+RUN apk update && apk upgrade --no-cache
+RUN npm config set update-notifier false
 
-COPY package.json package-lock.json ./
-
-COPY packages packages
-
-# Find and remove non package.json files
-RUN find packages \! -name "package.json" -mindepth 2 -maxdepth 2 -print | xargs rm -rf
+ENV TURBO_TELEMETRY_DISABLED=1
 
 ###############################################################################
-# Install Dependencies
+# Copy over dependency files to prepare for install
 ###############################################################################
-FROM node:20-alpine
+FROM base AS dependencies
 
-RUN apk update && apk upgrade && apk add --no-cache curl bash git libc6-compat
+COPY . .
+
+RUN apk add --no-cache sudo jq
+
+# Only re-install dependencies when there is a change to dependency definitions
+RUN sudo find . \! -name "package*.json" -mindepth 3 -maxdepth 3 -print | xargs rm -rf
+RUN sudo find . \! -name "package*.json" -type f -maxdepth 1 -delete
+RUN sudo find . -name "package.json" -mindepth 1 -maxdepth 3 -exec sh -c 'jq "with_entries(select(.key == \"name\" or .key == \"version\" or .key == \"workspaces\" or .key == \"dependencies\" or .key == \"devDependencies\" or .key == \"optionalDependencies\" or .key == \"peerDependencies\"))" {} > tmp.$$ && mv tmp.$$ {}' \;
+
+###############################################################################
+# Install dependencies and build
+###############################################################################
+FROM base AS build
+
+# See https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine
+# to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 

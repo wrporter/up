@@ -4,7 +4,7 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "outDir": "build",
-    "module": "CommonJS",
+    "module": "ESNext",
     "target": "ESNext"
   }
 }

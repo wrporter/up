@@ -12,9 +12,6 @@ docker run \
   -t \
 	--rm \
 	--name=${APP_NAME} \
-	-e TURBO_TEAM="${TURBO_TEAM}" \
-	-e TURBO_TOKEN="${TURBO_TOKEN}" \
-	-e TURBO_REMOTE_ONLY=true \
 	${IMAGE_PATH}:${VERSION} \
 	bash -c "echo '//${REGISTRY_URL}:_authToken="${REGISTRY_AUTH_TOKEN}"' >> .npmrc \
   && echo '//${REGISTRY_URL}:email=${REGISTRY_EMAIL}' >> .npmrc \

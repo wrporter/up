@@ -1,18 +1,13 @@
-name: Main
+name: Pull Request
 
 on:
-  push:
-    branches: ["main"]
   pull_request:
     types: [opened, synchronize]
 
 jobs:
   build:
-    name: Build and Publish
+    name: Build
     runs-on: ubuntu-latest
-    env:
-      REGISTRY_EMAIL: ${{ secrets.REGISTRY_EMAIL }}
-      REGISTRY_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
 
     steps:
       - name: 🥼 Check out code
@@ -45,11 +40,3 @@ jobs:
 
       - name: 🛠️ Build
         run: npm run ci
-
-      - name: 🚀 Publish packages
-        run: |
-          REGISTRY_URL="registry.npmjs.org/"
-          echo '//${REGISTRY_URL}:_authToken="${REGISTRY_AUTH_TOKEN}"' >> .npmrc
-          echo '//${REGISTRY_URL}:email=${REGISTRY_EMAIL}' >> .npmrc
-          echo '//${REGISTRY_URL}:always-auth=true' >> .npmrc
-          npx changeset publish

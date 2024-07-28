@@ -10,37 +10,55 @@ npm install --save-dev @wesp-up/eslint-config-react eslint
 
 ## Usage
 
-1. In your `.eslintrc.js` (or alternative config entry), extend the config files that suit your project. For example:
-    ```javascript
-    module.exports = {
-        extends: [
-            '@wesp-up/eslint-config/jest-testing-library',
-            '@wesp-up/eslint-config',
-        ],
-    };
-    ```
-2. In your `tsconfig.json`, include all TypeScript and JavaScript files via the following, including dot files, such as `.eslintrc.js`.
-    ```json
-    {
-      "include": ["**/*", ".*"]
-    }
-    ```
-    - Be sure to also `exclude` any files from your `tsconfig` now that it is being used for both linting and transpiling.
-    - To get the full capabilities of linting with TypeScript, the parser must use the transpiler. If you would like to use a different `tsconfig` for linting, you can specify a new one via `tsconfig.eslint.json` then add the following to your `.eslintrc.js` file.
-        ```javascript
-        parserOptions: {
-            project: './tsconfig.eslint.json',
-        }
-        ```
+1. In your `eslint.config.js` (or alternative config entry), extend the config files that suit your project. For example:
+
+   ```javascript
+   import config from '@wesp-up/eslint-config-react';
+
+   export default [...config];
+   ```
+
+2. In your `tsconfig.json`, include all TypeScript and JavaScript files via the following, including dot files, such as `eslint.config.js`.
+   ```json
+   {
+     "include": ["**/*", ".*"]
+   }
+   ```
+   - Be sure to also `exclude` any files from your `tsconfig` now that it is being used for both linting and transpiling.
+   - To get the full capabilities of linting with TypeScript, the parser must use the transpiler. If you would like to use a different `tsconfig` for linting, you can specify a new one via `tsconfig.eslint.json` then add the following to your `.eslintrc.cjs` file.
+
+      ```json
+      {
+        "extends": "./tsconfig.json",
+        "include": ["**/*", ".*"]
+      }
+      ```
+
+      ```javascript
+      // eslint.config.js
+      import config from '@wesp-up/eslint-config';
+ 
+      export default [
+        ...config,
+        {
+          languageOptions: {
+            parserOptions: {
+              project: './tsconfig.eslint.json',
+            },
+          },
+        },
+      ];
+      ```
+
 3. In your `package.json` add the following scripts.
-    ```json
-    {
-        "scripts": {
-            "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-            "lint:fix": "npm run lint -- --fix"
-        }
-    }
-    ```
+   ```json
+   {
+     "scripts": {
+       "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+       "lint:fix": "npm run lint -- --fix"
+     }
+   }
+   ```
 4. Now test out linting via `npm run lint` and fixable issues with `npm run lint:fix`.
 
 ## API

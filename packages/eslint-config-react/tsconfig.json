@@ -1,4 +1,4 @@
 {
-    "extends": "@wesp-up/tsconfig/base.json",
-    "include": ["**/*", ".*"]
+  "extends": "@wesp-up/tsconfig/base.json",
+  "include": ["**/*", ".*"]
 }

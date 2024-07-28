@@ -1,33 +1,33 @@
 {
   "name": "@wesp-up/eslint-config-react",
-  "version": "1.0.1",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "main": "index.js",
   "files": [
     "README.md",
-    "rules",
-    "[!.]*.js"
+    "index.js"
   ],
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
-    "clean": "rm -rf .turbo node_modules",
+    "clean": "npx rimraf .turbo node_modules",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
   "peerDependencies": {
-    "eslint": ">= 8.24 < 9"
+    "eslint": "> 9 < 10"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "1.6.0",
     "@wesp-up/eslint-config": "*",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-airbnb-typescript": "17.1.0",
-    "eslint-plugin-jest-dom": "5.1.0",
-    "eslint-plugin-jsx-a11y": "6.8.0",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-testing-library": "6.2.0"
+    "eslint-plugin-jest-dom": "5.4.0",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-testing-library": "6.2.2"
   },
   "devDependencies": {
     "@wesp-up/tsconfig": "*",
-    "eslint": "8.54.0"
+    "eslint": "9.7.0"
   }
 }

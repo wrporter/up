@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@wesp-up/tsconfig/base.json",
+  "extends": "./base.json",
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "es2021"],
     "isolatedModules": true,
