@@ -1,7 +1,10 @@
 {
   "name": "@wesp-up/tsconfig",
   "version": "2.0.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrporter/up.git"
+  },
   "files": [
     "README.md",
     "*.json"
