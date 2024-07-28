@@ -52,4 +52,5 @@ jobs:
           echo '//${REGISTRY_URL}:_authToken="${REGISTRY_AUTH_TOKEN}"' >> .npmrc
           echo '//${REGISTRY_URL}:email=${REGISTRY_EMAIL}' >> .npmrc
           echo '//${REGISTRY_URL}:always-auth=true' >> .npmrc
+          cat .npmrc
           npx changeset publish
