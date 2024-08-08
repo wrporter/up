@@ -1,5 +1,11 @@
 # @wesp-up/eslint-config-react
 
+## 2.0.1 (2024-08-08)
+
+### Patch Changes
+
+- Fixed peer dependency mismatch to allow for ESLint v9.
+
 ## 2.0.0 (2024-07-27)
 
 ### Major Changes
