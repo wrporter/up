@@ -1,14 +1,14 @@
 {
   "name": "@wesp-up/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/wrporter/up.git"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "files": [
     "README.md",
-    "index.js"
+    "index.mjs"
   ]
 }
