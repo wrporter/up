@@ -1,5 +1,11 @@
 # @wesp-up/express
 
+## 2.0.1 (2024-08-20)
+
+### Patch Changes
+
+- Allowed support for any express version after 4.18.2 rather than only 4.18.2 in peer dependencies.
+
 ## 2.0.0 (2024-07-28)
 
 ### Major Changes
