@@ -1,9 +1,9 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
-# Variable: HEADER_REQUEST_ID
+# Variable: HEADER\_REQUEST\_ID
 
-> `const` **HEADER_REQUEST_ID**: `"X-Request-ID"` = `'X-Request-ID'`
+> `const` **HEADER\_REQUEST\_ID**: `"X-Request-ID"` = `'X-Request-ID'`
 
 The name of the request header for the request ID

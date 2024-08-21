@@ -1,4 +1,4 @@
-import type { Request } from 'express';
+import type { Request, Response } from 'express';
 import type { NormalizePathFn, Opts } from 'express-prom-bundle';
 import promBundle from 'express-prom-bundle';
 
@@ -32,16 +32,27 @@ export function metricsMiddleware(options: Opts = {}): promBundle.Middleware {
     promClient: {
       collectDefaultMetrics: {},
     },
-    normalizePath: NormalizeExpressPath,
+    normalizePath,
+    formatStatusCode,
 
     // Allow consumers to override the previous defaults.
     ...options,
   });
 }
 
-export const NormalizeExpressPath: NormalizePathFn = (req: Request): string => {
-  if (req.route?.path) {
-    return req.route.path;
+export const formatStatusCode = (res: Response) => {
+  if (res.statusCode < 300) {
+    return '2xx';
+  }
+  if (res.statusCode < 400) {
+    return '3xx';
+  }
+  return res.statusCode;
+};
+
+export const normalizePath: NormalizePathFn = (req: Request): string => {
+  if (req.path) {
+    return req.path;
   }
   // Some requests never get an express route applied. This occurs for static resources. This also often occurs for authentication middleware
   // as a failure in authentication middleware will often result in an immediate 401 response without the routing middleware ever occurring.

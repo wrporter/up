@@ -1,4 +1,8 @@
-export { accessLogMiddleware, responseContentMiddleware } from './lib/access/index.js';
+export {
+  accessLogMiddleware,
+  responseContentMiddleware,
+  AccessLogOptions,
+} from './lib/access/index.js';
 export { errorHandler } from './lib/error-handler/index.js';
 export { ServerLogger, RequestLogger, LogMeta, LogMetaScope } from './lib/logger/index.js';
 export { VersionMeta, metaRouter, MetaOptions } from './lib/meta/index.js';

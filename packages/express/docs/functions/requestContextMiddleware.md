@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Function: requestContextMiddleware()
 
@@ -26,9 +26,9 @@ Middleware to set up context on the request. Context is accessed via
 ```typescript
 app.use(requestContextMiddleware);
 app.use((req, res, next) => {
-  const { userId, brandId } = authenticate(req);
-  req.context.userId = userId;
-  req.context.brandId = brandId;
-  req.context.log.info({ message: 'Authenticated!' });
+    const { userId, brandId } = authenticate(req);
+    req.context.userId = userId;
+    req.context.brandId = brandId;
+    req.context.log.info({ message: 'Authenticated!' });
 });
 ```

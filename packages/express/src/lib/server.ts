@@ -6,6 +6,7 @@ import type { ErrorRequestHandler } from 'express';
 import express from 'express';
 import type { Opts as PrometheusOptions } from 'express-prom-bundle';
 
+import { AccessLogOptions } from './access/access-log.middleware.js';
 import { accessLogMiddleware, responseContentMiddleware } from './access/index.js';
 import { notFoundHandler } from './error-handler/error-handler.middleware.js';
 import { errorHandler } from './error-handler/index.js';
@@ -48,7 +49,7 @@ export class Server {
 
   public metricsHttpServer: http.Server;
 
-  private options: Options;
+  protected options: Options;
 
   private shutdown?: () => void;
 
@@ -76,7 +77,7 @@ export class Server {
     /* ------------------------- Request Lifecycle ------------------------- */
     this.app.use(requestContextMiddleware);
     this.app.use(requestTransactionMiddleware);
-    this.app.use(accessLogMiddleware());
+    this.app.use(accessLogMiddleware(this.options.accessLogs));
     this.app.use(responseContentMiddleware);
 
     /* -------------------------- Setup Metrics ------------------------- */
@@ -199,6 +200,10 @@ export interface Options {
    * [express-prom-bundle](https://www.npmjs.com/package/express-prom-bundle).
    */
   metricsOptions?: PrometheusOptions;
+  /**
+   * Options for configuring access logs.
+   */
+  accessLogs?: AccessLogOptions;
   /**
    * Custom error handler for 500 errors. Use for customizing the default
    * JSON error handler; for example, respond with an HTML page.

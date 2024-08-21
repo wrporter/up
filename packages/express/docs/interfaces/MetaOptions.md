@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Interface: MetaOptions
 
@@ -14,7 +14,7 @@ Options for the [metaRouter](../functions/metaRouter.md).
 
 Path prefix for the router. Defaults to `''`.
 
----
+***
 
 ### versionMeta?
 

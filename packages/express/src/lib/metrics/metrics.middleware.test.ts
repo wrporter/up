@@ -1,7 +1,7 @@
-import type { Request } from 'express';
+import type { Request, Response } from 'express';
 import promBundle from 'express-prom-bundle';
 
-import { NormalizeExpressPath } from './metrics.middleware.js';
+import { formatStatusCode, normalizePath } from './metrics.middleware.js';
 
 import { metricsMiddleware } from './index.js';
 
@@ -24,7 +24,8 @@ describe('metricsMiddleware', () => {
       promClient: {
         collectDefaultMetrics: {},
       },
-      normalizePath: NormalizeExpressPath,
+      normalizePath,
+      formatStatusCode,
     });
   });
 
@@ -43,33 +44,29 @@ describe('metricsMiddleware', () => {
       promClient: {
         collectDefaultMetrics: {},
       },
-      normalizePath: NormalizeExpressPath,
+      normalizePath,
+      formatStatusCode,
     });
   });
 
-  describe('when normalizing paths through the default normalization', () => {
-    it('maps the path based on the express router value, e.g. values like "/journeys/:journeyId"', () => {
-      const req = {
-        path: '/targetaudience/api/v1/directories/POOL_1i832Jf78xt6NRB/segments/SG_3PjyKfTVIYN70Ou',
-        route: {
-          path: '/targetaudience/api/v1/directories/:directoryId/segments/:segmentId',
-        },
-      } as Request;
-      const opts = {};
-      const path = NormalizeExpressPath(req, opts);
-      expect(path).toEqual('/targetaudience/api/v1/directories/:directoryId/segments/:segmentId');
-    });
-    it('maps requests without a route (static assets, 404s, 401s, etc...) to "no-route-applied"', () => {
-      const req = {
-        path: '/not-a-real-path',
-        route: undefined,
-        res: {
-          statusCode: 404,
-        },
-      } as Request;
-      const opts = {};
-      const path = NormalizeExpressPath(req, opts);
-      expect(path).toEqual('no-route-applied');
-    });
+  it.each([
+    { status: 201, want: '2xx' },
+    { status: 302, want: '3xx' },
+    { status: 404, want: 404 },
+    { status: 500, want: 500 },
+  ])(`formats status code $status to $want`, ({ status, want }) => {
+    const res = { statusCode: status } as Response;
+    expect(formatStatusCode(res)).toEqual(want);
+  });
+
+  it('maps requests without a route (static assets, 404s, 401s, etc...) to "no-route-applied"', () => {
+    const req = {
+      res: {
+        statusCode: 404,
+      },
+    } as Request;
+    const opts = {};
+    const path = normalizePath(req, opts);
+    expect(path).toEqual('no-route-applied');
   });
 });

@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Type Alias: LogMetaScope
 

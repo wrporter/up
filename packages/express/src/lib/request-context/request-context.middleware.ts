@@ -21,7 +21,6 @@ export const requestContextMiddleware: RequestHandler = (req, res, next) => {
     ...req.context,
     log: new RequestLogger(req),
   };
-  res.locals.requestContext = req.context;
 
   next();
 };

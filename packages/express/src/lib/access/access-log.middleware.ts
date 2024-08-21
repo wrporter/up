@@ -7,10 +7,23 @@ import onFinished from 'on-finished';
 const textEncoder = new TextEncoder();
 
 /**
+ * Options to configure access logs.
+ */
+export interface AccessLogOptions {
+  /** Skip logging for specific paths. */
+  skip?: (req: Request, res: Response) => boolean;
+}
+
+/**
  * Access log middleware to keep track of requests made to the service.
  */
-export function accessLogMiddleware(): RequestHandler {
+export function accessLogMiddleware({ skip }: AccessLogOptions = {}): RequestHandler {
   return (req, res, next) => {
+    if (skip?.(req, res)) {
+      next();
+      return;
+    }
+
     const startTime = performance.now();
 
     next();

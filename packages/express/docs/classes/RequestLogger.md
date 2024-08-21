@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Class: RequestLogger
 
@@ -11,18 +11,18 @@ logger applies `requestId` and `transactionId` to all logs.
 
 ```typescript
 function route(req, res, next) {
-  const log = new RequestLogger(req);
-  log.addMeta({ myProp: 'my-prop' });
-  log.info({ message: 'power-up' });
-  // ->
-  // {
-  //   "message": "power-up",
-  //   "meta": {
-  //     "myProp": "my-prop"
-  //   },
-  //   "requestId": "3b0285da-5f26-44ed-964f-c00e4b484aa7",
-  //   "transactionId": "9a2792cd-42d2-46d5-9804-d85778ece7b8"
-  // }
+    const log = new RequestLogger(req);
+    log.addMeta({ myProp: 'my-prop' });
+    log.info({ message: 'power-up' });
+    // ->
+    // {
+    //   "message": "power-up",
+    //   "meta": {
+    //     "myProp": "my-prop"
+    //   },
+    //   "requestId": "3b0285da-5f26-44ed-964f-c00e4b484aa7",
+    //   "transactionId": "9a2792cd-42d2-46d5-9804-d85778ece7b8"
+    // }
 }
 ```
 
@@ -79,7 +79,7 @@ Metadata to include with logs.
 
 `void`
 
----
+***
 
 ### addAccessMeta()
 
@@ -98,7 +98,7 @@ Metadata to include with logs.
 
 `void`
 
----
+***
 
 ### addEventMeta()
 
@@ -118,7 +118,7 @@ Metadata to include with logs.
 
 `void`
 
----
+***
 
 ### addScopedMeta()
 
@@ -141,7 +141,7 @@ Metadata to include with logs.
 
 `void`
 
----
+***
 
 ### commit()
 
@@ -167,7 +167,7 @@ The entry to be logged.
 
 [`ServerLogger`](ServerLogger.md).[`commit`](ServerLogger.md#commit)
 
----
+***
 
 ### configure()
 
@@ -189,7 +189,7 @@ Options to set.
 
 [`ServerLogger`](ServerLogger.md).[`configure`](ServerLogger.md#configure)
 
----
+***
 
 ### getLevel()
 
@@ -205,7 +205,7 @@ Returns the current logging level set in the logger.
 
 [`ServerLogger`](ServerLogger.md).[`getLevel`](ServerLogger.md#getlevel)
 
----
+***
 
 ### log()
 
@@ -232,7 +232,7 @@ Data to be logged. Can be of any type.
 
 [`ServerLogger`](ServerLogger.md).[`log`](ServerLogger.md#log)
 
----
+***
 
 ### debug()
 
@@ -254,7 +254,7 @@ Data to be logged.
 
 [`ServerLogger`](ServerLogger.md).[`debug`](ServerLogger.md#debug)
 
----
+***
 
 ### info()
 
@@ -276,7 +276,7 @@ Data to be logged.
 
 [`ServerLogger`](ServerLogger.md).[`info`](ServerLogger.md#info)
 
----
+***
 
 ### access()
 
@@ -298,7 +298,7 @@ Entry to be logged.
 
 [`ServerLogger`](ServerLogger.md).[`access`](ServerLogger.md#access)
 
----
+***
 
 ### warn()
 
@@ -320,7 +320,7 @@ Data to be logged.
 
 [`ServerLogger`](ServerLogger.md).[`warn`](ServerLogger.md#warn)
 
----
+***
 
 ### error()
 

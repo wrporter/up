@@ -5,6 +5,7 @@ export default defineConfig({
     globals: true,
     clearMocks: true,
     coverage: {
+      provider: 'v8',
       reporter: ['text'],
       include: ['src/lib'],
       thresholds: {

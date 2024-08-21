@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Interface: VersionMeta
 
@@ -10,11 +10,11 @@ If values are not provided, the following are taken from environment
 variables. Otherwise, the values are empty strings.
 
 - **APP_ID:** The identifier for the service. Commonly matches the Nomad job
-  ID.
+ID.
 - **BUILD_BRANCH:** The version control branch of the source code this build
-  was created from.
+was created from.
 - **BUILD_SHA:** The SHA1 hash of the source code this build was created
-  from. For git repos, this hash is conventionally the git commit.
+from. For git repos, this hash is conventionally the git commit.
 - **BUILD_DATE:** The date this app was built in RFC3339 format.
 - **BUILD_VERSION:** _[Optional]_ A semantic version of the app.
 
@@ -26,7 +26,7 @@ variables. Otherwise, the values are empty strings.
 
 The name of this service.
 
----
+***
 
 ### branch?
 
@@ -35,7 +35,7 @@ The name of this service.
 The version control branch of the source code this build was created
 from.
 
----
+***
 
 ### sha?
 
@@ -44,7 +44,7 @@ from.
 The SHA1 hash of the source code this build was created from. For git
 repos, this hash is conventionally the git commit.
 
----
+***
 
 ### version?
 
@@ -52,7 +52,7 @@ repos, this hash is conventionally the git commit.
 
 The semantic version of the current build.
 
----
+***
 
 ### buildDate?
 

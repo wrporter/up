@@ -1,6 +1,6 @@
 [**@wesp-up/express**](../README.md) • **Docs**
 
----
+***
 
 # Interface: RequestContext
 
@@ -16,19 +16,19 @@ project-specific extensions.
 
 > **transactionId**: `string`
 
----
+***
 
 ### requestId
 
 > **requestId**: `string`
 
----
+***
 
 ### log
 
 > **log**: [`RequestLogger`](../classes/RequestLogger.md)
 
----
+***
 
 ### parentRequestId?
 
