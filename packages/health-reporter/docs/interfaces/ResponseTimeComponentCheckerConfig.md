@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: ResponseTimeComponentCheckerConfig
 
@@ -21,7 +21,7 @@ Name of the component being evaluated. Must match the pattern
 
 `Pick.componentName`
 
----
+***
 
 ### check()
 
@@ -45,7 +45,7 @@ status code.
 
 `Pick.check`
 
----
+***
 
 ### timeoutMilliseconds?
 
@@ -57,7 +57,7 @@ timeout results in a `fail` status for the check.
 #### Default
 
 ```ts
-5000;
+5000
 ```
 
 #### Inherited from

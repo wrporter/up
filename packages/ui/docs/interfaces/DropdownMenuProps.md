@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DropdownMenuProps
 
@@ -18,7 +18,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuProps.children`
 
----
+***
 
 ### dir?
 
@@ -28,7 +28,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuProps.dir`
 
----
+***
 
 ### open?
 
@@ -38,7 +38,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuProps.open`
 
----
+***
 
 ### defaultOpen?
 
@@ -48,7 +48,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuProps.defaultOpen`
 
----
+***
 
 ### modal?
 
@@ -58,7 +58,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuProps.modal`
 
----
+***
 
 ### data-testid?
 

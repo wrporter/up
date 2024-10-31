@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Class: RemixServer
 
@@ -39,25 +39,35 @@ An Express server integrated with Remix. Inherits from the server from
 
 [`Server`](Server.md).[`app`](Server.md#app)
 
----
+***
 
 ### httpServer
 
-> **httpServer**: `Server`\<_typeof_ `IncomingMessage`, _typeof_ `ServerResponse`\>
+> **httpServer**: `Server`\<*typeof* `IncomingMessage`, *typeof* `ServerResponse`\>
 
 #### Inherited from
 
 [`Server`](Server.md).[`httpServer`](Server.md#httpserver)
 
----
+***
 
 ### metricsHttpServer
 
-> **metricsHttpServer**: `Server`\<_typeof_ `IncomingMessage`, _typeof_ `ServerResponse`\>
+> **metricsHttpServer**: `Server`\<*typeof* `IncomingMessage`, *typeof* `ServerResponse`\>
 
 #### Inherited from
 
 [`Server`](Server.md).[`metricsHttpServer`](Server.md#metricshttpserver)
+
+***
+
+### options
+
+> `protected` **options**: [`Options`](../interfaces/Options.md)
+
+#### Inherited from
+
+[`Server`](Server.md).[`options`](Server.md#options)
 
 ## Methods
 
@@ -82,7 +92,7 @@ Express application.
 
 [`Server`](Server.md).[`postMountApp`](Server.md#postmountapp)
 
----
+***
 
 ### init()
 
@@ -96,7 +106,7 @@ Express application.
 
 [`Server`](Server.md).[`init`](Server.md#init)
 
----
+***
 
 ### start()
 
@@ -122,7 +132,7 @@ The port to start the metrics app (default 22500).
 
 [`Server`](Server.md).[`start`](Server.md#start)
 
----
+***
 
 ### stop()
 
@@ -146,7 +156,7 @@ are complete. However, if they exceed the
 
 [`Server`](Server.md).[`stop`](Server.md#stop)
 
----
+***
 
 ### preMountApp()?
 

@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: CoreProps
 

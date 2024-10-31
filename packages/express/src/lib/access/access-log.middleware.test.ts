@@ -15,16 +15,6 @@ vi.mock('on-finished', () => ({
   },
 }));
 
-const mockTransactionMiddleware: RequestHandler = (req, _res, next) => {
-  req.context = {
-    ...req.context,
-    transactionId: 'someTransaction',
-    requestId: 'someRequest',
-    parentRequestId: 'someParentRequest',
-  };
-  next();
-};
-
 const logger = {
   access: vi.fn(),
 } as unknown as RequestLogger;
@@ -50,7 +40,6 @@ beforeEach(() => {
     req.context = { log: logger } as unknown as RequestContext;
     next();
   });
-  app.use(mockTransactionMiddleware);
   app.use(middleware);
 });
 
@@ -195,18 +184,4 @@ it('logs x forwarded for header', async () => {
   await supertest(app).get('/').set('x-forwarded-for', 'forward');
 
   expect(logger.access).toHaveBeenCalledWith(expect.objectContaining({ xForwardedFor: 'forward' }));
-});
-
-it('logs transaction info', async () => {
-  app.use(mockTransactionMiddleware);
-
-  await supertest(app).get('/');
-
-  expect(logger.access).toHaveBeenCalledWith(
-    expect.objectContaining({
-      transactionId: 'someTransaction',
-      requestId: 'someRequest',
-      parentRequestId: 'someParentRequest',
-    }),
-  );
 });

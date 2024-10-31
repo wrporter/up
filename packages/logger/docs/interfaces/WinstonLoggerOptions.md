@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Interface: WinstonLoggerOptions
 
@@ -16,7 +16,7 @@ Options for the Winston Logger.
 
 > `optional` **mode**: [`Mode`](../type-aliases/Mode.md)
 
----
+***
 
 ### level?
 
@@ -28,7 +28,7 @@ logged.
 #### Default
 
 ```ts
-'info';
+"info"
 ```
 
 #### Inherited from

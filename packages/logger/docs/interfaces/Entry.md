@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Interface: Entry
 
@@ -8,7 +8,7 @@ Log entry. Can be a string or an object for additional metadata.
 
 ## Indexable
 
-\[`key`: `string`\]: `unknown`
+ \[`key`: `string`\]: `unknown`
 
 ## Properties
 
@@ -16,8 +16,8 @@ Log entry. Can be a string or an object for additional metadata.
 
 > `optional` **message**: `string`
 
----
+***
 
 ### error?
 
-> `optional` **error**: `Error`
+> `optional` **error**: `unknown`

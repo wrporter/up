@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Class: Server
 
@@ -30,17 +30,23 @@ Server that manages Express applications.
 
 > **app**: `Application`
 
----
+***
 
 ### httpServer
 
-> **httpServer**: `Server`\<_typeof_ `IncomingMessage`, _typeof_ `ServerResponse`\>
+> **httpServer**: `Server`\<*typeof* `IncomingMessage`, *typeof* `ServerResponse`\>
 
----
+***
 
 ### metricsHttpServer
 
-> **metricsHttpServer**: `Server`\<_typeof_ `IncomingMessage`, _typeof_ `ServerResponse`\>
+> **metricsHttpServer**: `Server`\<*typeof* `IncomingMessage`, *typeof* `ServerResponse`\>
+
+***
+
+### options
+
+> `protected` **options**: [`Options`](../interfaces/Options.md)
 
 ## Methods
 
@@ -52,7 +58,7 @@ Server that manages Express applications.
 
 `void`
 
----
+***
 
 ### start()
 
@@ -74,7 +80,7 @@ The port to start the metrics app (default 22500).
 
 `void`
 
----
+***
 
 ### stop()
 
@@ -94,7 +100,7 @@ are complete. However, if they exceed the
 
 `void`
 
----
+***
 
 ### preMountApp()?
 
@@ -113,7 +119,7 @@ Express application.
 
 `void`
 
----
+***
 
 ### postMountApp()?
 

@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: CheckboxProps
 
@@ -20,7 +20,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.form`
 
----
+***
 
 ### slot?
 
@@ -30,7 +30,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.slot`
 
----
+***
 
 ### style?
 
@@ -40,7 +40,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.style`
 
----
+***
 
 ### title?
 
@@ -50,7 +50,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.title`
 
----
+***
 
 ### pattern?
 
@@ -60,7 +60,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.pattern`
 
----
+***
 
 ### as?
 
@@ -70,7 +70,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.as`
 
----
+***
 
 ### color?
 
@@ -80,7 +80,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.color`
 
----
+***
 
 ### value?
 
@@ -90,7 +90,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.value`
 
----
+***
 
 ### content?
 
@@ -100,7 +100,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.content`
 
----
+***
 
 ### key?
 
@@ -110,7 +110,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -120,7 +120,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -130,7 +130,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -140,7 +140,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -150,7 +150,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -160,7 +160,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -170,7 +170,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.autoFocus`
 
----
+***
 
 ### className?
 
@@ -180,7 +180,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.className`
 
----
+***
 
 ### contentEditable?
 
@@ -190,7 +190,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -200,7 +200,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -210,7 +210,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.dir`
 
----
+***
 
 ### draggable?
 
@@ -220,7 +220,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.draggable`
 
----
+***
 
 ### hidden?
 
@@ -230,7 +230,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.hidden`
 
----
+***
 
 ### id?
 
@@ -240,7 +240,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.id`
 
----
+***
 
 ### lang?
 
@@ -250,7 +250,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.lang`
 
----
+***
 
 ### nonce?
 
@@ -260,7 +260,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -270,7 +270,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -280,7 +280,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -290,7 +290,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -300,7 +300,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.radioGroup`
 
----
+***
 
 ### role?
 
@@ -310,7 +310,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.role`
 
----
+***
 
 ### about?
 
@@ -320,7 +320,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.about`
 
----
+***
 
 ### datatype?
 
@@ -330,7 +330,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.datatype`
 
----
+***
 
 ### inlist?
 
@@ -340,7 +340,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.inlist`
 
----
+***
 
 ### prefix?
 
@@ -350,7 +350,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.prefix`
 
----
+***
 
 ### property?
 
@@ -360,7 +360,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.property`
 
----
+***
 
 ### rel?
 
@@ -370,7 +370,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.rel`
 
----
+***
 
 ### resource?
 
@@ -380,7 +380,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.resource`
 
----
+***
 
 ### rev?
 
@@ -390,7 +390,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.rev`
 
----
+***
 
 ### typeof?
 
@@ -400,7 +400,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.typeof`
 
----
+***
 
 ### vocab?
 
@@ -410,7 +410,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -420,7 +420,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -430,7 +430,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -440,7 +440,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -450,7 +450,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -460,7 +460,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -470,7 +470,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.itemType`
 
----
+***
 
 ### itemID?
 
@@ -480,7 +480,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -490,7 +490,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.itemRef`
 
----
+***
 
 ### results?
 
@@ -500,7 +500,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.results`
 
----
+***
 
 ### security?
 
@@ -510,7 +510,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.security`
 
----
+***
 
 ### unselectable?
 
@@ -520,7 +520,7 @@ Core props for a component using as to override the underlying element.
 
 `HTMLCoreProps.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -536,7 +536,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `HTMLCoreProps.inputMode`
 
----
+***
 
 ### is?
 
@@ -552,7 +552,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `HTMLCoreProps.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -564,7 +564,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `HTMLCoreProps.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -576,7 +576,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `HTMLCoreProps.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -589,7 +589,7 @@ presented if they are made.
 
 `HTMLCoreProps.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -605,7 +605,7 @@ aria-label.
 
 `HTMLCoreProps.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -621,7 +621,7 @@ aria-roledescription.
 
 `HTMLCoreProps.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -631,7 +631,7 @@ aria-roledescription.
 
 `HTMLCoreProps.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -641,14 +641,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -664,7 +664,7 @@ aria-colindex.
 
 `HTMLCoreProps.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -674,14 +674,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -697,7 +697,7 @@ aria-rowindextext.
 
 `HTMLCoreProps.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -707,14 +707,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -730,7 +730,7 @@ aria-owns.
 
 `HTMLCoreProps.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -742,7 +742,7 @@ Indicates the element that represents the current item within a container or set
 
 `HTMLCoreProps.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -758,7 +758,7 @@ aria-labelledby
 
 `HTMLCoreProps.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -774,7 +774,7 @@ related aria-describedby.
 
 `HTMLCoreProps.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -790,7 +790,7 @@ aria-describedby.
 
 `HTMLCoreProps.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -800,14 +800,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -823,7 +823,7 @@ in ARIA 1.1
 
 `HTMLCoreProps.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -833,14 +833,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -852,7 +852,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `HTMLCoreProps.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -865,7 +865,7 @@ allows assistive technology to override the general default of reading in docume
 
 `HTMLCoreProps.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -881,7 +881,7 @@ in ARIA 1.1
 
 `HTMLCoreProps.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -893,7 +893,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `HTMLCoreProps.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -909,7 +909,7 @@ aria-disabled.
 
 `HTMLCoreProps.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -925,7 +925,7 @@ aria-errormessage.
 
 `HTMLCoreProps.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -937,7 +937,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `HTMLCoreProps.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -953,7 +953,7 @@ aria-labelledby.
 
 `HTMLCoreProps.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -969,7 +969,7 @@ aria-describedby.
 
 `HTMLCoreProps.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -981,7 +981,7 @@ Defines the hierarchical level of an element within a structure.
 
 `HTMLCoreProps.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -993,7 +993,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `HTMLCoreProps.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -1005,7 +1005,7 @@ Indicates whether an element is modal when displayed.
 
 `HTMLCoreProps.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -1017,7 +1017,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `HTMLCoreProps.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -1029,7 +1029,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `HTMLCoreProps.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -1041,7 +1041,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `HTMLCoreProps.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1058,7 +1058,7 @@ aria-controls.
 
 `HTMLCoreProps.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1071,7 +1071,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `HTMLCoreProps.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1087,7 +1087,7 @@ aria-setsize.
 
 `HTMLCoreProps.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1097,14 +1097,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1120,7 +1120,7 @@ aria-disabled.
 
 `HTMLCoreProps.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1136,7 +1136,7 @@ aria-atomic.
 
 `HTMLCoreProps.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1148,7 +1148,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `HTMLCoreProps.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1160,7 +1160,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `HTMLCoreProps.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1176,7 +1176,7 @@ aria-rowindex.
 
 `HTMLCoreProps.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1186,14 +1186,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1209,7 +1209,7 @@ aria-colindextext.
 
 `HTMLCoreProps.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1219,14 +1219,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1236,14 +1236,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `HTMLCoreProps.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1259,7 +1259,7 @@ aria-posinset.
 
 `HTMLCoreProps.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1271,7 +1271,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `HTMLCoreProps.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1283,7 +1283,7 @@ Defines the maximum allowed value for a range widget.
 
 `HTMLCoreProps.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1295,7 +1295,7 @@ Defines the minimum allowed value for a range widget.
 
 `HTMLCoreProps.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1311,7 +1311,7 @@ aria-valuetext.
 
 `HTMLCoreProps.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1323,7 +1323,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1333,7 +1333,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1347,7 +1347,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1357,7 +1357,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1367,7 +1367,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1377,7 +1377,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1387,7 +1387,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1397,7 +1397,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1407,7 +1407,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1417,7 +1417,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1427,7 +1427,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1437,7 +1437,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1447,7 +1447,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1457,7 +1457,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1467,7 +1467,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1477,7 +1477,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1487,7 +1487,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1497,7 +1497,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1507,7 +1507,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1517,7 +1517,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1527,7 +1527,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1537,7 +1537,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1547,7 +1547,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1557,7 +1557,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1567,7 +1567,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1577,7 +1577,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1587,7 +1587,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1597,7 +1597,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1607,7 +1607,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1617,7 +1617,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1627,7 +1627,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1637,7 +1637,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1647,7 +1647,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1657,7 +1657,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1667,7 +1667,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1677,7 +1677,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1687,7 +1687,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1699,7 +1699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1711,7 +1711,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1721,7 +1721,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1731,7 +1731,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1741,7 +1741,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1751,7 +1751,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1761,7 +1761,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1771,7 +1771,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1781,7 +1781,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1791,7 +1791,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1801,7 +1801,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1811,7 +1811,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1821,7 +1821,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1831,7 +1831,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1841,7 +1841,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1851,7 +1851,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1861,7 +1861,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1871,7 +1871,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1881,7 +1881,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1891,7 +1891,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1901,7 +1901,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1911,7 +1911,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1921,7 +1921,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1931,7 +1931,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1941,7 +1941,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1951,7 +1951,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1961,7 +1961,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1971,7 +1971,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1981,7 +1981,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1991,7 +1991,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -2001,7 +2001,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -2011,7 +2011,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -2021,7 +2021,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -2031,7 +2031,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -2041,7 +2041,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2051,7 +2051,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2061,7 +2061,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2071,7 +2071,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2081,7 +2081,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2091,7 +2091,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2101,7 +2101,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2111,7 +2111,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2121,7 +2121,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2131,7 +2131,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2141,7 +2141,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2151,7 +2151,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2161,7 +2161,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2171,7 +2171,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2181,7 +2181,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2191,7 +2191,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2201,7 +2201,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2211,7 +2211,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2221,7 +2221,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2231,7 +2231,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2241,7 +2241,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2251,7 +2251,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2261,7 +2261,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2271,7 +2271,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2281,7 +2281,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2291,7 +2291,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2301,7 +2301,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2311,7 +2311,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2321,7 +2321,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2331,7 +2331,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2341,7 +2341,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2351,7 +2351,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2361,7 +2361,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2371,7 +2371,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2381,7 +2381,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2391,7 +2391,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2401,7 +2401,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2411,7 +2411,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2421,7 +2421,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2431,7 +2431,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2441,7 +2441,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2451,7 +2451,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2461,7 +2461,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2471,7 +2471,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2481,7 +2481,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2491,7 +2491,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2501,7 +2501,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2511,7 +2511,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2521,7 +2521,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2531,7 +2531,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2541,7 +2541,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2551,7 +2551,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onMouseUpCapture`
 
----
+***
 
 ### onSelect?
 
@@ -2561,7 +2561,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2571,7 +2571,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2581,7 +2581,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2591,7 +2591,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2601,7 +2601,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2611,7 +2611,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2621,7 +2621,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2631,7 +2631,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2641,7 +2641,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2651,7 +2651,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2661,7 +2661,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2671,7 +2671,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2681,7 +2681,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2691,7 +2691,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2701,7 +2701,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2711,7 +2711,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2721,7 +2721,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2731,7 +2731,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2741,7 +2741,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2751,7 +2751,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2761,7 +2761,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2771,7 +2771,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2781,7 +2781,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2791,7 +2791,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2801,7 +2801,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2811,7 +2811,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2821,7 +2821,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2831,7 +2831,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2841,7 +2841,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2851,7 +2851,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2861,7 +2861,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2871,7 +2871,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2881,7 +2881,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2891,7 +2891,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2901,7 +2901,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2911,7 +2911,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2921,7 +2921,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2931,7 +2931,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2941,7 +2941,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2951,7 +2951,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.onTransitionEndCapture`
 
----
+***
 
 ### type?
 
@@ -2961,7 +2961,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.type`
 
----
+***
 
 ### disabled?
 
@@ -2971,7 +2971,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.disabled`
 
----
+***
 
 ### formAction?
 
@@ -2981,7 +2981,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.formAction`
 
----
+***
 
 ### formEncType?
 
@@ -2991,7 +2991,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.formEncType`
 
----
+***
 
 ### formMethod?
 
@@ -3001,7 +3001,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.formMethod`
 
----
+***
 
 ### formNoValidate?
 
@@ -3011,7 +3011,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.formNoValidate`
 
----
+***
 
 ### formTarget?
 
@@ -3021,7 +3021,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.formTarget`
 
----
+***
 
 ### name?
 
@@ -3031,7 +3031,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.name`
 
----
+***
 
 ### multiple?
 
@@ -3041,7 +3041,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.multiple`
 
----
+***
 
 ### alt?
 
@@ -3051,7 +3051,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.alt`
 
----
+***
 
 ### autoComplete?
 
@@ -3061,7 +3061,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.autoComplete`
 
----
+***
 
 ### accept?
 
@@ -3071,7 +3071,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.accept`
 
----
+***
 
 ### capture?
 
@@ -3081,7 +3081,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.capture`
 
----
+***
 
 ### checked?
 
@@ -3091,7 +3091,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.checked`
 
----
+***
 
 ### enterKeyHint?
 
@@ -3101,7 +3101,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.enterKeyHint`
 
----
+***
 
 ### maxLength?
 
@@ -3111,7 +3111,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.maxLength`
 
----
+***
 
 ### minLength?
 
@@ -3121,7 +3121,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.minLength`
 
----
+***
 
 ### src?
 
@@ -3131,7 +3131,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.src`
 
----
+***
 
 ### list?
 
@@ -3141,7 +3141,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.list`
 
----
+***
 
 ### height?
 
@@ -3151,7 +3151,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.height`
 
----
+***
 
 ### max?
 
@@ -3161,7 +3161,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.max`
 
----
+***
 
 ### min?
 
@@ -3171,7 +3171,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.min`
 
----
+***
 
 ### placeholder?
 
@@ -3181,7 +3181,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.placeholder`
 
----
+***
 
 ### readOnly?
 
@@ -3191,7 +3191,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.readOnly`
 
----
+***
 
 ### required?
 
@@ -3201,7 +3201,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.required`
 
----
+***
 
 ### size?
 
@@ -3211,7 +3211,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.size`
 
----
+***
 
 ### step?
 
@@ -3221,7 +3221,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.step`
 
----
+***
 
 ### width?
 
@@ -3231,7 +3231,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `HTMLCoreProps.width`
 
----
+***
 
 ### data-testid?
 

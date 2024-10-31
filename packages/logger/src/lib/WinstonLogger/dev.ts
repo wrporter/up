@@ -13,7 +13,6 @@ addColors({
 
   timestamp: 'gray',
   stack: 'red',
-  transactionId: 'green',
 
   url: 'green',
   method: 'bold bgCyan',
@@ -32,13 +31,11 @@ export const printFormat: (info: TransformableInfo) => string = ({
   url,
   time,
   error,
-  transactionId,
   ...metadata
 }) => {
   const timestampF = c.colorize('timestamp', timestamp);
   const levelF = c.colorize(level, `[${level.toUpperCase().padEnd(6, ' ')}]`);
 
-  const transactionIdF = transactionId && c.colorize('transactionId', `[${transactionId}]`);
   const messageF = message ?? '';
   const errorF = error && `${c.colorize('stack', '-')} ${c.colorize('stack', error)}`;
   const methodF = method && c.colorize('method', method);
@@ -48,19 +45,7 @@ export const printFormat: (info: TransformableInfo) => string = ({
   const metadataF =
     Object.keys(metadata).length > 0 && c.colorize('metadata', JSON.stringify(metadata, null, 2));
 
-  return [
-    timestampF,
-    levelF,
-    transactionIdF,
-    ':',
-    methodF,
-    statusF,
-    timeF,
-    urlF,
-    messageF,
-    errorF,
-    metadataF,
-  ]
+  return [timestampF, levelF, ':', methodF, statusF, timeF, urlF, messageF, errorF, metadataF]
     .filter((item) => Boolean(item))
     .join(' ');
 };

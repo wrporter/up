@@ -12,24 +12,6 @@ project-specific extensions.
 
 ## Properties
 
-### transactionId
-
-> **transactionId**: `string`
-
-***
-
-### requestId
-
-> **requestId**: `string`
-
-***
-
 ### log
 
 > **log**: [`RequestLogger`](../classes/RequestLogger.md)
-
-***
-
-### parentRequestId?
-
-> `optional` **parentRequestId**: `string`

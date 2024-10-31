@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: TooltipTrigger()
 
@@ -8,7 +8,7 @@
 
 ## Type Parameters
 
-• **AsComponent** _extends_ `As`\<`any`\> = `"button"`
+• **AsComponent** *extends* `As`\<`any`\> = `"button"`
 
 ## Parameters
 

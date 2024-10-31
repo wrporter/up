@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: forwardRef()
 
@@ -10,9 +10,9 @@ Forward a ref to a component that allows customizing the underlying element.
 
 ## Type Parameters
 
-• **Props** _extends_ `object`
+• **Props** *extends* `object`
 
-• **Component** _extends_ `As`\<`any`\>
+• **Component** *extends* `As`\<`any`\>
 
 ## Parameters
 

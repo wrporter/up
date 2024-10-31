@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Interface: Options
 
@@ -22,5 +22,5 @@ logged.
 #### Default
 
 ```ts
-'info';
+"info"
 ```

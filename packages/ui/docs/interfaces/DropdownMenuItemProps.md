@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DropdownMenuItemProps
 
@@ -18,7 +18,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.slot`
 
----
+***
 
 ### style?
 
@@ -28,7 +28,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.style`
 
----
+***
 
 ### title?
 
@@ -38,7 +38,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.title`
 
----
+***
 
 ### color?
 
@@ -48,7 +48,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.color`
 
----
+***
 
 ### content?
 
@@ -58,7 +58,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.content`
 
----
+***
 
 ### key?
 
@@ -68,7 +68,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -78,7 +78,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -88,7 +88,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -98,7 +98,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -108,7 +108,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -118,7 +118,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -128,7 +128,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.autoFocus`
 
----
+***
 
 ### className?
 
@@ -138,7 +138,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.className`
 
----
+***
 
 ### contentEditable?
 
@@ -148,7 +148,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -158,7 +158,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -168,7 +168,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.dir`
 
----
+***
 
 ### draggable?
 
@@ -178,7 +178,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.draggable`
 
----
+***
 
 ### hidden?
 
@@ -188,7 +188,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.hidden`
 
----
+***
 
 ### id?
 
@@ -198,7 +198,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.id`
 
----
+***
 
 ### lang?
 
@@ -208,7 +208,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.lang`
 
----
+***
 
 ### nonce?
 
@@ -218,7 +218,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -228,7 +228,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -238,7 +238,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -248,7 +248,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -258,7 +258,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.radioGroup`
 
----
+***
 
 ### role?
 
@@ -268,7 +268,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.role`
 
----
+***
 
 ### about?
 
@@ -278,7 +278,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.about`
 
----
+***
 
 ### datatype?
 
@@ -288,7 +288,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.datatype`
 
----
+***
 
 ### inlist?
 
@@ -298,7 +298,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.inlist`
 
----
+***
 
 ### prefix?
 
@@ -308,7 +308,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.prefix`
 
----
+***
 
 ### property?
 
@@ -318,7 +318,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.property`
 
----
+***
 
 ### rel?
 
@@ -328,7 +328,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.rel`
 
----
+***
 
 ### resource?
 
@@ -338,7 +338,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.resource`
 
----
+***
 
 ### rev?
 
@@ -348,7 +348,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.rev`
 
----
+***
 
 ### typeof?
 
@@ -358,7 +358,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.typeof`
 
----
+***
 
 ### vocab?
 
@@ -368,7 +368,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -378,7 +378,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -388,7 +388,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -398,7 +398,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -408,7 +408,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -418,7 +418,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -428,7 +428,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.itemType`
 
----
+***
 
 ### itemID?
 
@@ -438,7 +438,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -448,7 +448,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.itemRef`
 
----
+***
 
 ### results?
 
@@ -458,7 +458,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.results`
 
----
+***
 
 ### security?
 
@@ -468,7 +468,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.security`
 
----
+***
 
 ### unselectable?
 
@@ -478,7 +478,7 @@
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -494,7 +494,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.inputMode`
 
----
+***
 
 ### is?
 
@@ -510,7 +510,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -522,7 +522,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -534,7 +534,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -547,7 +547,7 @@ presented if they are made.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -563,7 +563,7 @@ aria-label.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -579,7 +579,7 @@ aria-roledescription.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -589,7 +589,7 @@ aria-roledescription.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -599,14 +599,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -622,7 +622,7 @@ aria-colindex.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -632,14 +632,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -655,7 +655,7 @@ aria-rowindextext.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -665,14 +665,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -688,7 +688,7 @@ aria-owns.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -700,7 +700,7 @@ Indicates the element that represents the current item within a container or set
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -716,7 +716,7 @@ aria-labelledby
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -732,7 +732,7 @@ related aria-describedby.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -748,7 +748,7 @@ aria-describedby.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -758,14 +758,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -781,7 +781,7 @@ in ARIA 1.1
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -791,14 +791,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -810,7 +810,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -823,7 +823,7 @@ allows assistive technology to override the general default of reading in docume
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -839,7 +839,7 @@ in ARIA 1.1
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -851,7 +851,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -867,7 +867,7 @@ aria-disabled.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -883,7 +883,7 @@ aria-errormessage.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -895,7 +895,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -911,7 +911,7 @@ aria-labelledby.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -927,7 +927,7 @@ aria-describedby.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -939,7 +939,7 @@ Defines the hierarchical level of an element within a structure.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -951,7 +951,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -963,7 +963,7 @@ Indicates whether an element is modal when displayed.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -975,7 +975,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -987,7 +987,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -999,7 +999,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1016,7 +1016,7 @@ aria-controls.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1029,7 +1029,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1045,7 +1045,7 @@ aria-setsize.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1055,14 +1055,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1078,7 +1078,7 @@ aria-disabled.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1094,7 +1094,7 @@ aria-atomic.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1106,7 +1106,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1118,7 +1118,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1134,7 +1134,7 @@ aria-rowindex.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1144,14 +1144,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1167,7 +1167,7 @@ aria-colindextext.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1177,14 +1177,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1194,14 +1194,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1217,7 +1217,7 @@ aria-posinset.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1229,7 +1229,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1241,7 +1241,7 @@ Defines the maximum allowed value for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1253,7 +1253,7 @@ Defines the minimum allowed value for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1269,7 +1269,7 @@ aria-valuetext.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1281,7 +1281,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1291,7 +1291,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1305,7 +1305,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1315,7 +1315,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1325,7 +1325,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1335,7 +1335,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1345,7 +1345,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1355,7 +1355,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1365,7 +1365,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1375,7 +1375,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1385,7 +1385,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1395,7 +1395,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1405,7 +1405,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1415,7 +1415,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1425,7 +1425,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1435,7 +1435,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1445,7 +1445,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1455,7 +1455,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1465,7 +1465,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1475,7 +1475,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1485,7 +1485,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1495,7 +1495,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1505,7 +1505,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1515,7 +1515,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1525,7 +1525,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1535,7 +1535,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1545,7 +1545,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1555,7 +1555,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1565,7 +1565,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1575,7 +1575,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1585,7 +1585,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1595,7 +1595,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1605,7 +1605,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1615,7 +1615,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1625,7 +1625,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1635,7 +1635,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1645,7 +1645,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1657,7 +1657,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1669,7 +1669,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1679,7 +1679,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1689,7 +1689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1699,7 +1699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1709,7 +1709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1719,7 +1719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1729,7 +1729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1739,7 +1739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1749,7 +1749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1759,7 +1759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1769,7 +1769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1779,7 +1779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1789,7 +1789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1799,7 +1799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1809,7 +1809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1819,7 +1819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1829,7 +1829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1839,7 +1839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1849,7 +1849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1859,7 +1859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1869,7 +1869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1879,7 +1879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1889,7 +1889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1899,7 +1899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1909,7 +1909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1919,7 +1919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1929,7 +1929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1939,7 +1939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1949,7 +1949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -1959,7 +1959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -1969,7 +1969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -1979,7 +1979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -1989,7 +1989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -1999,7 +1999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2009,7 +2009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2019,7 +2019,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2029,7 +2029,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2039,7 +2039,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2049,7 +2049,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2059,7 +2059,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2069,7 +2069,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2079,7 +2079,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2089,7 +2089,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2099,7 +2099,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2109,7 +2109,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2119,7 +2119,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2129,7 +2129,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2139,7 +2139,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2149,7 +2149,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2159,7 +2159,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2169,7 +2169,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2179,7 +2179,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2189,7 +2189,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2199,7 +2199,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2209,7 +2209,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2219,7 +2219,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2229,7 +2229,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2239,7 +2239,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2249,7 +2249,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2259,7 +2259,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2269,7 +2269,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2279,7 +2279,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2289,7 +2289,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2299,7 +2299,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2309,7 +2309,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2319,7 +2319,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2329,7 +2329,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2339,7 +2339,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2349,7 +2349,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2359,7 +2359,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2369,7 +2369,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2379,7 +2379,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2389,7 +2389,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2399,7 +2399,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2409,7 +2409,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2419,7 +2419,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2429,7 +2429,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2439,7 +2439,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2449,7 +2449,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2459,7 +2459,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2469,7 +2469,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2479,7 +2479,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2489,7 +2489,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2499,7 +2499,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2509,7 +2509,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onMouseUpCapture`
 
----
+***
 
 ### onSelect()?
 
@@ -2527,7 +2527,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2537,7 +2537,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2547,7 +2547,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2557,7 +2557,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2567,7 +2567,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2577,7 +2577,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2587,7 +2587,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2597,7 +2597,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2607,7 +2607,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2617,7 +2617,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2627,7 +2627,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2637,7 +2637,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2647,7 +2647,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2657,7 +2657,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2667,7 +2667,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2677,7 +2677,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2687,7 +2687,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2697,7 +2697,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2707,7 +2707,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2717,7 +2717,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2727,7 +2727,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2737,7 +2737,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2747,7 +2747,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2757,7 +2757,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2767,7 +2767,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2777,7 +2777,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2787,7 +2787,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2797,7 +2797,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2807,7 +2807,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2817,7 +2817,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2827,7 +2827,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2837,7 +2837,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2847,7 +2847,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2857,7 +2857,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2867,7 +2867,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2877,7 +2877,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2887,7 +2887,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2897,7 +2897,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2907,7 +2907,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2917,7 +2917,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.onTransitionEndCapture`
 
----
+***
 
 ### asChild?
 
@@ -2927,7 +2927,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.asChild`
 
----
+***
 
 ### disabled?
 
@@ -2937,7 +2937,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DropdownMenuPrimitive.DropdownMenuItemProps.disabled`
 
----
+***
 
 ### textValue?
 

@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: AccordionItemProps
 
@@ -20,7 +20,7 @@ A string value for the accordion item. All items within an accordion should use 
 
 `AccordionPrimitive.AccordionItemProps.value`
 
----
+***
 
 ### disabled?
 
@@ -31,14 +31,14 @@ Whether or not an accordion item is disabled from user interaction.
 #### Default Value
 
 ```ts
-false;
+false
 ```
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.disabled`
 
----
+***
 
 ### slot?
 
@@ -48,7 +48,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.slot`
 
----
+***
 
 ### style?
 
@@ -58,7 +58,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.style`
 
----
+***
 
 ### title?
 
@@ -68,7 +68,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.title`
 
----
+***
 
 ### color?
 
@@ -78,7 +78,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.color`
 
----
+***
 
 ### content?
 
@@ -88,7 +88,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.content`
 
----
+***
 
 ### key?
 
@@ -98,7 +98,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -108,7 +108,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -118,7 +118,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -128,7 +128,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -138,7 +138,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -148,7 +148,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -158,7 +158,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.autoFocus`
 
----
+***
 
 ### className?
 
@@ -168,7 +168,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.className`
 
----
+***
 
 ### contentEditable?
 
@@ -178,7 +178,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -188,7 +188,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -198,7 +198,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.dir`
 
----
+***
 
 ### draggable?
 
@@ -208,7 +208,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.draggable`
 
----
+***
 
 ### hidden?
 
@@ -218,7 +218,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.hidden`
 
----
+***
 
 ### id?
 
@@ -228,7 +228,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.id`
 
----
+***
 
 ### lang?
 
@@ -238,7 +238,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.lang`
 
----
+***
 
 ### nonce?
 
@@ -248,7 +248,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -258,7 +258,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -268,7 +268,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -278,7 +278,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -288,7 +288,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.radioGroup`
 
----
+***
 
 ### role?
 
@@ -298,7 +298,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.role`
 
----
+***
 
 ### about?
 
@@ -308,7 +308,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.about`
 
----
+***
 
 ### datatype?
 
@@ -318,7 +318,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.datatype`
 
----
+***
 
 ### inlist?
 
@@ -328,7 +328,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.inlist`
 
----
+***
 
 ### prefix?
 
@@ -338,7 +338,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.prefix`
 
----
+***
 
 ### property?
 
@@ -348,7 +348,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.property`
 
----
+***
 
 ### rel?
 
@@ -358,7 +358,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.rel`
 
----
+***
 
 ### resource?
 
@@ -368,7 +368,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.resource`
 
----
+***
 
 ### rev?
 
@@ -378,7 +378,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.rev`
 
----
+***
 
 ### typeof?
 
@@ -388,7 +388,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.typeof`
 
----
+***
 
 ### vocab?
 
@@ -398,7 +398,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -408,7 +408,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -418,7 +418,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -428,7 +428,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -438,7 +438,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -448,7 +448,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -458,7 +458,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.itemType`
 
----
+***
 
 ### itemID?
 
@@ -468,7 +468,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -478,7 +478,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.itemRef`
 
----
+***
 
 ### results?
 
@@ -488,7 +488,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.results`
 
----
+***
 
 ### security?
 
@@ -498,7 +498,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.security`
 
----
+***
 
 ### unselectable?
 
@@ -508,7 +508,7 @@ false;
 
 `AccordionPrimitive.AccordionItemProps.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -524,7 +524,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `AccordionPrimitive.AccordionItemProps.inputMode`
 
----
+***
 
 ### is?
 
@@ -540,7 +540,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `AccordionPrimitive.AccordionItemProps.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -552,7 +552,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `AccordionPrimitive.AccordionItemProps.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -564,7 +564,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `AccordionPrimitive.AccordionItemProps.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -577,7 +577,7 @@ presented if they are made.
 
 `AccordionPrimitive.AccordionItemProps.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -593,7 +593,7 @@ aria-label.
 
 `AccordionPrimitive.AccordionItemProps.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -609,7 +609,7 @@ aria-roledescription.
 
 `AccordionPrimitive.AccordionItemProps.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -619,7 +619,7 @@ aria-roledescription.
 
 `AccordionPrimitive.AccordionItemProps.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -629,14 +629,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -652,7 +652,7 @@ aria-colindex.
 
 `AccordionPrimitive.AccordionItemProps.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -662,14 +662,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -685,7 +685,7 @@ aria-rowindextext.
 
 `AccordionPrimitive.AccordionItemProps.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -695,14 +695,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -718,7 +718,7 @@ aria-owns.
 
 `AccordionPrimitive.AccordionItemProps.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -730,7 +730,7 @@ Indicates the element that represents the current item within a container or set
 
 `AccordionPrimitive.AccordionItemProps.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -746,7 +746,7 @@ aria-labelledby
 
 `AccordionPrimitive.AccordionItemProps.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -762,7 +762,7 @@ related aria-describedby.
 
 `AccordionPrimitive.AccordionItemProps.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -778,7 +778,7 @@ aria-describedby.
 
 `AccordionPrimitive.AccordionItemProps.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -788,14 +788,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -811,7 +811,7 @@ in ARIA 1.1
 
 `AccordionPrimitive.AccordionItemProps.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -821,14 +821,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -840,7 +840,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `AccordionPrimitive.AccordionItemProps.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -853,7 +853,7 @@ allows assistive technology to override the general default of reading in docume
 
 `AccordionPrimitive.AccordionItemProps.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -869,7 +869,7 @@ in ARIA 1.1
 
 `AccordionPrimitive.AccordionItemProps.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -881,7 +881,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `AccordionPrimitive.AccordionItemProps.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -897,7 +897,7 @@ aria-disabled.
 
 `AccordionPrimitive.AccordionItemProps.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -913,7 +913,7 @@ aria-errormessage.
 
 `AccordionPrimitive.AccordionItemProps.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -925,7 +925,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `AccordionPrimitive.AccordionItemProps.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -941,7 +941,7 @@ aria-labelledby.
 
 `AccordionPrimitive.AccordionItemProps.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -957,7 +957,7 @@ aria-describedby.
 
 `AccordionPrimitive.AccordionItemProps.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -969,7 +969,7 @@ Defines the hierarchical level of an element within a structure.
 
 `AccordionPrimitive.AccordionItemProps.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -981,7 +981,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `AccordionPrimitive.AccordionItemProps.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -993,7 +993,7 @@ Indicates whether an element is modal when displayed.
 
 `AccordionPrimitive.AccordionItemProps.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -1005,7 +1005,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `AccordionPrimitive.AccordionItemProps.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -1017,7 +1017,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `AccordionPrimitive.AccordionItemProps.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -1029,7 +1029,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `AccordionPrimitive.AccordionItemProps.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1046,7 +1046,7 @@ aria-controls.
 
 `AccordionPrimitive.AccordionItemProps.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1059,7 +1059,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `AccordionPrimitive.AccordionItemProps.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1075,7 +1075,7 @@ aria-setsize.
 
 `AccordionPrimitive.AccordionItemProps.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1085,14 +1085,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1108,7 +1108,7 @@ aria-disabled.
 
 `AccordionPrimitive.AccordionItemProps.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1124,7 +1124,7 @@ aria-atomic.
 
 `AccordionPrimitive.AccordionItemProps.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1136,7 +1136,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `AccordionPrimitive.AccordionItemProps.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1148,7 +1148,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `AccordionPrimitive.AccordionItemProps.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1164,7 +1164,7 @@ aria-rowindex.
 
 `AccordionPrimitive.AccordionItemProps.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1174,14 +1174,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1197,7 +1197,7 @@ aria-colindextext.
 
 `AccordionPrimitive.AccordionItemProps.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1207,14 +1207,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1224,14 +1224,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `AccordionPrimitive.AccordionItemProps.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1247,7 +1247,7 @@ aria-posinset.
 
 `AccordionPrimitive.AccordionItemProps.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1259,7 +1259,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `AccordionPrimitive.AccordionItemProps.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1271,7 +1271,7 @@ Defines the maximum allowed value for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1283,7 +1283,7 @@ Defines the minimum allowed value for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1299,7 +1299,7 @@ aria-valuetext.
 
 `AccordionPrimitive.AccordionItemProps.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1311,7 +1311,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1321,7 +1321,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1335,7 +1335,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1345,7 +1345,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1355,7 +1355,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1365,7 +1365,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1375,7 +1375,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1385,7 +1385,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1395,7 +1395,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1405,7 +1405,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1415,7 +1415,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1425,7 +1425,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1435,7 +1435,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1445,7 +1445,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1455,7 +1455,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1465,7 +1465,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1475,7 +1475,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1485,7 +1485,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1495,7 +1495,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1505,7 +1505,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1515,7 +1515,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1525,7 +1525,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1535,7 +1535,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1545,7 +1545,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1555,7 +1555,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1565,7 +1565,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1575,7 +1575,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1585,7 +1585,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1595,7 +1595,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1605,7 +1605,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1615,7 +1615,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1625,7 +1625,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1635,7 +1635,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1645,7 +1645,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1655,7 +1655,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1665,7 +1665,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1675,7 +1675,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1687,7 +1687,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1699,7 +1699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1709,7 +1709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1719,7 +1719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1729,7 +1729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1739,7 +1739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1749,7 +1749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1759,7 +1759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1769,7 +1769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1779,7 +1779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1789,7 +1789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1799,7 +1799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1809,7 +1809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1819,7 +1819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1829,7 +1829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1839,7 +1839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1849,7 +1849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1859,7 +1859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1869,7 +1869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1879,7 +1879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1889,7 +1889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1899,7 +1899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1909,7 +1909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1919,7 +1919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1929,7 +1929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1939,7 +1939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1949,7 +1949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1959,7 +1959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1969,7 +1969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1979,7 +1979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -1989,7 +1989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -1999,7 +1999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -2009,7 +2009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -2019,7 +2019,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -2029,7 +2029,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2039,7 +2039,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2049,7 +2049,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2059,7 +2059,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2069,7 +2069,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2079,7 +2079,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2089,7 +2089,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2099,7 +2099,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2109,7 +2109,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2119,7 +2119,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2129,7 +2129,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2139,7 +2139,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2149,7 +2149,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2159,7 +2159,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2169,7 +2169,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2179,7 +2179,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2189,7 +2189,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2199,7 +2199,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2209,7 +2209,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2219,7 +2219,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2229,7 +2229,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2239,7 +2239,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2249,7 +2249,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2259,7 +2259,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2269,7 +2269,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2279,7 +2279,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2289,7 +2289,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2299,7 +2299,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2309,7 +2309,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2319,7 +2319,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2329,7 +2329,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2339,7 +2339,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2349,7 +2349,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2359,7 +2359,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2369,7 +2369,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2379,7 +2379,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2389,7 +2389,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2399,7 +2399,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2409,7 +2409,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2419,7 +2419,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2429,7 +2429,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2439,7 +2439,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2449,7 +2449,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2459,7 +2459,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2469,7 +2469,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2479,7 +2479,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2489,7 +2489,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2499,7 +2499,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2509,7 +2509,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2519,7 +2519,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2529,7 +2529,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2539,7 +2539,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onMouseUpCapture`
 
----
+***
 
 ### onSelect?
 
@@ -2549,7 +2549,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2559,7 +2559,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2569,7 +2569,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2579,7 +2579,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2589,7 +2589,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2599,7 +2599,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2609,7 +2609,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2619,7 +2619,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2629,7 +2629,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2639,7 +2639,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2649,7 +2649,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2659,7 +2659,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2669,7 +2669,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2679,7 +2679,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2689,7 +2689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2699,7 +2699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2709,7 +2709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2719,7 +2719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2729,7 +2729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2739,7 +2739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2749,7 +2749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2759,7 +2759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2769,7 +2769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2779,7 +2779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2789,7 +2789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2799,7 +2799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2809,7 +2809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2819,7 +2819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2829,7 +2829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2839,7 +2839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2849,7 +2849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2859,7 +2859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2869,7 +2869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2879,7 +2879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2889,7 +2889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2899,7 +2899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2909,7 +2909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2919,7 +2919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2929,7 +2929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2939,7 +2939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `AccordionPrimitive.AccordionItemProps.onTransitionEndCapture`
 
----
+***
 
 ### asChild?
 

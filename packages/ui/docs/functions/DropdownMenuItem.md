@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: DropdownMenuItem()
 
@@ -8,7 +8,7 @@
 
 ## Type Parameters
 
-• **AsComponent** _extends_ `As`\<`any`\> = `"div"`
+• **AsComponent** *extends* `As`\<`any`\> = `"div"`
 
 ## Parameters
 

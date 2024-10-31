@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Class: MultiLogger
 
@@ -57,7 +57,7 @@ Loggers to add.
 
 `void`
 
----
+***
 
 ### configure()
 
@@ -79,7 +79,7 @@ Options to set.
 
 [`Logger`](Logger.md).[`configure`](Logger.md#configure)
 
----
+***
 
 ### commit()
 
@@ -103,7 +103,7 @@ Level of the data to log.
 
 [`Logger`](Logger.md).[`commit`](Logger.md#commit)
 
----
+***
 
 ### getLevel()
 
@@ -119,7 +119,7 @@ Returns the current logging level set in the logger.
 
 [`Logger`](Logger.md).[`getLevel`](Logger.md#getlevel)
 
----
+***
 
 ### log()
 
@@ -146,7 +146,7 @@ Data to be logged. Can be of any type.
 
 [`Logger`](Logger.md).[`log`](Logger.md#log)
 
----
+***
 
 ### debug()
 
@@ -168,7 +168,7 @@ Data to be logged.
 
 [`Logger`](Logger.md).[`debug`](Logger.md#debug)
 
----
+***
 
 ### info()
 
@@ -190,7 +190,7 @@ Data to be logged.
 
 [`Logger`](Logger.md).[`info`](Logger.md#info)
 
----
+***
 
 ### access()
 
@@ -212,7 +212,7 @@ Entry to be logged.
 
 [`Logger`](Logger.md).[`access`](Logger.md#access)
 
----
+***
 
 ### warn()
 
@@ -234,7 +234,7 @@ Data to be logged.
 
 [`Logger`](Logger.md).[`warn`](Logger.md#warn)
 
----
+***
 
 ### error()
 

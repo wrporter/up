@@ -38,17 +38,6 @@ it('prints the level', () => {
   expect(result).toEqual(`${timestamp} [WARN  ] :`);
 });
 
-it('prints the transactionId', () => {
-  const result = printFormat({
-    timestamp,
-    level: 'info',
-    message: undefined,
-    transactionId: '1234',
-  });
-
-  expect(result).toEqual(`${timestamp} [INFO  ] [1234] :`);
-});
-
 it('prints the method', () => {
   const result = printFormat({
     timestamp,

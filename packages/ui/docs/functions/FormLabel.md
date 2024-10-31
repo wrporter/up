@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: FormLabel()
 
@@ -8,7 +8,7 @@
 
 ## Type Parameters
 
-• **AsComponent** _extends_ `As`\<`any`\> = `"label"`
+• **AsComponent** *extends* `As`\<`any`\> = `"label"`
 
 ## Parameters
 

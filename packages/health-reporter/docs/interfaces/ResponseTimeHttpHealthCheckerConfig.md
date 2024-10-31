@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: ResponseTimeHttpHealthCheckerConfig
 
@@ -16,7 +16,7 @@
 
 The URL to perform the check against.
 
----
+***
 
 ### componentName
 
@@ -29,7 +29,7 @@ Name of the component being evaluated. Must match the pattern
 
 `Pick.componentName`
 
----
+***
 
 ### timeoutMilliseconds?
 
@@ -41,7 +41,7 @@ timeout results in a `fail` status for the check.
 #### Default
 
 ```ts
-5000;
+5000
 ```
 
 #### Inherited from

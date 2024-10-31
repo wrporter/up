@@ -1,6 +1,6 @@
 **@wesp-up/ui** • **Docs**
 
----
+***
 
 # @wesp-up/ui
 

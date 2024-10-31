@@ -1,5 +1,13 @@
 # @wesp-up/express
 
+## 3.0.1
+
+### Patch Changes
+
+- Remove custom trace IDs from request context and access logs.
+- Updated dependencies
+  - @wesp-up/logger@1.2.2
+
 ## 3.0.0
 
 ### Major Changes

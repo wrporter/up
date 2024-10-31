@@ -1,5 +1,11 @@
 # @wesp-up/logger
 
+## 1.2.2
+
+### Patch Changes
+
+- Removed transactionId from the logger.
+
 ## 1.2.1
 
 ### Patch Changes

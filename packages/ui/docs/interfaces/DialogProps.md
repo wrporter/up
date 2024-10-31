@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DialogProps
 
@@ -18,7 +18,7 @@
 
 `DialogPrimitive.DialogProps.children`
 
----
+***
 
 ### open?
 
@@ -28,7 +28,7 @@
 
 `DialogPrimitive.DialogProps.open`
 
----
+***
 
 ### defaultOpen?
 
@@ -38,7 +38,7 @@
 
 `DialogPrimitive.DialogProps.defaultOpen`
 
----
+***
 
 ### modal?
 
@@ -48,7 +48,7 @@
 
 `DialogPrimitive.DialogProps.modal`
 
----
+***
 
 ### data-testid?
 

@@ -1,6 +1,6 @@
 **@wesp-up/metrics** • **Docs**
 
----
+***
 
 # @wesp-up/metrics
 

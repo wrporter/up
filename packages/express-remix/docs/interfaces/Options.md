@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Interface: Options
 
@@ -19,14 +19,14 @@ exist, the server will stop immediately.
 #### Default
 
 ```ts
-5000;
+5000
 ```
 
 #### See
 
 [Server.stop](../classes/Server.md#stop)
 
----
+***
 
 ### mountApp()?
 
@@ -43,7 +43,7 @@ middleware, routes, etc.
 
 `void`
 
----
+***
 
 ### pathPrefix?
 
@@ -51,13 +51,13 @@ middleware, routes, etc.
 
 Service prefix to be used on routes such as the healthcheck.
 
----
+***
 
 ### versionMeta?
 
 > `optional` **versionMeta**: [`VersionMeta`](VersionMeta.md)
 
----
+***
 
 ### metricsOptions?
 
@@ -67,7 +67,15 @@ Options for configuring the Prometheus metrics exports. Straight
 pass-through to
 [express-prom-bundle](https://www.npmjs.com/package/express-prom-bundle).
 
----
+***
+
+### accessLogs?
+
+> `optional` **accessLogs**: [`AccessLogOptions`](AccessLogOptions.md)
+
+Options for configuring access logs.
+
+***
 
 ### error500Handler?
 

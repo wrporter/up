@@ -42,9 +42,6 @@ export function accessLogMiddleware({ skip }: AccessLogOptions = {}): RequestHan
         // -- Recommended
         clientIp: getIp(req),
         method: req.method,
-        requestId: context.requestId,
-        parentRequestId: context.parentRequestId,
-        transactionId: context.transactionId,
         userAgent: req.headers['user-agent'],
 
         // -- Optional

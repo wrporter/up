@@ -1,12 +1,12 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DialogContentProps
 
 ## Extends
 
-- `Omit`\<`DialogPrimitive.DialogContentProps`, `"color"`\>.`Omit`\<`VariantProps`\<_typeof_ `tooltipVariants`\>, `"class"`\>
+- `Omit`\<`DialogPrimitive.DialogContentProps`, `"color"`\>.`Omit`\<`VariantProps`\<*typeof* `tooltipVariants`\>, `"class"`\>
 
 ## Properties
 
@@ -18,13 +18,13 @@
 
 `Omit.color`
 
----
+***
 
 ### portalProps?
 
 > `optional` **portalProps**: `DialogPortalProps`
 
----
+***
 
 ### slot?
 
@@ -34,7 +34,7 @@
 
 `Omit.slot`
 
----
+***
 
 ### style?
 
@@ -44,7 +44,7 @@
 
 `Omit.style`
 
----
+***
 
 ### title?
 
@@ -54,7 +54,7 @@
 
 `Omit.title`
 
----
+***
 
 ### content?
 
@@ -64,7 +64,7 @@
 
 `Omit.content`
 
----
+***
 
 ### key?
 
@@ -74,7 +74,7 @@
 
 `Omit.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -84,7 +84,7 @@
 
 `Omit.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -94,7 +94,7 @@
 
 `Omit.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -104,7 +104,7 @@
 
 `Omit.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -114,7 +114,7 @@
 
 `Omit.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -124,7 +124,7 @@
 
 `Omit.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -134,7 +134,7 @@
 
 `Omit.autoFocus`
 
----
+***
 
 ### className?
 
@@ -144,7 +144,7 @@
 
 `Omit.className`
 
----
+***
 
 ### contentEditable?
 
@@ -154,7 +154,7 @@
 
 `Omit.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -164,7 +164,7 @@
 
 `Omit.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -174,7 +174,7 @@
 
 `Omit.dir`
 
----
+***
 
 ### draggable?
 
@@ -184,7 +184,7 @@
 
 `Omit.draggable`
 
----
+***
 
 ### hidden?
 
@@ -194,7 +194,7 @@
 
 `Omit.hidden`
 
----
+***
 
 ### id?
 
@@ -204,7 +204,7 @@
 
 `Omit.id`
 
----
+***
 
 ### lang?
 
@@ -214,7 +214,7 @@
 
 `Omit.lang`
 
----
+***
 
 ### nonce?
 
@@ -224,7 +224,7 @@
 
 `Omit.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -234,7 +234,7 @@
 
 `Omit.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -244,7 +244,7 @@
 
 `Omit.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -254,7 +254,7 @@
 
 `Omit.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -264,7 +264,7 @@
 
 `Omit.radioGroup`
 
----
+***
 
 ### role?
 
@@ -274,7 +274,7 @@
 
 `Omit.role`
 
----
+***
 
 ### about?
 
@@ -284,7 +284,7 @@
 
 `Omit.about`
 
----
+***
 
 ### datatype?
 
@@ -294,7 +294,7 @@
 
 `Omit.datatype`
 
----
+***
 
 ### inlist?
 
@@ -304,7 +304,7 @@
 
 `Omit.inlist`
 
----
+***
 
 ### prefix?
 
@@ -314,7 +314,7 @@
 
 `Omit.prefix`
 
----
+***
 
 ### property?
 
@@ -324,7 +324,7 @@
 
 `Omit.property`
 
----
+***
 
 ### rel?
 
@@ -334,7 +334,7 @@
 
 `Omit.rel`
 
----
+***
 
 ### resource?
 
@@ -344,7 +344,7 @@
 
 `Omit.resource`
 
----
+***
 
 ### rev?
 
@@ -354,7 +354,7 @@
 
 `Omit.rev`
 
----
+***
 
 ### typeof?
 
@@ -364,7 +364,7 @@
 
 `Omit.typeof`
 
----
+***
 
 ### vocab?
 
@@ -374,7 +374,7 @@
 
 `Omit.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -384,7 +384,7 @@
 
 `Omit.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -394,7 +394,7 @@
 
 `Omit.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -404,7 +404,7 @@
 
 `Omit.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -414,7 +414,7 @@
 
 `Omit.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -424,7 +424,7 @@
 
 `Omit.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -434,7 +434,7 @@
 
 `Omit.itemType`
 
----
+***
 
 ### itemID?
 
@@ -444,7 +444,7 @@
 
 `Omit.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -454,7 +454,7 @@
 
 `Omit.itemRef`
 
----
+***
 
 ### results?
 
@@ -464,7 +464,7 @@
 
 `Omit.results`
 
----
+***
 
 ### security?
 
@@ -474,7 +474,7 @@
 
 `Omit.security`
 
----
+***
 
 ### unselectable?
 
@@ -484,7 +484,7 @@
 
 `Omit.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -500,7 +500,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `Omit.inputMode`
 
----
+***
 
 ### is?
 
@@ -516,7 +516,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `Omit.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -528,7 +528,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `Omit.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -540,7 +540,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `Omit.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -553,7 +553,7 @@ presented if they are made.
 
 `Omit.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -569,7 +569,7 @@ aria-label.
 
 `Omit.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -585,7 +585,7 @@ aria-roledescription.
 
 `Omit.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -595,7 +595,7 @@ aria-roledescription.
 
 `Omit.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -605,14 +605,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `Omit.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -628,7 +628,7 @@ aria-colindex.
 
 `Omit.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -638,14 +638,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `Omit.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -661,7 +661,7 @@ aria-rowindextext.
 
 `Omit.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -671,14 +671,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `Omit.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -694,7 +694,7 @@ aria-owns.
 
 `Omit.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -706,7 +706,7 @@ Indicates the element that represents the current item within a container or set
 
 `Omit.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -722,7 +722,7 @@ aria-labelledby
 
 `Omit.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -738,7 +738,7 @@ related aria-describedby.
 
 `Omit.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -754,7 +754,7 @@ aria-describedby.
 
 `Omit.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -764,14 +764,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `Omit.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -787,7 +787,7 @@ in ARIA 1.1
 
 `Omit.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -797,14 +797,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `Omit.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -816,7 +816,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `Omit.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -829,7 +829,7 @@ allows assistive technology to override the general default of reading in docume
 
 `Omit.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -845,7 +845,7 @@ in ARIA 1.1
 
 `Omit.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -857,7 +857,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `Omit.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -873,7 +873,7 @@ aria-disabled.
 
 `Omit.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -889,7 +889,7 @@ aria-errormessage.
 
 `Omit.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -901,7 +901,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `Omit.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -917,7 +917,7 @@ aria-labelledby.
 
 `Omit.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -933,7 +933,7 @@ aria-describedby.
 
 `Omit.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -945,7 +945,7 @@ Defines the hierarchical level of an element within a structure.
 
 `Omit.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -957,7 +957,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `Omit.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -969,7 +969,7 @@ Indicates whether an element is modal when displayed.
 
 `Omit.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -981,7 +981,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `Omit.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -993,7 +993,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `Omit.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -1005,7 +1005,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `Omit.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1022,7 +1022,7 @@ aria-controls.
 
 `Omit.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1035,7 +1035,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `Omit.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1051,7 +1051,7 @@ aria-setsize.
 
 `Omit.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1061,14 +1061,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `Omit.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1084,7 +1084,7 @@ aria-disabled.
 
 `Omit.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1100,7 +1100,7 @@ aria-atomic.
 
 `Omit.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1112,7 +1112,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `Omit.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1124,7 +1124,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `Omit.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1140,7 +1140,7 @@ aria-rowindex.
 
 `Omit.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1150,14 +1150,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `Omit.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1173,7 +1173,7 @@ aria-colindextext.
 
 `Omit.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1183,14 +1183,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `Omit.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1200,14 +1200,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `Omit.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1223,7 +1223,7 @@ aria-posinset.
 
 `Omit.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1235,7 +1235,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `Omit.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1247,7 +1247,7 @@ Defines the maximum allowed value for a range widget.
 
 `Omit.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1259,7 +1259,7 @@ Defines the minimum allowed value for a range widget.
 
 `Omit.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1275,7 +1275,7 @@ aria-valuetext.
 
 `Omit.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1287,7 +1287,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1297,7 +1297,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1311,7 +1311,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1321,7 +1321,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1331,7 +1331,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1341,7 +1341,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1351,7 +1351,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1361,7 +1361,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1371,7 +1371,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1381,7 +1381,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1391,7 +1391,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1401,7 +1401,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1411,7 +1411,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1421,7 +1421,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1431,7 +1431,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1441,7 +1441,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1451,7 +1451,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1461,7 +1461,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1471,7 +1471,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1481,7 +1481,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1491,7 +1491,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1501,7 +1501,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1511,7 +1511,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1521,7 +1521,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1531,7 +1531,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1541,7 +1541,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1551,7 +1551,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1561,7 +1561,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1571,7 +1571,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1581,7 +1581,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1591,7 +1591,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1601,7 +1601,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1611,7 +1611,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1621,7 +1621,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1631,7 +1631,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1641,7 +1641,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1651,7 +1651,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1663,7 +1663,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1675,7 +1675,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1685,7 +1685,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1695,7 +1695,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1705,7 +1705,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1715,7 +1715,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1725,7 +1725,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1735,7 +1735,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1745,7 +1745,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1755,7 +1755,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1765,7 +1765,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1775,7 +1775,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1785,7 +1785,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1795,7 +1795,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1805,7 +1805,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1815,7 +1815,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1825,7 +1825,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1835,7 +1835,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1845,7 +1845,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1855,7 +1855,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1865,7 +1865,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1875,7 +1875,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1885,7 +1885,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1895,7 +1895,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1905,7 +1905,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1915,7 +1915,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1925,7 +1925,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1935,7 +1935,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1945,7 +1945,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1955,7 +1955,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -1965,7 +1965,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -1975,7 +1975,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -1985,7 +1985,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -1995,7 +1995,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -2005,7 +2005,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2015,7 +2015,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2025,7 +2025,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2035,7 +2035,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2045,7 +2045,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2055,7 +2055,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2065,7 +2065,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2075,7 +2075,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2085,7 +2085,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2095,7 +2095,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2105,7 +2105,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2115,7 +2115,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2125,7 +2125,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2135,7 +2135,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2145,7 +2145,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2155,7 +2155,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2165,7 +2165,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2175,7 +2175,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2185,7 +2185,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2195,7 +2195,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2205,7 +2205,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2215,7 +2215,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2225,7 +2225,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2235,7 +2235,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2245,7 +2245,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2255,7 +2255,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2265,7 +2265,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2275,7 +2275,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2285,7 +2285,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2295,7 +2295,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2305,7 +2305,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2315,7 +2315,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2325,7 +2325,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2335,7 +2335,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2345,7 +2345,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2355,7 +2355,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2365,7 +2365,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2375,7 +2375,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2385,7 +2385,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2395,7 +2395,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2405,7 +2405,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2415,7 +2415,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2425,7 +2425,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2435,7 +2435,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2445,7 +2445,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2455,7 +2455,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2465,7 +2465,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2475,7 +2475,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2485,7 +2485,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2495,7 +2495,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2505,7 +2505,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2515,7 +2515,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onMouseUpCapture`
 
----
+***
 
 ### onSelect?
 
@@ -2525,7 +2525,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2535,7 +2535,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2545,7 +2545,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2555,7 +2555,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2565,7 +2565,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2575,7 +2575,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2585,7 +2585,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2595,7 +2595,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2605,7 +2605,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2615,7 +2615,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2625,7 +2625,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2635,7 +2635,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2645,7 +2645,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2655,7 +2655,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2665,7 +2665,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2675,7 +2675,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2685,7 +2685,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2695,7 +2695,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2705,7 +2705,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2715,7 +2715,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2725,7 +2725,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2735,7 +2735,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2745,7 +2745,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2755,7 +2755,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2765,7 +2765,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2775,7 +2775,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2785,7 +2785,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2795,7 +2795,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2805,7 +2805,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2815,7 +2815,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2825,7 +2825,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2835,7 +2835,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2845,7 +2845,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2855,7 +2855,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2865,7 +2865,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2875,7 +2875,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2885,7 +2885,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2895,7 +2895,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2905,7 +2905,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2915,7 +2915,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.onTransitionEndCapture`
 
----
+***
 
 ### asChild?
 
@@ -2925,7 +2925,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `Omit.asChild`
 
----
+***
 
 ### forceMount?
 
@@ -2938,7 +2938,7 @@ controlling animation with React animation libraries.
 
 `Omit.forceMount`
 
----
+***
 
 ### onEscapeKeyDown()?
 
@@ -2959,7 +2959,7 @@ Can be prevented.
 
 `Omit.onEscapeKeyDown`
 
----
+***
 
 ### onPointerDownOutside()?
 
@@ -2980,7 +2980,7 @@ Can be prevented.
 
 `Omit.onPointerDownOutside`
 
----
+***
 
 ### onFocusOutside()?
 
@@ -3001,7 +3001,7 @@ Can be prevented.
 
 `Omit.onFocusOutside`
 
----
+***
 
 ### onInteractOutside()?
 
@@ -3023,7 +3023,7 @@ Can be prevented.
 
 `Omit.onInteractOutside`
 
----
+***
 
 ### onOpenAutoFocus()?
 
@@ -3044,7 +3044,7 @@ Can be prevented.
 
 `Omit.onOpenAutoFocus`
 
----
+***
 
 ### onCloseAutoFocus()?
 

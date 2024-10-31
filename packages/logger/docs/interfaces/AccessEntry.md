@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Interface: AccessEntry
 
@@ -8,7 +8,7 @@ Log entry. Can be a string or an object for additional metadata.
 
 ## Indexable
 
-\[`key`: `string`\]: `unknown`
+ \[`key`: `string`\]: `unknown`
 
 ## Properties
 
@@ -16,26 +16,20 @@ Log entry. Can be a string or an object for additional metadata.
 
 > **url**: `string`
 
----
+***
 
 ### method
 
 > **method**: `string`
 
----
+***
 
 ### status
 
 > **status**: `number`
 
----
+***
 
 ### time
 
 > **time**: `number`
-
----
-
-### transactionId?
-
-> `optional` **transactionId**: `string`

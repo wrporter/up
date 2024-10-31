@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Type Alias: OmitCommonProps\<Target, OmitAdditionalProps\>
 
@@ -10,4 +10,4 @@
 
 • **Target**
 
-• **OmitAdditionalProps** _extends_ keyof `any` = `never`
+• **OmitAdditionalProps** *extends* keyof `any` = `never`

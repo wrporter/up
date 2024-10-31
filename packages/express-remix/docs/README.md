@@ -1,6 +1,6 @@
 **@wesp-up/express-remix** • **Docs**
 
----
+***
 
 # @wesp-up/express-remix
 
@@ -14,6 +14,7 @@
 ## Interfaces
 
 - [RemixOptions](interfaces/RemixOptions.md)
+- [AccessLogOptions](interfaces/AccessLogOptions.md)
 - [LogMeta](interfaces/LogMeta.md)
 - [MetaOptions](interfaces/MetaOptions.md)
 - [Options](interfaces/Options.md)
@@ -28,9 +29,6 @@
 ## Variables
 
 - [defaultRemixOptions](variables/defaultRemixOptions.md)
-- [HEADER_PARENT_REQUEST_ID](variables/HEADER_PARENT_REQUEST_ID.md)
-- [HEADER_REQUEST_ID](variables/HEADER_REQUEST_ID.md)
-- [HEADER_TRANSACTION_ID](variables/HEADER_TRANSACTION_ID.md)
 - [defaultServerOptions](variables/defaultServerOptions.md)
 - [log](variables/log.md)
 
@@ -46,5 +44,4 @@
 - [metaRouter](functions/metaRouter.md)
 - [metricsMiddleware](functions/metricsMiddleware.md)
 - [requestContextMiddleware](functions/requestContextMiddleware.md)
-- [requestTransactionMiddleware](functions/requestTransactionMiddleware.md)
 - [responseContentMiddleware](functions/responseContentMiddleware.md)

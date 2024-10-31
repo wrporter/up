@@ -1,6 +1,6 @@
 **@wesp-up/logger** • **Docs**
 
----
+***
 
 # @wesp-up/logger
 

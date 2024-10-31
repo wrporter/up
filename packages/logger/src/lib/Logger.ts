@@ -30,7 +30,6 @@ export interface AccessEntry {
   method: string;
   status: number;
   time: number;
-  transactionId?: string;
   [key: string]: unknown;
 }
 

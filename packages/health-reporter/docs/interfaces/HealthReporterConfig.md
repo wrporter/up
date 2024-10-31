@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: HealthReporterConfig
 
@@ -17,7 +17,7 @@
 Service identifier. Defaults to using `process.env.APP_ID` when not
 specified.
 
----
+***
 
 ### releaseId?
 

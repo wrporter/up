@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Type Alias: HTMLCoreProps\<T\>
 
@@ -16,4 +16,4 @@ Core props for a component using as to override the underlying element.
 
 ## Type Parameters
 
-• **T** _extends_ `As`
+• **T** *extends* `As`

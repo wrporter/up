@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DialogTriggerProps
 
@@ -18,7 +18,7 @@
 
 `DialogPrimitive.DialogTriggerProps.form`
 
----
+***
 
 ### slot?
 
@@ -28,7 +28,7 @@
 
 `DialogPrimitive.DialogTriggerProps.slot`
 
----
+***
 
 ### style?
 
@@ -38,7 +38,7 @@
 
 `DialogPrimitive.DialogTriggerProps.style`
 
----
+***
 
 ### title?
 
@@ -48,7 +48,7 @@
 
 `DialogPrimitive.DialogTriggerProps.title`
 
----
+***
 
 ### color?
 
@@ -58,7 +58,7 @@
 
 `DialogPrimitive.DialogTriggerProps.color`
 
----
+***
 
 ### value?
 
@@ -68,7 +68,7 @@
 
 `DialogPrimitive.DialogTriggerProps.value`
 
----
+***
 
 ### content?
 
@@ -78,7 +78,7 @@
 
 `DialogPrimitive.DialogTriggerProps.content`
 
----
+***
 
 ### key?
 
@@ -88,7 +88,7 @@
 
 `DialogPrimitive.DialogTriggerProps.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -98,7 +98,7 @@
 
 `DialogPrimitive.DialogTriggerProps.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -108,7 +108,7 @@
 
 `DialogPrimitive.DialogTriggerProps.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -118,7 +118,7 @@
 
 `DialogPrimitive.DialogTriggerProps.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -128,7 +128,7 @@
 
 `DialogPrimitive.DialogTriggerProps.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -138,7 +138,7 @@
 
 `DialogPrimitive.DialogTriggerProps.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -148,7 +148,7 @@
 
 `DialogPrimitive.DialogTriggerProps.autoFocus`
 
----
+***
 
 ### className?
 
@@ -158,7 +158,7 @@
 
 `DialogPrimitive.DialogTriggerProps.className`
 
----
+***
 
 ### contentEditable?
 
@@ -168,7 +168,7 @@
 
 `DialogPrimitive.DialogTriggerProps.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -178,7 +178,7 @@
 
 `DialogPrimitive.DialogTriggerProps.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -188,7 +188,7 @@
 
 `DialogPrimitive.DialogTriggerProps.dir`
 
----
+***
 
 ### draggable?
 
@@ -198,7 +198,7 @@
 
 `DialogPrimitive.DialogTriggerProps.draggable`
 
----
+***
 
 ### hidden?
 
@@ -208,7 +208,7 @@
 
 `DialogPrimitive.DialogTriggerProps.hidden`
 
----
+***
 
 ### id?
 
@@ -218,7 +218,7 @@
 
 `DialogPrimitive.DialogTriggerProps.id`
 
----
+***
 
 ### lang?
 
@@ -228,7 +228,7 @@
 
 `DialogPrimitive.DialogTriggerProps.lang`
 
----
+***
 
 ### nonce?
 
@@ -238,7 +238,7 @@
 
 `DialogPrimitive.DialogTriggerProps.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -248,7 +248,7 @@
 
 `DialogPrimitive.DialogTriggerProps.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -258,7 +258,7 @@
 
 `DialogPrimitive.DialogTriggerProps.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -268,7 +268,7 @@
 
 `DialogPrimitive.DialogTriggerProps.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -278,7 +278,7 @@
 
 `DialogPrimitive.DialogTriggerProps.radioGroup`
 
----
+***
 
 ### role?
 
@@ -288,7 +288,7 @@
 
 `DialogPrimitive.DialogTriggerProps.role`
 
----
+***
 
 ### about?
 
@@ -298,7 +298,7 @@
 
 `DialogPrimitive.DialogTriggerProps.about`
 
----
+***
 
 ### datatype?
 
@@ -308,7 +308,7 @@
 
 `DialogPrimitive.DialogTriggerProps.datatype`
 
----
+***
 
 ### inlist?
 
@@ -318,7 +318,7 @@
 
 `DialogPrimitive.DialogTriggerProps.inlist`
 
----
+***
 
 ### prefix?
 
@@ -328,7 +328,7 @@
 
 `DialogPrimitive.DialogTriggerProps.prefix`
 
----
+***
 
 ### property?
 
@@ -338,7 +338,7 @@
 
 `DialogPrimitive.DialogTriggerProps.property`
 
----
+***
 
 ### rel?
 
@@ -348,7 +348,7 @@
 
 `DialogPrimitive.DialogTriggerProps.rel`
 
----
+***
 
 ### resource?
 
@@ -358,7 +358,7 @@
 
 `DialogPrimitive.DialogTriggerProps.resource`
 
----
+***
 
 ### rev?
 
@@ -368,7 +368,7 @@
 
 `DialogPrimitive.DialogTriggerProps.rev`
 
----
+***
 
 ### typeof?
 
@@ -378,7 +378,7 @@
 
 `DialogPrimitive.DialogTriggerProps.typeof`
 
----
+***
 
 ### vocab?
 
@@ -388,7 +388,7 @@
 
 `DialogPrimitive.DialogTriggerProps.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -398,7 +398,7 @@
 
 `DialogPrimitive.DialogTriggerProps.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -408,7 +408,7 @@
 
 `DialogPrimitive.DialogTriggerProps.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -418,7 +418,7 @@
 
 `DialogPrimitive.DialogTriggerProps.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -428,7 +428,7 @@
 
 `DialogPrimitive.DialogTriggerProps.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -438,7 +438,7 @@
 
 `DialogPrimitive.DialogTriggerProps.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -448,7 +448,7 @@
 
 `DialogPrimitive.DialogTriggerProps.itemType`
 
----
+***
 
 ### itemID?
 
@@ -458,7 +458,7 @@
 
 `DialogPrimitive.DialogTriggerProps.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -468,7 +468,7 @@
 
 `DialogPrimitive.DialogTriggerProps.itemRef`
 
----
+***
 
 ### results?
 
@@ -478,7 +478,7 @@
 
 `DialogPrimitive.DialogTriggerProps.results`
 
----
+***
 
 ### security?
 
@@ -488,7 +488,7 @@
 
 `DialogPrimitive.DialogTriggerProps.security`
 
----
+***
 
 ### unselectable?
 
@@ -498,7 +498,7 @@
 
 `DialogPrimitive.DialogTriggerProps.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -514,7 +514,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `DialogPrimitive.DialogTriggerProps.inputMode`
 
----
+***
 
 ### is?
 
@@ -530,7 +530,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `DialogPrimitive.DialogTriggerProps.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -542,7 +542,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `DialogPrimitive.DialogTriggerProps.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -554,7 +554,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `DialogPrimitive.DialogTriggerProps.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -567,7 +567,7 @@ presented if they are made.
 
 `DialogPrimitive.DialogTriggerProps.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -583,7 +583,7 @@ aria-label.
 
 `DialogPrimitive.DialogTriggerProps.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -599,7 +599,7 @@ aria-roledescription.
 
 `DialogPrimitive.DialogTriggerProps.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -609,7 +609,7 @@ aria-roledescription.
 
 `DialogPrimitive.DialogTriggerProps.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -619,14 +619,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -642,7 +642,7 @@ aria-colindex.
 
 `DialogPrimitive.DialogTriggerProps.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -652,14 +652,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -675,7 +675,7 @@ aria-rowindextext.
 
 `DialogPrimitive.DialogTriggerProps.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -685,14 +685,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -708,7 +708,7 @@ aria-owns.
 
 `DialogPrimitive.DialogTriggerProps.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -720,7 +720,7 @@ Indicates the element that represents the current item within a container or set
 
 `DialogPrimitive.DialogTriggerProps.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -736,7 +736,7 @@ aria-labelledby
 
 `DialogPrimitive.DialogTriggerProps.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -752,7 +752,7 @@ related aria-describedby.
 
 `DialogPrimitive.DialogTriggerProps.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -768,7 +768,7 @@ aria-describedby.
 
 `DialogPrimitive.DialogTriggerProps.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -778,14 +778,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -801,7 +801,7 @@ in ARIA 1.1
 
 `DialogPrimitive.DialogTriggerProps.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -811,14 +811,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -830,7 +830,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `DialogPrimitive.DialogTriggerProps.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -843,7 +843,7 @@ allows assistive technology to override the general default of reading in docume
 
 `DialogPrimitive.DialogTriggerProps.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -859,7 +859,7 @@ in ARIA 1.1
 
 `DialogPrimitive.DialogTriggerProps.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -871,7 +871,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `DialogPrimitive.DialogTriggerProps.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -887,7 +887,7 @@ aria-disabled.
 
 `DialogPrimitive.DialogTriggerProps.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -903,7 +903,7 @@ aria-errormessage.
 
 `DialogPrimitive.DialogTriggerProps.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -915,7 +915,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `DialogPrimitive.DialogTriggerProps.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -931,7 +931,7 @@ aria-labelledby.
 
 `DialogPrimitive.DialogTriggerProps.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -947,7 +947,7 @@ aria-describedby.
 
 `DialogPrimitive.DialogTriggerProps.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -959,7 +959,7 @@ Defines the hierarchical level of an element within a structure.
 
 `DialogPrimitive.DialogTriggerProps.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -971,7 +971,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `DialogPrimitive.DialogTriggerProps.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -983,7 +983,7 @@ Indicates whether an element is modal when displayed.
 
 `DialogPrimitive.DialogTriggerProps.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -995,7 +995,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `DialogPrimitive.DialogTriggerProps.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -1007,7 +1007,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `DialogPrimitive.DialogTriggerProps.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -1019,7 +1019,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `DialogPrimitive.DialogTriggerProps.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1036,7 +1036,7 @@ aria-controls.
 
 `DialogPrimitive.DialogTriggerProps.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1049,7 +1049,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `DialogPrimitive.DialogTriggerProps.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1065,7 +1065,7 @@ aria-setsize.
 
 `DialogPrimitive.DialogTriggerProps.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1075,14 +1075,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1098,7 +1098,7 @@ aria-disabled.
 
 `DialogPrimitive.DialogTriggerProps.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1114,7 +1114,7 @@ aria-atomic.
 
 `DialogPrimitive.DialogTriggerProps.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1126,7 +1126,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `DialogPrimitive.DialogTriggerProps.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1138,7 +1138,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `DialogPrimitive.DialogTriggerProps.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1154,7 +1154,7 @@ aria-rowindex.
 
 `DialogPrimitive.DialogTriggerProps.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1164,14 +1164,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1187,7 +1187,7 @@ aria-colindextext.
 
 `DialogPrimitive.DialogTriggerProps.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1197,14 +1197,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1214,14 +1214,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `DialogPrimitive.DialogTriggerProps.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1237,7 +1237,7 @@ aria-posinset.
 
 `DialogPrimitive.DialogTriggerProps.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1249,7 +1249,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `DialogPrimitive.DialogTriggerProps.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1261,7 +1261,7 @@ Defines the maximum allowed value for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1273,7 +1273,7 @@ Defines the minimum allowed value for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1289,7 +1289,7 @@ aria-valuetext.
 
 `DialogPrimitive.DialogTriggerProps.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1301,7 +1301,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1311,7 +1311,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1325,7 +1325,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1335,7 +1335,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1345,7 +1345,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1355,7 +1355,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1365,7 +1365,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1375,7 +1375,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1385,7 +1385,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1395,7 +1395,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1405,7 +1405,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1415,7 +1415,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1425,7 +1425,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1435,7 +1435,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1445,7 +1445,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1455,7 +1455,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1465,7 +1465,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1475,7 +1475,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1485,7 +1485,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1495,7 +1495,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1505,7 +1505,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1515,7 +1515,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1525,7 +1525,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1535,7 +1535,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1545,7 +1545,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1555,7 +1555,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1565,7 +1565,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1575,7 +1575,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1585,7 +1585,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1595,7 +1595,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1605,7 +1605,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1615,7 +1615,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1625,7 +1625,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1635,7 +1635,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1645,7 +1645,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1655,7 +1655,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1665,7 +1665,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1677,7 +1677,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1689,7 +1689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1699,7 +1699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1709,7 +1709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1719,7 +1719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1729,7 +1729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1739,7 +1739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1749,7 +1749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1759,7 +1759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1769,7 +1769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1779,7 +1779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1789,7 +1789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1799,7 +1799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1809,7 +1809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1819,7 +1819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1829,7 +1829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1839,7 +1839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1849,7 +1849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1859,7 +1859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1869,7 +1869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1879,7 +1879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1889,7 +1889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1899,7 +1899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1909,7 +1909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1919,7 +1919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1929,7 +1929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1939,7 +1939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1949,7 +1949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1959,7 +1959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1969,7 +1969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -1979,7 +1979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -1989,7 +1989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -1999,7 +1999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -2009,7 +2009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -2019,7 +2019,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2029,7 +2029,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2039,7 +2039,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2049,7 +2049,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2059,7 +2059,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2069,7 +2069,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2079,7 +2079,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2089,7 +2089,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2099,7 +2099,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2109,7 +2109,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2119,7 +2119,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2129,7 +2129,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2139,7 +2139,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2149,7 +2149,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2159,7 +2159,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2169,7 +2169,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2179,7 +2179,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2189,7 +2189,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2199,7 +2199,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2209,7 +2209,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2219,7 +2219,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2229,7 +2229,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2239,7 +2239,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2249,7 +2249,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2259,7 +2259,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2269,7 +2269,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2279,7 +2279,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2289,7 +2289,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2299,7 +2299,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2309,7 +2309,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2319,7 +2319,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2329,7 +2329,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2339,7 +2339,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2349,7 +2349,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2359,7 +2359,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2369,7 +2369,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2379,7 +2379,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2389,7 +2389,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2399,7 +2399,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2409,7 +2409,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2419,7 +2419,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2429,7 +2429,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2439,7 +2439,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2449,7 +2449,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2459,7 +2459,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2469,7 +2469,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2479,7 +2479,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2489,7 +2489,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2499,7 +2499,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2509,7 +2509,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2519,7 +2519,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2529,7 +2529,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onMouseUpCapture`
 
----
+***
 
 ### onSelect?
 
@@ -2539,7 +2539,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2549,7 +2549,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2559,7 +2559,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2569,7 +2569,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2579,7 +2579,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2589,7 +2589,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2599,7 +2599,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2609,7 +2609,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2619,7 +2619,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2629,7 +2629,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2639,7 +2639,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2649,7 +2649,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2659,7 +2659,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2669,7 +2669,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2679,7 +2679,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2689,7 +2689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2699,7 +2699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2709,7 +2709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2719,7 +2719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2729,7 +2729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2739,7 +2739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2749,7 +2749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2759,7 +2759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2769,7 +2769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2779,7 +2779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2789,7 +2789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2799,7 +2799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2809,7 +2809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2819,7 +2819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2829,7 +2829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2839,7 +2839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2849,7 +2849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2859,7 +2859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2869,7 +2869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2879,7 +2879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2889,7 +2889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2899,7 +2899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2909,7 +2909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2919,7 +2919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2929,7 +2929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.onTransitionEndCapture`
 
----
+***
 
 ### asChild?
 
@@ -2939,7 +2939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.asChild`
 
----
+***
 
 ### type?
 
@@ -2949,7 +2949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.type`
 
----
+***
 
 ### disabled?
 
@@ -2959,7 +2959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.disabled`
 
----
+***
 
 ### formAction?
 
@@ -2969,7 +2969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.formAction`
 
----
+***
 
 ### formEncType?
 
@@ -2979,7 +2979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.formEncType`
 
----
+***
 
 ### formMethod?
 
@@ -2989,7 +2989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.formMethod`
 
----
+***
 
 ### formNoValidate?
 
@@ -2999,7 +2999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.formNoValidate`
 
----
+***
 
 ### formTarget?
 
@@ -3009,7 +3009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogTriggerProps.formTarget`
 
----
+***
 
 ### name?
 

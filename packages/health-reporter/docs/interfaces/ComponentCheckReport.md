@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: ComponentCheckReport
 
@@ -16,7 +16,7 @@
 
 Value returned from the check.
 
----
+***
 
 ### observedUnit
 
@@ -24,7 +24,7 @@ Value returned from the check.
 
 Unit of the `observedValue`.
 
----
+***
 
 ### status
 
@@ -37,7 +37,7 @@ overall status.
 
 `Pick.status`
 
----
+***
 
 ### output?
 

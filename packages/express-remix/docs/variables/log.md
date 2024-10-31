@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Variable: log
 

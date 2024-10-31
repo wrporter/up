@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Class: HealthReporter
 
@@ -45,7 +45,7 @@ information you expose.
 
 [`HealthReporter`](HealthReporter.md)
 
----
+***
 
 ### report()
 

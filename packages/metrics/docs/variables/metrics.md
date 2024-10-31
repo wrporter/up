@@ -1,6 +1,6 @@
 [**@wesp-up/metrics**](../README.md) • **Docs**
 
----
+***
 
 # Variable: metrics
 

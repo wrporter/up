@@ -1,6 +1,6 @@
 [**@wesp-up/logger**](../README.md) • **Docs**
 
----
+***
 
 # Class: `abstract` Logger
 
@@ -43,7 +43,7 @@ Returns the current logging level set in the logger.
 
 [`Level`](../type-aliases/Level.md)
 
----
+***
 
 ### log()
 
@@ -66,7 +66,7 @@ Data to be logged. Can be of any type.
 
 `void`
 
----
+***
 
 ### configure()
 
@@ -84,7 +84,7 @@ Options to set.
 
 `void`
 
----
+***
 
 ### commit()
 
@@ -106,7 +106,7 @@ The entry to be logged.
 
 `void`
 
----
+***
 
 ### debug()
 
@@ -124,7 +124,7 @@ Data to be logged.
 
 `void`
 
----
+***
 
 ### info()
 
@@ -142,7 +142,7 @@ Data to be logged.
 
 `void`
 
----
+***
 
 ### access()
 
@@ -160,7 +160,7 @@ Entry to be logged.
 
 `void`
 
----
+***
 
 ### warn()
 
@@ -178,7 +178,7 @@ Data to be logged.
 
 `void`
 
----
+***
 
 ### error()
 

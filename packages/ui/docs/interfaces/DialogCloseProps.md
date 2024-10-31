@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: DialogCloseProps
 
@@ -18,7 +18,7 @@
 
 `DialogPrimitive.DialogCloseProps.form`
 
----
+***
 
 ### slot?
 
@@ -28,7 +28,7 @@
 
 `DialogPrimitive.DialogCloseProps.slot`
 
----
+***
 
 ### style?
 
@@ -38,7 +38,7 @@
 
 `DialogPrimitive.DialogCloseProps.style`
 
----
+***
 
 ### title?
 
@@ -48,7 +48,7 @@
 
 `DialogPrimitive.DialogCloseProps.title`
 
----
+***
 
 ### color?
 
@@ -58,7 +58,7 @@
 
 `DialogPrimitive.DialogCloseProps.color`
 
----
+***
 
 ### value?
 
@@ -68,7 +68,7 @@
 
 `DialogPrimitive.DialogCloseProps.value`
 
----
+***
 
 ### content?
 
@@ -78,7 +78,7 @@
 
 `DialogPrimitive.DialogCloseProps.content`
 
----
+***
 
 ### key?
 
@@ -88,7 +88,7 @@
 
 `DialogPrimitive.DialogCloseProps.key`
 
----
+***
 
 ### defaultChecked?
 
@@ -98,7 +98,7 @@
 
 `DialogPrimitive.DialogCloseProps.defaultChecked`
 
----
+***
 
 ### defaultValue?
 
@@ -108,7 +108,7 @@
 
 `DialogPrimitive.DialogCloseProps.defaultValue`
 
----
+***
 
 ### suppressContentEditableWarning?
 
@@ -118,7 +118,7 @@
 
 `DialogPrimitive.DialogCloseProps.suppressContentEditableWarning`
 
----
+***
 
 ### suppressHydrationWarning?
 
@@ -128,7 +128,7 @@
 
 `DialogPrimitive.DialogCloseProps.suppressHydrationWarning`
 
----
+***
 
 ### accessKey?
 
@@ -138,7 +138,7 @@
 
 `DialogPrimitive.DialogCloseProps.accessKey`
 
----
+***
 
 ### autoFocus?
 
@@ -148,7 +148,7 @@
 
 `DialogPrimitive.DialogCloseProps.autoFocus`
 
----
+***
 
 ### className?
 
@@ -158,7 +158,7 @@
 
 `DialogPrimitive.DialogCloseProps.className`
 
----
+***
 
 ### contentEditable?
 
@@ -168,7 +168,7 @@
 
 `DialogPrimitive.DialogCloseProps.contentEditable`
 
----
+***
 
 ### contextMenu?
 
@@ -178,7 +178,7 @@
 
 `DialogPrimitive.DialogCloseProps.contextMenu`
 
----
+***
 
 ### dir?
 
@@ -188,7 +188,7 @@
 
 `DialogPrimitive.DialogCloseProps.dir`
 
----
+***
 
 ### draggable?
 
@@ -198,7 +198,7 @@
 
 `DialogPrimitive.DialogCloseProps.draggable`
 
----
+***
 
 ### hidden?
 
@@ -208,7 +208,7 @@
 
 `DialogPrimitive.DialogCloseProps.hidden`
 
----
+***
 
 ### id?
 
@@ -218,7 +218,7 @@
 
 `DialogPrimitive.DialogCloseProps.id`
 
----
+***
 
 ### lang?
 
@@ -228,7 +228,7 @@
 
 `DialogPrimitive.DialogCloseProps.lang`
 
----
+***
 
 ### nonce?
 
@@ -238,7 +238,7 @@
 
 `DialogPrimitive.DialogCloseProps.nonce`
 
----
+***
 
 ### spellCheck?
 
@@ -248,7 +248,7 @@
 
 `DialogPrimitive.DialogCloseProps.spellCheck`
 
----
+***
 
 ### tabIndex?
 
@@ -258,7 +258,7 @@
 
 `DialogPrimitive.DialogCloseProps.tabIndex`
 
----
+***
 
 ### translate?
 
@@ -268,7 +268,7 @@
 
 `DialogPrimitive.DialogCloseProps.translate`
 
----
+***
 
 ### radioGroup?
 
@@ -278,7 +278,7 @@
 
 `DialogPrimitive.DialogCloseProps.radioGroup`
 
----
+***
 
 ### role?
 
@@ -288,7 +288,7 @@
 
 `DialogPrimitive.DialogCloseProps.role`
 
----
+***
 
 ### about?
 
@@ -298,7 +298,7 @@
 
 `DialogPrimitive.DialogCloseProps.about`
 
----
+***
 
 ### datatype?
 
@@ -308,7 +308,7 @@
 
 `DialogPrimitive.DialogCloseProps.datatype`
 
----
+***
 
 ### inlist?
 
@@ -318,7 +318,7 @@
 
 `DialogPrimitive.DialogCloseProps.inlist`
 
----
+***
 
 ### prefix?
 
@@ -328,7 +328,7 @@
 
 `DialogPrimitive.DialogCloseProps.prefix`
 
----
+***
 
 ### property?
 
@@ -338,7 +338,7 @@
 
 `DialogPrimitive.DialogCloseProps.property`
 
----
+***
 
 ### rel?
 
@@ -348,7 +348,7 @@
 
 `DialogPrimitive.DialogCloseProps.rel`
 
----
+***
 
 ### resource?
 
@@ -358,7 +358,7 @@
 
 `DialogPrimitive.DialogCloseProps.resource`
 
----
+***
 
 ### rev?
 
@@ -368,7 +368,7 @@
 
 `DialogPrimitive.DialogCloseProps.rev`
 
----
+***
 
 ### typeof?
 
@@ -378,7 +378,7 @@
 
 `DialogPrimitive.DialogCloseProps.typeof`
 
----
+***
 
 ### vocab?
 
@@ -388,7 +388,7 @@
 
 `DialogPrimitive.DialogCloseProps.vocab`
 
----
+***
 
 ### autoCapitalize?
 
@@ -398,7 +398,7 @@
 
 `DialogPrimitive.DialogCloseProps.autoCapitalize`
 
----
+***
 
 ### autoCorrect?
 
@@ -408,7 +408,7 @@
 
 `DialogPrimitive.DialogCloseProps.autoCorrect`
 
----
+***
 
 ### autoSave?
 
@@ -418,7 +418,7 @@
 
 `DialogPrimitive.DialogCloseProps.autoSave`
 
----
+***
 
 ### itemProp?
 
@@ -428,7 +428,7 @@
 
 `DialogPrimitive.DialogCloseProps.itemProp`
 
----
+***
 
 ### itemScope?
 
@@ -438,7 +438,7 @@
 
 `DialogPrimitive.DialogCloseProps.itemScope`
 
----
+***
 
 ### itemType?
 
@@ -448,7 +448,7 @@
 
 `DialogPrimitive.DialogCloseProps.itemType`
 
----
+***
 
 ### itemID?
 
@@ -458,7 +458,7 @@
 
 `DialogPrimitive.DialogCloseProps.itemID`
 
----
+***
 
 ### itemRef?
 
@@ -468,7 +468,7 @@
 
 `DialogPrimitive.DialogCloseProps.itemRef`
 
----
+***
 
 ### results?
 
@@ -478,7 +478,7 @@
 
 `DialogPrimitive.DialogCloseProps.results`
 
----
+***
 
 ### security?
 
@@ -488,7 +488,7 @@
 
 `DialogPrimitive.DialogCloseProps.security`
 
----
+***
 
 ### unselectable?
 
@@ -498,7 +498,7 @@
 
 `DialogPrimitive.DialogCloseProps.unselectable`
 
----
+***
 
 ### inputMode?
 
@@ -514,7 +514,7 @@ Hints at the type of data that might be entered by the user while editing the el
 
 `DialogPrimitive.DialogCloseProps.inputMode`
 
----
+***
 
 ### is?
 
@@ -530,7 +530,7 @@ Specify that a standard HTML element should behave like a defined custom built-i
 
 `DialogPrimitive.DialogCloseProps.is`
 
----
+***
 
 ### aria-activedescendant?
 
@@ -542,7 +542,7 @@ Identifies the currently active element when DOM focus is on a composite widget,
 
 `DialogPrimitive.DialogCloseProps.aria-activedescendant`
 
----
+***
 
 ### aria-atomic?
 
@@ -554,7 +554,7 @@ Indicates whether assistive technologies will present all, or only parts of, the
 
 `DialogPrimitive.DialogCloseProps.aria-atomic`
 
----
+***
 
 ### aria-autocomplete?
 
@@ -567,7 +567,7 @@ presented if they are made.
 
 `DialogPrimitive.DialogCloseProps.aria-autocomplete`
 
----
+***
 
 ### aria-braillelabel?
 
@@ -583,7 +583,7 @@ aria-label.
 
 `DialogPrimitive.DialogCloseProps.aria-braillelabel`
 
----
+***
 
 ### aria-brailleroledescription?
 
@@ -599,7 +599,7 @@ aria-roledescription.
 
 `DialogPrimitive.DialogCloseProps.aria-brailleroledescription`
 
----
+***
 
 ### aria-busy?
 
@@ -609,7 +609,7 @@ aria-roledescription.
 
 `DialogPrimitive.DialogCloseProps.aria-busy`
 
----
+***
 
 ### aria-checked?
 
@@ -619,14 +619,14 @@ Indicates the current "checked" state of checkboxes, radio buttons, and other wi
 
 #### See
 
-- aria-pressed
-- aria-selected.
+ - aria-pressed
+ - aria-selected.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-checked`
 
----
+***
 
 ### aria-colcount?
 
@@ -642,7 +642,7 @@ aria-colindex.
 
 `DialogPrimitive.DialogCloseProps.aria-colcount`
 
----
+***
 
 ### aria-colindex?
 
@@ -652,14 +652,14 @@ Defines an element's column index or position with respect to the total number o
 
 #### See
 
-- aria-colcount
-- aria-colspan.
+ - aria-colcount
+ - aria-colspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-colindex`
 
----
+***
 
 ### aria-colindextext?
 
@@ -675,7 +675,7 @@ aria-rowindextext.
 
 `DialogPrimitive.DialogCloseProps.aria-colindextext`
 
----
+***
 
 ### aria-colspan?
 
@@ -685,14 +685,14 @@ Defines the number of columns spanned by a cell or gridcell within a table, grid
 
 #### See
 
-- aria-colindex
-- aria-rowspan.
+ - aria-colindex
+ - aria-rowspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-colspan`
 
----
+***
 
 ### aria-controls?
 
@@ -708,7 +708,7 @@ aria-owns.
 
 `DialogPrimitive.DialogCloseProps.aria-controls`
 
----
+***
 
 ### aria-current?
 
@@ -720,7 +720,7 @@ Indicates the element that represents the current item within a container or set
 
 `DialogPrimitive.DialogCloseProps.aria-current`
 
----
+***
 
 ### aria-describedby?
 
@@ -736,7 +736,7 @@ aria-labelledby
 
 `DialogPrimitive.DialogCloseProps.aria-describedby`
 
----
+***
 
 ### aria-description?
 
@@ -752,7 +752,7 @@ related aria-describedby.
 
 `DialogPrimitive.DialogCloseProps.aria-description`
 
----
+***
 
 ### aria-details?
 
@@ -768,7 +768,7 @@ aria-describedby.
 
 `DialogPrimitive.DialogCloseProps.aria-details`
 
----
+***
 
 ### aria-disabled?
 
@@ -778,14 +778,14 @@ Indicates that the element is perceivable but disabled, so it is not editable or
 
 #### See
 
-- aria-hidden
-- aria-readonly.
+ - aria-hidden
+ - aria-readonly.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-disabled`
 
----
+***
 
 ### ~~aria-dropeffect?~~
 
@@ -801,7 +801,7 @@ in ARIA 1.1
 
 `DialogPrimitive.DialogCloseProps.aria-dropeffect`
 
----
+***
 
 ### aria-errormessage?
 
@@ -811,14 +811,14 @@ Identifies the element that provides an error message for the object.
 
 #### See
 
-- aria-invalid
-- aria-describedby.
+ - aria-invalid
+ - aria-describedby.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-errormessage`
 
----
+***
 
 ### aria-expanded?
 
@@ -830,7 +830,7 @@ Indicates whether the element, or another grouping element it controls, is curre
 
 `DialogPrimitive.DialogCloseProps.aria-expanded`
 
----
+***
 
 ### aria-flowto?
 
@@ -843,7 +843,7 @@ allows assistive technology to override the general default of reading in docume
 
 `DialogPrimitive.DialogCloseProps.aria-flowto`
 
----
+***
 
 ### ~~aria-grabbed?~~
 
@@ -859,7 +859,7 @@ in ARIA 1.1
 
 `DialogPrimitive.DialogCloseProps.aria-grabbed`
 
----
+***
 
 ### aria-haspopup?
 
@@ -871,7 +871,7 @@ Indicates the availability and type of interactive popup element, such as menu o
 
 `DialogPrimitive.DialogCloseProps.aria-haspopup`
 
----
+***
 
 ### aria-hidden?
 
@@ -887,7 +887,7 @@ aria-disabled.
 
 `DialogPrimitive.DialogCloseProps.aria-hidden`
 
----
+***
 
 ### aria-invalid?
 
@@ -903,7 +903,7 @@ aria-errormessage.
 
 `DialogPrimitive.DialogCloseProps.aria-invalid`
 
----
+***
 
 ### aria-keyshortcuts?
 
@@ -915,7 +915,7 @@ Indicates keyboard shortcuts that an author has implemented to activate or give 
 
 `DialogPrimitive.DialogCloseProps.aria-keyshortcuts`
 
----
+***
 
 ### aria-label?
 
@@ -931,7 +931,7 @@ aria-labelledby.
 
 `DialogPrimitive.DialogCloseProps.aria-label`
 
----
+***
 
 ### aria-labelledby?
 
@@ -947,7 +947,7 @@ aria-describedby.
 
 `DialogPrimitive.DialogCloseProps.aria-labelledby`
 
----
+***
 
 ### aria-level?
 
@@ -959,7 +959,7 @@ Defines the hierarchical level of an element within a structure.
 
 `DialogPrimitive.DialogCloseProps.aria-level`
 
----
+***
 
 ### aria-live?
 
@@ -971,7 +971,7 @@ Indicates that an element will be updated, and describes the types of updates th
 
 `DialogPrimitive.DialogCloseProps.aria-live`
 
----
+***
 
 ### aria-modal?
 
@@ -983,7 +983,7 @@ Indicates whether an element is modal when displayed.
 
 `DialogPrimitive.DialogCloseProps.aria-modal`
 
----
+***
 
 ### aria-multiline?
 
@@ -995,7 +995,7 @@ Indicates whether a text box accepts multiple lines of input or only a single li
 
 `DialogPrimitive.DialogCloseProps.aria-multiline`
 
----
+***
 
 ### aria-multiselectable?
 
@@ -1007,7 +1007,7 @@ Indicates that the user may select more than one item from the current selectabl
 
 `DialogPrimitive.DialogCloseProps.aria-multiselectable`
 
----
+***
 
 ### aria-orientation?
 
@@ -1019,7 +1019,7 @@ Indicates whether the element's orientation is horizontal, vertical, or unknown/
 
 `DialogPrimitive.DialogCloseProps.aria-orientation`
 
----
+***
 
 ### aria-owns?
 
@@ -1036,7 +1036,7 @@ aria-controls.
 
 `DialogPrimitive.DialogCloseProps.aria-owns`
 
----
+***
 
 ### aria-placeholder?
 
@@ -1049,7 +1049,7 @@ A hint could be a sample value or a brief description of the expected format.
 
 `DialogPrimitive.DialogCloseProps.aria-placeholder`
 
----
+***
 
 ### aria-posinset?
 
@@ -1065,7 +1065,7 @@ aria-setsize.
 
 `DialogPrimitive.DialogCloseProps.aria-posinset`
 
----
+***
 
 ### aria-pressed?
 
@@ -1075,14 +1075,14 @@ Indicates the current "pressed" state of toggle buttons.
 
 #### See
 
-- aria-checked
-- aria-selected.
+ - aria-checked
+ - aria-selected.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-pressed`
 
----
+***
 
 ### aria-readonly?
 
@@ -1098,7 +1098,7 @@ aria-disabled.
 
 `DialogPrimitive.DialogCloseProps.aria-readonly`
 
----
+***
 
 ### aria-relevant?
 
@@ -1114,7 +1114,7 @@ aria-atomic.
 
 `DialogPrimitive.DialogCloseProps.aria-relevant`
 
----
+***
 
 ### aria-required?
 
@@ -1126,7 +1126,7 @@ Indicates that user input is required on the element before a form may be submit
 
 `DialogPrimitive.DialogCloseProps.aria-required`
 
----
+***
 
 ### aria-roledescription?
 
@@ -1138,7 +1138,7 @@ Defines a human-readable, author-localized description for the role of an elemen
 
 `DialogPrimitive.DialogCloseProps.aria-roledescription`
 
----
+***
 
 ### aria-rowcount?
 
@@ -1154,7 +1154,7 @@ aria-rowindex.
 
 `DialogPrimitive.DialogCloseProps.aria-rowcount`
 
----
+***
 
 ### aria-rowindex?
 
@@ -1164,14 +1164,14 @@ Defines an element's row index or position with respect to the total number of r
 
 #### See
 
-- aria-rowcount
-- aria-rowspan.
+ - aria-rowcount
+ - aria-rowspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-rowindex`
 
----
+***
 
 ### aria-rowindextext?
 
@@ -1187,7 +1187,7 @@ aria-colindextext.
 
 `DialogPrimitive.DialogCloseProps.aria-rowindextext`
 
----
+***
 
 ### aria-rowspan?
 
@@ -1197,14 +1197,14 @@ Defines the number of rows spanned by a cell or gridcell within a table, grid, o
 
 #### See
 
-- aria-rowindex
-- aria-colspan.
+ - aria-rowindex
+ - aria-colspan.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-rowspan`
 
----
+***
 
 ### aria-selected?
 
@@ -1214,14 +1214,14 @@ Indicates the current "selected" state of various widgets.
 
 #### See
 
-- aria-checked
-- aria-pressed.
+ - aria-checked
+ - aria-pressed.
 
 #### Inherited from
 
 `DialogPrimitive.DialogCloseProps.aria-selected`
 
----
+***
 
 ### aria-setsize?
 
@@ -1237,7 +1237,7 @@ aria-posinset.
 
 `DialogPrimitive.DialogCloseProps.aria-setsize`
 
----
+***
 
 ### aria-sort?
 
@@ -1249,7 +1249,7 @@ Indicates if items in a table or grid are sorted in ascending or descending orde
 
 `DialogPrimitive.DialogCloseProps.aria-sort`
 
----
+***
 
 ### aria-valuemax?
 
@@ -1261,7 +1261,7 @@ Defines the maximum allowed value for a range widget.
 
 `DialogPrimitive.DialogCloseProps.aria-valuemax`
 
----
+***
 
 ### aria-valuemin?
 
@@ -1273,7 +1273,7 @@ Defines the minimum allowed value for a range widget.
 
 `DialogPrimitive.DialogCloseProps.aria-valuemin`
 
----
+***
 
 ### aria-valuenow?
 
@@ -1289,7 +1289,7 @@ aria-valuetext.
 
 `DialogPrimitive.DialogCloseProps.aria-valuenow`
 
----
+***
 
 ### aria-valuetext?
 
@@ -1301,7 +1301,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.aria-valuetext`
 
----
+***
 
 ### children?
 
@@ -1311,7 +1311,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.children`
 
----
+***
 
 ### dangerouslySetInnerHTML?
 
@@ -1325,7 +1325,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.dangerouslySetInnerHTML`
 
----
+***
 
 ### onCopy?
 
@@ -1335,7 +1335,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCopy`
 
----
+***
 
 ### onCopyCapture?
 
@@ -1345,7 +1345,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCopyCapture`
 
----
+***
 
 ### onCut?
 
@@ -1355,7 +1355,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCut`
 
----
+***
 
 ### onCutCapture?
 
@@ -1365,7 +1365,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCutCapture`
 
----
+***
 
 ### onPaste?
 
@@ -1375,7 +1375,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPaste`
 
----
+***
 
 ### onPasteCapture?
 
@@ -1385,7 +1385,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPasteCapture`
 
----
+***
 
 ### onCompositionEnd?
 
@@ -1395,7 +1395,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionEnd`
 
----
+***
 
 ### onCompositionEndCapture?
 
@@ -1405,7 +1405,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionEndCapture`
 
----
+***
 
 ### onCompositionStart?
 
@@ -1415,7 +1415,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionStart`
 
----
+***
 
 ### onCompositionStartCapture?
 
@@ -1425,7 +1425,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionStartCapture`
 
----
+***
 
 ### onCompositionUpdate?
 
@@ -1435,7 +1435,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionUpdate`
 
----
+***
 
 ### onCompositionUpdateCapture?
 
@@ -1445,7 +1445,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCompositionUpdateCapture`
 
----
+***
 
 ### onFocus?
 
@@ -1455,7 +1455,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onFocus`
 
----
+***
 
 ### onFocusCapture?
 
@@ -1465,7 +1465,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onFocusCapture`
 
----
+***
 
 ### onBlur?
 
@@ -1475,7 +1475,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onBlur`
 
----
+***
 
 ### onBlurCapture?
 
@@ -1485,7 +1485,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onBlurCapture`
 
----
+***
 
 ### onChange?
 
@@ -1495,7 +1495,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onChange`
 
----
+***
 
 ### onChangeCapture?
 
@@ -1505,7 +1505,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onChangeCapture`
 
----
+***
 
 ### onBeforeInput?
 
@@ -1515,7 +1515,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onBeforeInput`
 
----
+***
 
 ### onBeforeInputCapture?
 
@@ -1525,7 +1525,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onBeforeInputCapture`
 
----
+***
 
 ### onInput?
 
@@ -1535,7 +1535,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onInput`
 
----
+***
 
 ### onInputCapture?
 
@@ -1545,7 +1545,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onInputCapture`
 
----
+***
 
 ### onReset?
 
@@ -1555,7 +1555,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onReset`
 
----
+***
 
 ### onResetCapture?
 
@@ -1565,7 +1565,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onResetCapture`
 
----
+***
 
 ### onSubmit?
 
@@ -1575,7 +1575,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSubmit`
 
----
+***
 
 ### onSubmitCapture?
 
@@ -1585,7 +1585,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSubmitCapture`
 
----
+***
 
 ### onInvalid?
 
@@ -1595,7 +1595,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onInvalid`
 
----
+***
 
 ### onInvalidCapture?
 
@@ -1605,7 +1605,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onInvalidCapture`
 
----
+***
 
 ### onLoad?
 
@@ -1615,7 +1615,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoad`
 
----
+***
 
 ### onLoadCapture?
 
@@ -1625,7 +1625,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadCapture`
 
----
+***
 
 ### onError?
 
@@ -1635,7 +1635,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onError`
 
----
+***
 
 ### onErrorCapture?
 
@@ -1645,7 +1645,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onErrorCapture`
 
----
+***
 
 ### onKeyDown?
 
@@ -1655,7 +1655,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyDown`
 
----
+***
 
 ### onKeyDownCapture?
 
@@ -1665,7 +1665,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyDownCapture`
 
----
+***
 
 ### ~~onKeyPress?~~
 
@@ -1677,7 +1677,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyPress`
 
----
+***
 
 ### ~~onKeyPressCapture?~~
 
@@ -1689,7 +1689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyPressCapture`
 
----
+***
 
 ### onKeyUp?
 
@@ -1699,7 +1699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyUp`
 
----
+***
 
 ### onKeyUpCapture?
 
@@ -1709,7 +1709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onKeyUpCapture`
 
----
+***
 
 ### onAbort?
 
@@ -1719,7 +1719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAbort`
 
----
+***
 
 ### onAbortCapture?
 
@@ -1729,7 +1729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAbortCapture`
 
----
+***
 
 ### onCanPlay?
 
@@ -1739,7 +1739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCanPlay`
 
----
+***
 
 ### onCanPlayCapture?
 
@@ -1749,7 +1749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCanPlayCapture`
 
----
+***
 
 ### onCanPlayThrough?
 
@@ -1759,7 +1759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCanPlayThrough`
 
----
+***
 
 ### onCanPlayThroughCapture?
 
@@ -1769,7 +1769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onCanPlayThroughCapture`
 
----
+***
 
 ### onDurationChange?
 
@@ -1779,7 +1779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDurationChange`
 
----
+***
 
 ### onDurationChangeCapture?
 
@@ -1789,7 +1789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDurationChangeCapture`
 
----
+***
 
 ### onEmptied?
 
@@ -1799,7 +1799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEmptied`
 
----
+***
 
 ### onEmptiedCapture?
 
@@ -1809,7 +1809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEmptiedCapture`
 
----
+***
 
 ### onEncrypted?
 
@@ -1819,7 +1819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEncrypted`
 
----
+***
 
 ### onEncryptedCapture?
 
@@ -1829,7 +1829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEncryptedCapture`
 
----
+***
 
 ### onEnded?
 
@@ -1839,7 +1839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEnded`
 
----
+***
 
 ### onEndedCapture?
 
@@ -1849,7 +1849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onEndedCapture`
 
----
+***
 
 ### onLoadedData?
 
@@ -1859,7 +1859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadedData`
 
----
+***
 
 ### onLoadedDataCapture?
 
@@ -1869,7 +1869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadedDataCapture`
 
----
+***
 
 ### onLoadedMetadata?
 
@@ -1879,7 +1879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadedMetadata`
 
----
+***
 
 ### onLoadedMetadataCapture?
 
@@ -1889,7 +1889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadedMetadataCapture`
 
----
+***
 
 ### onLoadStart?
 
@@ -1899,7 +1899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadStart`
 
----
+***
 
 ### onLoadStartCapture?
 
@@ -1909,7 +1909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLoadStartCapture`
 
----
+***
 
 ### onPause?
 
@@ -1919,7 +1919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPause`
 
----
+***
 
 ### onPauseCapture?
 
@@ -1929,7 +1929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPauseCapture`
 
----
+***
 
 ### onPlay?
 
@@ -1939,7 +1939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPlay`
 
----
+***
 
 ### onPlayCapture?
 
@@ -1949,7 +1949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPlayCapture`
 
----
+***
 
 ### onPlaying?
 
@@ -1959,7 +1959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPlaying`
 
----
+***
 
 ### onPlayingCapture?
 
@@ -1969,7 +1969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPlayingCapture`
 
----
+***
 
 ### onProgress?
 
@@ -1979,7 +1979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onProgress`
 
----
+***
 
 ### onProgressCapture?
 
@@ -1989,7 +1989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onProgressCapture`
 
----
+***
 
 ### onRateChange?
 
@@ -1999,7 +1999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onRateChange`
 
----
+***
 
 ### onRateChangeCapture?
 
@@ -2009,7 +2009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onRateChangeCapture`
 
----
+***
 
 ### onResize?
 
@@ -2019,7 +2019,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onResize`
 
----
+***
 
 ### onResizeCapture?
 
@@ -2029,7 +2029,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onResizeCapture`
 
----
+***
 
 ### onSeeked?
 
@@ -2039,7 +2039,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSeeked`
 
----
+***
 
 ### onSeekedCapture?
 
@@ -2049,7 +2049,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSeekedCapture`
 
----
+***
 
 ### onSeeking?
 
@@ -2059,7 +2059,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSeeking`
 
----
+***
 
 ### onSeekingCapture?
 
@@ -2069,7 +2069,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSeekingCapture`
 
----
+***
 
 ### onStalled?
 
@@ -2079,7 +2079,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onStalled`
 
----
+***
 
 ### onStalledCapture?
 
@@ -2089,7 +2089,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onStalledCapture`
 
----
+***
 
 ### onSuspend?
 
@@ -2099,7 +2099,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSuspend`
 
----
+***
 
 ### onSuspendCapture?
 
@@ -2109,7 +2109,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSuspendCapture`
 
----
+***
 
 ### onTimeUpdate?
 
@@ -2119,7 +2119,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTimeUpdate`
 
----
+***
 
 ### onTimeUpdateCapture?
 
@@ -2129,7 +2129,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTimeUpdateCapture`
 
----
+***
 
 ### onVolumeChange?
 
@@ -2139,7 +2139,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onVolumeChange`
 
----
+***
 
 ### onVolumeChangeCapture?
 
@@ -2149,7 +2149,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onVolumeChangeCapture`
 
----
+***
 
 ### onWaiting?
 
@@ -2159,7 +2159,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onWaiting`
 
----
+***
 
 ### onWaitingCapture?
 
@@ -2169,7 +2169,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onWaitingCapture`
 
----
+***
 
 ### onAuxClick?
 
@@ -2179,7 +2179,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAuxClick`
 
----
+***
 
 ### onAuxClickCapture?
 
@@ -2189,7 +2189,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAuxClickCapture`
 
----
+***
 
 ### onClick?
 
@@ -2199,7 +2199,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onClick`
 
----
+***
 
 ### onClickCapture?
 
@@ -2209,7 +2209,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onClickCapture`
 
----
+***
 
 ### onContextMenu?
 
@@ -2219,7 +2219,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onContextMenu`
 
----
+***
 
 ### onContextMenuCapture?
 
@@ -2229,7 +2229,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onContextMenuCapture`
 
----
+***
 
 ### onDoubleClick?
 
@@ -2239,7 +2239,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDoubleClick`
 
----
+***
 
 ### onDoubleClickCapture?
 
@@ -2249,7 +2249,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDoubleClickCapture`
 
----
+***
 
 ### onDrag?
 
@@ -2259,7 +2259,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDrag`
 
----
+***
 
 ### onDragCapture?
 
@@ -2269,7 +2269,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragCapture`
 
----
+***
 
 ### onDragEnd?
 
@@ -2279,7 +2279,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragEnd`
 
----
+***
 
 ### onDragEndCapture?
 
@@ -2289,7 +2289,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragEndCapture`
 
----
+***
 
 ### onDragEnter?
 
@@ -2299,7 +2299,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragEnter`
 
----
+***
 
 ### onDragEnterCapture?
 
@@ -2309,7 +2309,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragEnterCapture`
 
----
+***
 
 ### onDragExit?
 
@@ -2319,7 +2319,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragExit`
 
----
+***
 
 ### onDragExitCapture?
 
@@ -2329,7 +2329,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragExitCapture`
 
----
+***
 
 ### onDragLeave?
 
@@ -2339,7 +2339,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragLeave`
 
----
+***
 
 ### onDragLeaveCapture?
 
@@ -2349,7 +2349,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragLeaveCapture`
 
----
+***
 
 ### onDragOver?
 
@@ -2359,7 +2359,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragOver`
 
----
+***
 
 ### onDragOverCapture?
 
@@ -2369,7 +2369,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragOverCapture`
 
----
+***
 
 ### onDragStart?
 
@@ -2379,7 +2379,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragStart`
 
----
+***
 
 ### onDragStartCapture?
 
@@ -2389,7 +2389,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDragStartCapture`
 
----
+***
 
 ### onDrop?
 
@@ -2399,7 +2399,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDrop`
 
----
+***
 
 ### onDropCapture?
 
@@ -2409,7 +2409,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onDropCapture`
 
----
+***
 
 ### onMouseDown?
 
@@ -2419,7 +2419,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseDown`
 
----
+***
 
 ### onMouseDownCapture?
 
@@ -2429,7 +2429,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseDownCapture`
 
----
+***
 
 ### onMouseEnter?
 
@@ -2439,7 +2439,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseEnter`
 
----
+***
 
 ### onMouseLeave?
 
@@ -2449,7 +2449,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseLeave`
 
----
+***
 
 ### onMouseMove?
 
@@ -2459,7 +2459,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseMove`
 
----
+***
 
 ### onMouseMoveCapture?
 
@@ -2469,7 +2469,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseMoveCapture`
 
----
+***
 
 ### onMouseOut?
 
@@ -2479,7 +2479,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseOut`
 
----
+***
 
 ### onMouseOutCapture?
 
@@ -2489,7 +2489,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseOutCapture`
 
----
+***
 
 ### onMouseOver?
 
@@ -2499,7 +2499,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseOver`
 
----
+***
 
 ### onMouseOverCapture?
 
@@ -2509,7 +2509,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseOverCapture`
 
----
+***
 
 ### onMouseUp?
 
@@ -2519,7 +2519,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseUp`
 
----
+***
 
 ### onMouseUpCapture?
 
@@ -2529,7 +2529,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onMouseUpCapture`
 
----
+***
 
 ### onSelect?
 
@@ -2539,7 +2539,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSelect`
 
----
+***
 
 ### onSelectCapture?
 
@@ -2549,7 +2549,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onSelectCapture`
 
----
+***
 
 ### onTouchCancel?
 
@@ -2559,7 +2559,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchCancel`
 
----
+***
 
 ### onTouchCancelCapture?
 
@@ -2569,7 +2569,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchCancelCapture`
 
----
+***
 
 ### onTouchEnd?
 
@@ -2579,7 +2579,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchEnd`
 
----
+***
 
 ### onTouchEndCapture?
 
@@ -2589,7 +2589,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchEndCapture`
 
----
+***
 
 ### onTouchMove?
 
@@ -2599,7 +2599,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchMove`
 
----
+***
 
 ### onTouchMoveCapture?
 
@@ -2609,7 +2609,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchMoveCapture`
 
----
+***
 
 ### onTouchStart?
 
@@ -2619,7 +2619,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchStart`
 
----
+***
 
 ### onTouchStartCapture?
 
@@ -2629,7 +2629,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTouchStartCapture`
 
----
+***
 
 ### onPointerDown?
 
@@ -2639,7 +2639,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerDown`
 
----
+***
 
 ### onPointerDownCapture?
 
@@ -2649,7 +2649,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerDownCapture`
 
----
+***
 
 ### onPointerMove?
 
@@ -2659,7 +2659,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerMove`
 
----
+***
 
 ### onPointerMoveCapture?
 
@@ -2669,7 +2669,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerMoveCapture`
 
----
+***
 
 ### onPointerUp?
 
@@ -2679,7 +2679,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerUp`
 
----
+***
 
 ### onPointerUpCapture?
 
@@ -2689,7 +2689,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerUpCapture`
 
----
+***
 
 ### onPointerCancel?
 
@@ -2699,7 +2699,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerCancel`
 
----
+***
 
 ### onPointerCancelCapture?
 
@@ -2709,7 +2709,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerCancelCapture`
 
----
+***
 
 ### onPointerEnter?
 
@@ -2719,7 +2719,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerEnter`
 
----
+***
 
 ### onPointerLeave?
 
@@ -2729,7 +2729,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerLeave`
 
----
+***
 
 ### onPointerOver?
 
@@ -2739,7 +2739,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerOver`
 
----
+***
 
 ### onPointerOverCapture?
 
@@ -2749,7 +2749,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerOverCapture`
 
----
+***
 
 ### onPointerOut?
 
@@ -2759,7 +2759,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerOut`
 
----
+***
 
 ### onPointerOutCapture?
 
@@ -2769,7 +2769,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onPointerOutCapture`
 
----
+***
 
 ### onGotPointerCapture?
 
@@ -2779,7 +2779,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onGotPointerCapture`
 
----
+***
 
 ### onGotPointerCaptureCapture?
 
@@ -2789,7 +2789,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onGotPointerCaptureCapture`
 
----
+***
 
 ### onLostPointerCapture?
 
@@ -2799,7 +2799,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLostPointerCapture`
 
----
+***
 
 ### onLostPointerCaptureCapture?
 
@@ -2809,7 +2809,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onLostPointerCaptureCapture`
 
----
+***
 
 ### onScroll?
 
@@ -2819,7 +2819,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onScroll`
 
----
+***
 
 ### onScrollCapture?
 
@@ -2829,7 +2829,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onScrollCapture`
 
----
+***
 
 ### onWheel?
 
@@ -2839,7 +2839,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onWheel`
 
----
+***
 
 ### onWheelCapture?
 
@@ -2849,7 +2849,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onWheelCapture`
 
----
+***
 
 ### onAnimationStart?
 
@@ -2859,7 +2859,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationStart`
 
----
+***
 
 ### onAnimationStartCapture?
 
@@ -2869,7 +2869,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationStartCapture`
 
----
+***
 
 ### onAnimationEnd?
 
@@ -2879,7 +2879,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationEnd`
 
----
+***
 
 ### onAnimationEndCapture?
 
@@ -2889,7 +2889,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationEndCapture`
 
----
+***
 
 ### onAnimationIteration?
 
@@ -2899,7 +2899,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationIteration`
 
----
+***
 
 ### onAnimationIterationCapture?
 
@@ -2909,7 +2909,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onAnimationIterationCapture`
 
----
+***
 
 ### onTransitionEnd?
 
@@ -2919,7 +2919,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTransitionEnd`
 
----
+***
 
 ### onTransitionEndCapture?
 
@@ -2929,7 +2929,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.onTransitionEndCapture`
 
----
+***
 
 ### asChild?
 
@@ -2939,7 +2939,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.asChild`
 
----
+***
 
 ### type?
 
@@ -2949,7 +2949,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.type`
 
----
+***
 
 ### disabled?
 
@@ -2959,7 +2959,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.disabled`
 
----
+***
 
 ### formAction?
 
@@ -2969,7 +2969,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.formAction`
 
----
+***
 
 ### formEncType?
 
@@ -2979,7 +2979,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.formEncType`
 
----
+***
 
 ### formMethod?
 
@@ -2989,7 +2989,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.formMethod`
 
----
+***
 
 ### formNoValidate?
 
@@ -2999,7 +2999,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.formNoValidate`
 
----
+***
 
 ### formTarget?
 
@@ -3009,7 +3009,7 @@ Defines the human readable text alternative of aria-valuenow for a range widget.
 
 `DialogPrimitive.DialogCloseProps.formTarget`
 
----
+***
 
 ### name?
 

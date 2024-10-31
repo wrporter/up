@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Interface: TooltipProps
 
@@ -14,7 +14,7 @@
 
 > `optional` **providerProps**: `TooltipProviderProps`
 
----
+***
 
 ### children?
 
@@ -24,7 +24,7 @@
 
 `TooltipPrimitive.TooltipProps.children`
 
----
+***
 
 ### open?
 
@@ -34,7 +34,7 @@
 
 `TooltipPrimitive.TooltipProps.open`
 
----
+***
 
 ### defaultOpen?
 
@@ -44,7 +44,7 @@
 
 `TooltipPrimitive.TooltipProps.defaultOpen`
 
----
+***
 
 ### onOpenChange()?
 
@@ -62,7 +62,7 @@
 
 `TooltipPrimitive.TooltipProps.onOpenChange`
 
----
+***
 
 ### delayDuration?
 
@@ -74,14 +74,14 @@ override the prop with the same name passed to Provider.
 #### Default Value
 
 ```ts
-700;
+700
 ```
 
 #### Inherited from
 
 `TooltipPrimitive.TooltipProps.delayDuration`
 
----
+***
 
 ### disableHoverableContent?
 
@@ -92,14 +92,14 @@ When `true`, trying to hover the content will result in the tooltip closing as t
 #### Default Value
 
 ```ts
-false;
+false
 ```
 
 #### Inherited from
 
 `TooltipPrimitive.TooltipProps.disableHoverableContent`
 
----
+***
 
 ### data-testid?
 

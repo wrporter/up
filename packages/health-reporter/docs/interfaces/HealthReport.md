@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: HealthReport
 
@@ -17,7 +17,7 @@
 Overall health status. If the status of a check fails, so does the
 overall status.
 
----
+***
 
 ### checks
 
@@ -28,9 +28,9 @@ service health.
 
 #### Index Signature
 
-\[`key`: `string`\]: [`ComponentCheckReport`](ComponentCheckReport.md)[]
+ \[`key`: `string`\]: [`ComponentCheckReport`](ComponentCheckReport.md)[]
 
----
+***
 
 ### serviceId?
 
@@ -43,7 +43,7 @@ specified.
 
 [`HealthReporterConfig`](HealthReporterConfig.md).[`serviceId`](HealthReporterConfig.md#serviceid)
 
----
+***
 
 ### releaseId?
 

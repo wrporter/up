@@ -1,6 +1,6 @@
 [**@wesp-up/health-reporter**](../README.md) • **Docs**
 
----
+***
 
 # Interface: ComponentCheckerConfig
 
@@ -13,7 +13,7 @@
 Name of the component being evaluated. Must match the pattern
 `^[a-zA-Z-_]{1,50}$`.
 
----
+***
 
 ### measurementName
 
@@ -22,7 +22,7 @@ Name of the component being evaluated. Must match the pattern
 Name of the measurement being evaluated. Example: `responseTime`. Must
 match the pattern `^[a-zA-Z-_]{1,50}$`.
 
----
+***
 
 ### observedUnit
 
@@ -30,7 +30,7 @@ match the pattern `^[a-zA-Z-_]{1,50}$`.
 
 Unit of the `observedValue`. Must match the pattern `^[a-zA-Z]{1,25}$`.
 
----
+***
 
 ### check()
 
@@ -50,7 +50,7 @@ status code.
 
 `Promise`\<`unknown`\>
 
----
+***
 
 ### timeoutMilliseconds?
 
@@ -62,5 +62,5 @@ timeout results in a `fail` status for the check.
 #### Default
 
 ```ts
-5000;
+5000
 ```

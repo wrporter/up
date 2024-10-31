@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Interface: ShutdownOptions
 
@@ -10,11 +10,11 @@ Options for performing a graceful shutdown of a server.
 
 ### server
 
-> **server**: `Server`\<_typeof_ `IncomingMessage`, _typeof_ `ServerResponse`\> \| `Server`
+> **server**: `Server`\<*typeof* `IncomingMessage`, *typeof* `ServerResponse`\> \| `Server`
 
 The server to shut down.
 
----
+***
 
 ### log?
 
@@ -22,7 +22,7 @@ The server to shut down.
 
 Optional logger for logging events.
 
----
+***
 
 ### timeout?
 
@@ -31,7 +31,7 @@ Optional logger for logging events.
 Time in milliseconds to wait for open connections to finish. Defaults
 to 10,000ms.
 
----
+***
 
 ### onInit()?
 
@@ -43,7 +43,7 @@ Callback function to call at the start of the shutdown operation.
 
 `void`
 
----
+***
 
 ### onShutdown()?
 

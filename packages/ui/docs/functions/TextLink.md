@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: TextLink()
 
@@ -8,7 +8,7 @@
 
 ## Type Parameters
 
-• **AsComponent** _extends_ `As`\<`any`\> = `"a"`
+• **AsComponent** *extends* `As`\<`any`\> = `"a"`
 
 ## Parameters
 

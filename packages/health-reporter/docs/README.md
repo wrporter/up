@@ -1,6 +1,6 @@
 **@wesp-up/health-reporter** • **Docs**
 
----
+***
 
 # @wesp-up/health-reporter
 

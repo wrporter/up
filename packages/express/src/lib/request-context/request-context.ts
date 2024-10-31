@@ -8,9 +8,6 @@ import type { RequestLogger } from '../logger/index.js';
  * project-specific extensions.
  */
 export interface RequestContext {
-  transactionId: string;
-  requestId: string;
-  parentRequestId?: string;
   log: RequestLogger;
 }
 

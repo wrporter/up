@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Class: ServerLogger
 
@@ -69,7 +69,7 @@ The entry to be logged.
 
 `Logger.commit`
 
----
+***
 
 ### configure()
 
@@ -91,7 +91,7 @@ Options to set.
 
 `Logger.configure`
 
----
+***
 
 ### getLevel()
 
@@ -107,7 +107,7 @@ Returns the current logging level set in the logger.
 
 `Logger.getLevel`
 
----
+***
 
 ### log()
 
@@ -134,7 +134,7 @@ Data to be logged. Can be of any type.
 
 `Logger.log`
 
----
+***
 
 ### debug()
 
@@ -156,7 +156,7 @@ Data to be logged.
 
 `Logger.debug`
 
----
+***
 
 ### info()
 
@@ -178,7 +178,7 @@ Data to be logged.
 
 `Logger.info`
 
----
+***
 
 ### access()
 
@@ -200,7 +200,7 @@ Entry to be logged.
 
 `Logger.access`
 
----
+***
 
 ### warn()
 
@@ -222,7 +222,7 @@ Data to be logged.
 
 `Logger.warn`
 
----
+***
 
 ### error()
 

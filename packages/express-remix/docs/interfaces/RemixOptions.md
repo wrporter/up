@@ -1,6 +1,6 @@
 [**@wesp-up/express-remix**](../README.md) • **Docs**
 
----
+***
 
 # Interface: RemixOptions
 
@@ -18,7 +18,7 @@ The build path for the backend server.
 
 `${PWD}/build`
 
----
+***
 
 ### assetsRoot
 
@@ -30,7 +30,7 @@ The root folder for public assets.
 
 `public`
 
----
+***
 
 ### assetsBuildDirectory
 
@@ -43,7 +43,7 @@ The build directory for remix assets, should be a child of
 
 `public/build`
 
----
+***
 
 ### publicPath
 
@@ -55,7 +55,7 @@ The route path for public assets.
 
 `/build/`
 
----
+***
 
 ### assetsRootMaxAge
 

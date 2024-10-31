@@ -1,6 +1,6 @@
 [**@wesp-up/ui**](../README.md) • **Docs**
 
----
+***
 
 # Function: TextField()
 
@@ -8,7 +8,7 @@
 
 ## Type Parameters
 
-• **AsComponent** _extends_ `As`\<`any`\> = `"input"`
+• **AsComponent** *extends* `As`\<`any`\> = `"input"`
 
 ## Parameters
 
