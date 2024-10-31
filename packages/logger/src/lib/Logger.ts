@@ -18,7 +18,7 @@ export interface Options {
  */
 export interface Entry {
   message?: string;
-  error?: Error;
+  error?: Error | unknown;
   [key: string]: unknown;
 }
 

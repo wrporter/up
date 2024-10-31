@@ -1,5 +1,11 @@
 # @wesp-up/logger
 
+## 1.2.1
+
+### Patch Changes
+
+- Allow error objects to be a more lenient type for catch blocks.
+
 ## 1.2.0
 
 ### Minor Changes
