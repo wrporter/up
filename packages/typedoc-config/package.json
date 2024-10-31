@@ -1,6 +1,6 @@
 {
   "name": "@wesp-up/typedoc-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/wrporter/up.git"
@@ -10,7 +10,7 @@
     "*.json"
   ],
   "dependencies": {
-    "typedoc": "0.26.5",
-    "typedoc-plugin-markdown": "4.2.3"
+    "typedoc": "0.26.10",
+    "typedoc-plugin-markdown": "4.2.9"
   }
 }

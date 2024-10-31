@@ -1,8 +1,8 @@
 import jsEslint from '@eslint/js';
+import pluginVitest from '@vitest/eslint-plugin';
 import pluginImportX from 'eslint-plugin-import-x';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
-import pluginVitest from 'eslint-plugin-vitest';
 import globals from 'globals';
 import tsEslint from 'typescript-eslint';
 

@@ -1,5 +1,4 @@
 import type { Entry, Level, Options } from '@wesp-up/logger';
-import type { Request } from 'express';
 
 import { ServerLogger } from './server.logger.js';
 
@@ -16,22 +15,16 @@ export type Scope = 'global' | 'access' | 'event';
 interface ScopedMeta extends Record<Scope, Meta> {}
 
 /**
- * Request-scoped logger that decorates logs with data from `req.context`. The
- * logger applies `requestId` and `transactionId` to all logs.
+ * A contextual logger that decorates logs with metadata.
  * @example
  * ```typescript
  * function route(req, res, next) {
- *     const log = new RequestLogger(req);
- *     log.addMeta({ myProp: 'my-prop' });
+ *     req.context.log.addGlobalMeta({ myProp: 'my-prop' });
  *     log.info({ message: 'power-up' });
  *     // ->
  *     // {
  *     //   "message": "power-up",
- *     //   "meta": {
- *     //     "myProp": "my-prop"
- *     //   },
- *     //   "requestId": "3b0285da-5f26-44ed-964f-c00e4b484aa7",
- *     //   "transactionId": "9a2792cd-42d2-46d5-9804-d85778ece7b8"
+ *     //   "myProp": "my-prop"
  *     // }
  * }
  * ```
@@ -39,10 +32,7 @@ interface ScopedMeta extends Record<Scope, Meta> {}
 export class RequestLogger extends ServerLogger {
   private meta: ScopedMeta = { global: {}, access: {}, event: {} };
 
-  constructor(
-    private request: Request,
-    options?: Options,
-  ) {
+  constructor(options?: Options) {
     super(options);
   }
 
@@ -86,9 +76,7 @@ export class RequestLogger extends ServerLogger {
   }
 
   protected commit(level: Level, entry: Entry): void {
-    const { requestId, transactionId } = this.request.context;
     let meta = this.meta.global;
-
     if (level === 'access') {
       meta = { ...meta, ...this.meta.access };
     } else {
@@ -97,13 +85,8 @@ export class RequestLogger extends ServerLogger {
 
     const data: Entry = {
       ...entry,
-      requestId,
-      transactionId,
+      ...meta,
     };
-
-    if (Object.keys(meta).length > 0) {
-      data.meta = meta;
-    }
 
     super.commit(level, data);
   }

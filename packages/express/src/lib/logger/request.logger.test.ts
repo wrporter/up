@@ -1,9 +1,7 @@
 import type { AccessEntry } from '@wesp-up/logger';
 import { log } from '@wesp-up/logger';
-import type { Request } from 'express';
 
 import { RequestLogger } from './request.logger.js';
-import type { RequestContext } from '../request-context/index.js';
 
 vi.mock('@wesp-up/logger', async () => {
   const actual = await vi.importActual<typeof import('@wesp-up/logger')>('@wesp-up/logger');
@@ -18,30 +16,12 @@ vi.mock('@wesp-up/logger', async () => {
 });
 
 let logger: RequestLogger;
-let req: Request;
 
 beforeEach(() => {
-  req = {
-    context: {} as RequestContext,
-  } as Request;
-  logger = new RequestLogger(req);
+  logger = new RequestLogger();
   logger.configure({ level: 'info' });
   vi.mocked(log.getLevel).mockClear();
   vi.mocked(log.configure).mockClear();
-});
-
-it('logs trace IDs', () => {
-  req.context.requestId = 'request-id';
-  req.context.transactionId = 'transaction-id';
-
-  logger.info('Zap!');
-
-  expect(log.log).toHaveBeenCalledOnce();
-  expect(log.log).toHaveBeenCalledWith('info', {
-    message: 'Zap!',
-    requestId: 'request-id',
-    transactionId: 'transaction-id',
-  });
 });
 
 it('logs global metadata', () => {
@@ -50,19 +30,19 @@ it('logs global metadata', () => {
   logger.info('Zap!');
   expect(log.log).toHaveBeenCalledWith('info', {
     message: 'Zap!',
-    meta: { prop: 'test-meta' },
+    prop: 'test-meta',
   });
 
   logger.error('Zap!');
   expect(log.log).toHaveBeenCalledWith('error', {
     message: 'Zap!',
-    meta: { prop: 'test-meta' },
+    prop: 'test-meta',
   });
 
   logger.access({ method: 'GET' } as AccessEntry);
   expect(log.log).toHaveBeenCalledWith('access', {
     method: 'GET',
-    meta: { prop: 'test-meta' },
+    prop: 'test-meta',
   });
 });
 
@@ -72,7 +52,7 @@ it('logs event metadata', () => {
   logger.info('Zap!');
   expect(log.log).toHaveBeenCalledWith('info', {
     message: 'Zap!',
-    meta: { prop: 'test-meta' },
+    prop: 'test-meta',
   });
 
   logger.access({ method: 'GET' } as AccessEntry);
@@ -92,7 +72,7 @@ it('logs access metadata', () => {
   logger.access({ method: 'GET' } as AccessEntry);
   expect(log.log).toHaveBeenCalledWith('access', {
     method: 'GET',
-    meta: { prop: 'test-meta' },
+    prop: 'test-meta',
   });
 });
 
@@ -104,6 +84,7 @@ it('merges metadata', () => {
 
   expect(log.log).toHaveBeenCalledWith('info', {
     message: 'Zap!',
-    meta: { prop1: 'overwrite-meta1', prop2: 'test-meta2' },
+    prop1: 'overwrite-meta1',
+    prop2: 'test-meta2',
   });
 });

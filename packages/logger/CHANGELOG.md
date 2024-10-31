@@ -1,5 +1,11 @@
 # @wesp-up/logger
 
+## 1.2.0
+
+### Minor Changes
+
+- Update dependencies
+
 ## 1.1.0 (2024-01-23)
 
 ### Minor Changes

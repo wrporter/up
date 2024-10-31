@@ -1,5 +1,20 @@
 # @wesp-up/express
 
+## 3.0.0
+
+### Major Changes
+
+- **Breaking changes**
+
+  - Removed custom request tracing. Consumers should prefer industry solutions such as OpenTelemetry tracing instead.
+  - The request logger now allows metadata to overwrite at the root of the logged entry rather than a `meta` property. This is to provide more flexibility in how the logger can be used.
+
+### Patch Changes
+
+- Updated dependencies
+  - @wesp-up/metrics@1.1.0
+  - @wesp-up/logger@1.2.0
+
 ## 2.1.0 (2024-08-20)
 
 ### Minor Changes

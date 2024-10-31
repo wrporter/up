@@ -1,5 +1,16 @@
 # @wesp-up/eslint-config-react
 
+## 2.1.0
+
+### Minor Changes
+
+- Update dependencies
+
+### Patch Changes
+
+- Updated dependencies
+  - @wesp-up/eslint-config@2.1.0
+
 ## 2.0.1 (2024-08-08)
 
 ### Patch Changes

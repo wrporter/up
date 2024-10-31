@@ -19,7 +19,7 @@ import { RequestLogger } from '../logger/index.js';
 export const requestContextMiddleware: RequestHandler = (req, res, next) => {
   req.context = {
     ...req.context,
-    log: new RequestLogger(req),
+    log: new RequestLogger(),
   };
 
   next();

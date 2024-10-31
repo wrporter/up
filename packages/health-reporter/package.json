@@ -1,6 +1,6 @@
 {
   "name": "@wesp-up/health-reporter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/wrporter/up.git"
@@ -31,10 +31,10 @@
     "@wesp-up/eslint-config": "*",
     "@wesp-up/tsconfig": "*",
     "@wesp-up/typedoc-config": "*",
-    "@vitest/coverage-v8": "2.0.4",
-    "eslint": "9.8.0",
-    "tsup": "8.2.3",
-    "typescript": "5.5.4",
-    "vitest": "2.0.4"
+    "@vitest/coverage-v8": "2.1.4",
+    "eslint": "9.13.0",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3",
+    "vitest": "2.1.4"
   }
 }

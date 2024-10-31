@@ -26,9 +26,6 @@
 
 ## Variables
 
-- [HEADER\_TRANSACTION\_ID](variables/HEADER_TRANSACTION_ID.md)
-- [HEADER\_PARENT\_REQUEST\_ID](variables/HEADER_PARENT_REQUEST_ID.md)
-- [HEADER\_REQUEST\_ID](variables/HEADER_REQUEST_ID.md)
 - [log](variables/log.md)
 - [defaultServerOptions](variables/defaultServerOptions.md)
 
@@ -40,7 +37,6 @@
 - [metaRouter](functions/metaRouter.md)
 - [metricsMiddleware](functions/metricsMiddleware.md)
 - [requestContextMiddleware](functions/requestContextMiddleware.md)
-- [requestTransactionMiddleware](functions/requestTransactionMiddleware.md)
 - [gracefulShutdown](functions/gracefulShutdown.md)
 - [gracefulShutdownWithSignals](functions/gracefulShutdownWithSignals.md)
 - [createServer](functions/createServer.md)

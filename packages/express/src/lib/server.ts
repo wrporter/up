@@ -15,7 +15,6 @@ import type { VersionMeta } from './meta/index.js';
 import { metaRouter } from './meta/index.js';
 import { metricsMiddleware } from './metrics/index.js';
 import { requestContextMiddleware } from './request-context/index.js';
-import { requestTransactionMiddleware } from './request-transaction/index.js';
 import { gracefulShutdown, gracefulShutdownWithSignals } from './shutdown/index.js';
 
 export const log = new ServerLogger();
@@ -76,7 +75,6 @@ export class Server {
 
     /* ------------------------- Request Lifecycle ------------------------- */
     this.app.use(requestContextMiddleware);
-    this.app.use(requestTransactionMiddleware);
     this.app.use(accessLogMiddleware(this.options.accessLogs));
     this.app.use(responseContentMiddleware);
 
