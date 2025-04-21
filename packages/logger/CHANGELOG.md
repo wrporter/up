@@ -1,5 +1,11 @@
 # @wesp-up/logger
 
+## 1.2.3
+
+### Patch Changes
+
+- Update dependencies
+
 ## 1.2.2
 
 ### Patch Changes

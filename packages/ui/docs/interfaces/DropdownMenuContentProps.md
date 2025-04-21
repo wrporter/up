@@ -68,7 +68,7 @@
 
 ### key?
 
-> `optional` **key**: `null` \| `string` \| `number` \| `bigint`
+> `optional` **key**: `null` \| `Key`
 
 #### Inherited from
 

@@ -1,5 +1,16 @@
 # @wesp-up/express
 
+## 4.0.0
+
+### Major Changes
+
+- Support Express v5. The package is still compatible with Express v4, but the new TypeScript types from Express v5 conflict, so this is a breaking change a necessitates a major version bump.
+
+### Patch Changes
+
+- Updated dependencies
+  - @wesp-up/logger@1.2.3
+
 ## 3.0.1
 
 ### Patch Changes

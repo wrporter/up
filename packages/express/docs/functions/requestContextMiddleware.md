@@ -4,7 +4,7 @@
 
 # Function: requestContextMiddleware()
 
-> **requestContextMiddleware**(`req`, `res`, `next`): `void`
+> **requestContextMiddleware**(`req`, `res`, `next`): `void` \| `Promise`\<`void`\>
 
 Middleware to set up context on the request. Context is accessed via
 `req.context`.
@@ -19,7 +19,7 @@ Middleware to set up context on the request. Context is accessed via
 
 ## Returns
 
-`void`
+`void` \| `Promise`\<`void`\>
 
 ## Example
 

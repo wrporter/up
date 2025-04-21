@@ -1,4 +1,4 @@
-import type { Request, Response } from 'express';
+import type { Request, Response } from "express";
 
 /**
  * Service version information.
@@ -40,15 +40,15 @@ export interface VersionMeta {
  */
 export function createVersionHandler(versionMeta?: VersionMeta) {
   const meta: VersionMeta = {
-    id: process.env.APP_ID ?? '',
-    branch: process.env.BUILD_BRANCH ?? '',
-    sha: process.env.BUILD_SHA ?? '',
-    version: process.env.BUILD_VERSION ?? '',
-    buildDate: process.env.BUILD_DATE ?? '',
+    id: process.env.APP_ID ?? "",
+    branch: process.env.BUILD_BRANCH ?? "",
+    sha: process.env.BUILD_SHA ?? "",
+    version: process.env.BUILD_VERSION ?? "",
+    buildDate: process.env.BUILD_DATE ?? "",
     ...versionMeta,
   };
 
-  return (req: Request, res: Response) => {
-    return res.json(meta);
+  return (_req: Request, res: Response) => {
+    res.json(meta);
   };
 }

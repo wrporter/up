@@ -1,21 +1,27 @@
-import http from 'http';
-import type { AddressInfo } from 'net';
+import http from "http";
+import type { AddressInfo } from "net";
 
-import compression from 'compression';
-import type { ErrorRequestHandler } from 'express';
-import express from 'express';
-import type { Opts as PrometheusOptions } from 'express-prom-bundle';
+import compression from "compression";
+import type { ErrorRequestHandler } from "express";
+import express from "express";
+import type { Opts as PrometheusOptions } from "express-prom-bundle";
 
-import { AccessLogOptions } from './access/access-log.middleware.js';
-import { accessLogMiddleware, responseContentMiddleware } from './access/index.js';
-import { notFoundHandler } from './error-handler/error-handler.middleware.js';
-import { errorHandler } from './error-handler/index.js';
-import { ServerLogger } from './logger/index.js';
-import type { VersionMeta } from './meta/index.js';
-import { metaRouter } from './meta/index.js';
-import { metricsMiddleware } from './metrics/index.js';
-import { requestContextMiddleware } from './request-context/index.js';
-import { gracefulShutdown, gracefulShutdownWithSignals } from './shutdown/index.js';
+import { AccessLogOptions } from "./access/access-log.middleware.js";
+import {
+  accessLogMiddleware,
+  responseContentMiddleware,
+} from "./access/index.js";
+import { notFoundHandler } from "./error-handler/error-handler.middleware.js";
+import { errorHandler } from "./error-handler/index.js";
+import { ServerLogger } from "./logger/index.js";
+import type { VersionMeta } from "./meta/index.js";
+import { metaRouter } from "./meta/index.js";
+import { metricsMiddleware } from "./metrics/index.js";
+import { requestContextMiddleware } from "./request-context/index.js";
+import {
+  gracefulShutdown,
+  gracefulShutdownWithSignals,
+} from "./shutdown/index.js";
 
 export const log = new ServerLogger();
 
@@ -37,7 +43,7 @@ export function createServer(options: Options = {}) {
 /** Default options for the server when not provided. */
 export const defaultServerOptions: Partial<Options> = {
   gracefulShutdownTimeout: 5000,
-  pathPrefix: '',
+  pathPrefix: "",
 };
 
 /** Server that manages Express applications. */
@@ -62,7 +68,8 @@ export class Server {
   public init() {
     /* --------------------- Performance & Security --------------------- */
     // http://expressjs.com/en/advanced/best-practice-security.html#at-a-minimum-disable-x-powered-by-header
-    this.app.disable('x-powered-by');
+    this.app.disable("x-powered-by");
+    // @ts-ignore -- https://github.com/expressjs/compression/issues/226
     this.app.use(compression());
 
     /* --------------------- Performance & Security --------------------- */
@@ -99,16 +106,18 @@ export class Server {
     this.app.use(errorHandler(this.options.error500Handler));
 
     /* ------------------------- Server Creation ------------------------ */
-    this.httpServer.on('request', this.app);
-    this.metricsHttpServer.on('request', metricsApp);
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
+    this.httpServer.on("request", this.app);
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
+    this.metricsHttpServer.on("request", metricsApp);
 
-    this.httpServer.on('listening', () => {
-      this.app.set('status', 'ok');
+    this.httpServer.on("listening", () => {
+      this.app.set("status", "ok");
       const { port } = this.httpServer.address() as AddressInfo;
       log.info(`Server listening at http://localhost:${port}`);
     });
 
-    this.metricsHttpServer.on('listening', () => {
+    this.metricsHttpServer.on("listening", () => {
       const { port } = this.metricsHttpServer.address() as AddressInfo;
       log.info(`Metrics Server listening at http://localhost:${port}`);
     });
@@ -137,12 +146,14 @@ export class Server {
     this.httpServer.listen(port);
     this.metricsHttpServer.listen(metricsPort);
 
+    // TODO: Swap out custom graceful shutdown with https://www.npmjs.com/package/http-graceful-shutdown
+    // TODO: No need for graceful shutdown on the metrics server, shut it down right after the main server shuts down and exit after that.
     const metricsShutdown = gracefulShutdown({
       server: this.metricsHttpServer,
       log,
       timeout: 3000,
       onShutdown() {
-        log.info('Service stopped');
+        log.info("Service stopped");
         process.exit(0); // do not wait for other processes to finish
       },
     });
@@ -151,7 +162,7 @@ export class Server {
       server: this.httpServer,
       log,
       timeout: this.options?.gracefulShutdownTimeout,
-      onInit: () => this.app.set('status', 'shutdown'),
+      onInit: () => this.app.set("status", "shutdown"),
       onShutdown: () => metricsShutdown(),
     });
   }

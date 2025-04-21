@@ -4,7 +4,7 @@
 
 # Function: responseContentMiddleware()
 
-> **responseContentMiddleware**(`req`, `res`, `next`): `void`
+> **responseContentMiddleware**(`req`, `res`, `next`): `void` \| `Promise`\<`void`\>
 
 Records the response body to provide the byte size in access logs.
 
@@ -18,4 +18,4 @@ Records the response body to provide the byte size in access logs.
 
 ## Returns
 
-`void`
+`void` \| `Promise`\<`void`\>

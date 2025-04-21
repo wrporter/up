@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import path from 'path';
+import path from "path";
 
-import { createRequestHandler } from '@remix-run/express';
-import type { Application } from 'express';
-import express from 'express';
+import { createRequestHandler } from "@remix-run/express";
+import type { Application } from "express";
+import express from "express";
 
 /**
  * Remix options.
@@ -42,11 +42,11 @@ export interface RemixOptions {
  * Smart defaults for Remix. You normally shouldn't have to change these.
  */
 export const defaultRemixOptions: RemixOptions = {
-  serverBuildPath: path.join(process.cwd(), 'build'),
-  assetsBuildDirectory: 'public/build',
-  publicPath: '/build/',
-  assetsRoot: 'public',
-  assetsRootMaxAge: '1h',
+  serverBuildPath: path.join(process.cwd(), "build"),
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
+  assetsRoot: "public",
+  assetsRootMaxAge: "1h",
 };
 
 /**
@@ -62,7 +62,13 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
     ...defaultRemixOptions,
     ...options,
   };
-  const { publicPath, assetsBuildDirectory, assetsRoot, assetsRootMaxAge, serverBuildPath } = opts;
+  const {
+    publicPath,
+    assetsBuildDirectory,
+    assetsRoot,
+    assetsRootMaxAge,
+    serverBuildPath,
+  } = opts;
   const env = process.env.NODE_ENV;
 
   /* -------------------------- Static Assets ------------------------- */
@@ -71,7 +77,7 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
     publicPath,
     express.static(assetsBuildDirectory, {
       immutable: true,
-      maxAge: '1y',
+      maxAge: "1y",
     }),
   );
 
@@ -95,9 +101,10 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
     });
   }
 
-  if (env === 'development') {
+  if (env === "development") {
     app.all(
-      '*',
+      "*",
+      // @ts-ignore -- ignore until @remix-run/express supports express v5
       createRequestHandler({
         // ignoring as we are following direct instructions from remix
         /* c8 ignore next 6 */
@@ -111,7 +118,8 @@ export function useRemix(app: Application, options?: Partial<RemixOptions>) {
     );
   } else {
     app.all(
-      '*',
+      "*",
+      // @ts-ignore -- ignore until @remix-run/express supports express v5
       createRequestHandler({
         // ignoring as we are following direct instructions from remix
         /* c8 ignore next 6 */

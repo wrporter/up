@@ -1,6 +1,6 @@
 {
   "name": "@wesp-up/logger",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/wrporter/up.git"
@@ -29,16 +29,17 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "winston": "3.15.0"
+    "logform": "2.6.1",
+    "winston": "3.17.0"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "3.1.2",
     "@wesp-up/eslint-config": "*",
     "@wesp-up/tsconfig": "*",
     "@wesp-up/typedoc-config": "*",
-    "@vitest/coverage-v8": "2.1.4",
-    "eslint": "9.13.0",
-    "tsup": "8.3.5",
-    "typescript": "5.6.3",
-    "vitest": "2.1.4"
+    "eslint": "9.25.0",
+    "tsup": "8.4.0",
+    "typescript": "5.8.3",
+    "vitest": "3.1.2"
   }
 }

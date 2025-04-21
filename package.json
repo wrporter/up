@@ -2,12 +2,13 @@
   "name": "wesp-up",
   "private": true,
   "workspaces": [
+    "apps/*",
     "packages/*"
   ],
-  "packageManager": "npm@10.7.0",
+  "packageManager": "npm@11.3.0",
   "engines": {
-    "npm": ">=10.7.0",
-    "node": ">=20.15.1"
+    "npm": ">=11.3.0",
+    "node": ">=22.14.0"
   },
   "prettier": "@wesp-up/prettier-config",
   "scripts": {

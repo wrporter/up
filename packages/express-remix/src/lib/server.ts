@@ -1,14 +1,16 @@
-import type { Options as ServerOptions } from '@wesp-up/express';
-import { Server } from '@wesp-up/express';
-import type { Application } from 'express';
+import type { Options as ServerOptions } from "@wesp-up/express";
+import { Server } from "@wesp-up/express";
+import type { Application } from "express";
 
-import type { RemixOptions } from './remix.js';
-import { useRemix } from './remix.js';
+import type { RemixOptions } from "./remix.js";
+import { useRemix } from "./remix.js";
 
 /**
  * Creates an Express server integrated with Remix and ready for production.
  */
-export function createRemixServer(options: Partial<RemixOptions & ServerOptions> = {}) {
+export function createRemixServer(
+  options: Partial<RemixOptions & ServerOptions> = {},
+) {
   const server = new RemixServer(options);
   server.init();
   return server;
@@ -26,6 +28,7 @@ export class RemixServer extends Server {
     this.remixOptions = options;
   }
 
+  // @ts-ignore -- ignore until @remix-run/express supports express v5
   protected postMountApp(app: Application): void {
     useRemix(app, this.remixOptions);
   }

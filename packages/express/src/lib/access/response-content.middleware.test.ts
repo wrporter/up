@@ -1,6 +1,6 @@
-import type { NextFunction, Request, Response } from 'express';
+import type { NextFunction, Request, Response } from "express";
 
-import { responseContentMiddleware } from './response-content.middleware.js';
+import { responseContentMiddleware } from "./response-content.middleware.js";
 
 const req = {} as Request;
 const write = vi.fn();
@@ -12,56 +12,56 @@ beforeEach(() => {
   res = { write, end } as unknown as Response;
 });
 
-it('calls next', () => {
-  responseContentMiddleware(req, res, next);
+it("calls next", async () => {
+  await responseContentMiddleware(req, res, next);
 
   expect(next).toHaveBeenCalled();
 });
 
-it('writes the response body to the response object', () => {
-  responseContentMiddleware(req, res, next);
+it("writes the response body to the response object", async () => {
+  await responseContentMiddleware(req, res, next);
 
-  res.write('data');
+  res.write("data");
   res.end();
 
-  expect(res.content).toEqual('data');
+  expect(res.content).toEqual("data");
 });
 
-it('writes content on end', () => {
-  responseContentMiddleware(req, res, next);
+it("writes content on end", async () => {
+  await responseContentMiddleware(req, res, next);
 
-  res.write('start');
-  res.end('end');
+  res.write("start");
+  res.end("end");
 
-  expect(res.content).toEqual('startend');
+  expect(res.content).toEqual("startend");
 });
 
-it('calls the old write function', () => {
-  responseContentMiddleware(req, res, next);
+it("calls the old write function", async () => {
+  await responseContentMiddleware(req, res, next);
 
-  res.write('data');
+  res.write("data");
 
-  expect(write).toHaveBeenCalledWith('data');
+  expect(write).toHaveBeenCalledWith("data");
 });
 
-it('write returns result of the original write function', () => {
+it("write returns result of the original write function", async () => {
   write.mockReturnValue(true);
 
-  responseContentMiddleware(req, res, next);
+  await responseContentMiddleware(req, res, next);
 
-  expect(res.write('data')).toEqual(true);
+  expect(res.write("data")).toEqual(true);
 });
 
-it('end returns the response object so the response continues successfully', () => {
-  responseContentMiddleware(req, res, next);
+it("end returns the response object so the response continues successfully", async () => {
+  await responseContentMiddleware(req, res, next);
 
   expect(res.end()).toEqual(res);
 });
 
-it('calls the old end function', () => {
-  responseContentMiddleware(req, res, next);
+it("calls the old end function", async () => {
+  await responseContentMiddleware(req, res, next);
 
-  res.end('data');
+  res.end("data");
 
-  expect(end).toHaveBeenCalledWith('data');
+  expect(end).toHaveBeenCalledWith("data");
 });
