@@ -1,6 +1,6 @@
-import type { Request, Response } from 'express';
-import type { NormalizePathFn, Opts } from 'express-prom-bundle';
-import promBundle from 'express-prom-bundle';
+import type { Request, Response } from "express";
+import type { BaseOptions, NormalizePathFn } from "express-prom-bundle";
+import promBundle from "express-prom-bundle";
 
 /**
  * Metrics middleware that exposes metrics about the Node process and HTTP
@@ -23,7 +23,9 @@ import promBundle from 'express-prom-bundle';
  * });
  * ```
  */
-export function metricsMiddleware(options: Opts = {}): promBundle.Middleware {
+export function metricsMiddleware(
+  options: BaseOptions = {},
+): promBundle.Middleware {
   return promBundle({
     includeMethod: true,
     includePath: true,
@@ -42,10 +44,10 @@ export function metricsMiddleware(options: Opts = {}): promBundle.Middleware {
 
 export const formatStatusCode = (res: Response) => {
   if (res.statusCode < 300) {
-    return '2xx';
+    return "2xx";
   }
   if (res.statusCode < 400) {
-    return '3xx';
+    return "3xx";
   }
   return res.statusCode;
 };
@@ -67,5 +69,5 @@ export const normalizePath: NormalizePathFn = (req: Request): string => {
   // Example (Route applied even on auth failure):
   //    appRouter.get('some-path', authMiddleware, someHandler);
   //    app.use(appRouter)
-  return 'no-route-applied';
+  return "no-route-applied";
 };

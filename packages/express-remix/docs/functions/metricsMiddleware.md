@@ -15,7 +15,7 @@ options may be overridden by passing in options specified by
 
 ## Parameters
 
-• **options?**: `Opts`
+• **options?**: `BaseOptions`
 
 Options to override defaults.
 

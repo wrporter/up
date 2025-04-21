@@ -4,7 +4,7 @@ import type { AddressInfo } from "net";
 import compression from "compression";
 import type { ErrorRequestHandler } from "express";
 import express from "express";
-import type { Opts as PrometheusOptions } from "express-prom-bundle";
+import type { BaseOptions as PrometheusOptions } from "express-prom-bundle";
 
 import { AccessLogOptions } from "./access/access-log.middleware.js";
 import {

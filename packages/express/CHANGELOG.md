@@ -1,5 +1,11 @@
 # @wesp-up/express
 
+## 4.0.1
+
+### Patch Changes
+
+- Fix TypeScript type for metric options
+
 ## 4.0.0
 
 ### Major Changes

@@ -61,7 +61,7 @@ Service prefix to be used on routes such as the healthcheck.
 
 ### metricsOptions?
 
-> `optional` **metricsOptions**: `Opts`
+> `optional` **metricsOptions**: `BaseOptions`
 
 Options for configuring the Prometheus metrics exports. Straight
 pass-through to
